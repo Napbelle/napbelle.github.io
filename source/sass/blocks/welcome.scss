@@ -4,3 +4,30 @@
   background-image: url("../../img/welcome.jpg");
   padding: 185px 725px 280px 475px;
 }
+
+.welcome__title {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 80px;
+  font-weight: 700;
+  line-height: 94px;
+  margin-bottom: 40px;
+}
+
+.welcome__text {
+  font-family: "PT Mono", "Arial", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 34px;
+}
+
+.welcome__button {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21px;
+  text-align: center;
+  width: 410px;
+  padding: 15px 25px 18px 25px;
+  color: $color-alice-blue;
+  background-color: $color-deep-sky-blue;
+}
