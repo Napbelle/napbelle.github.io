@@ -71,26 +71,41 @@
         </section>
 <section class="catalog">
   <h2 class="visually-hidden">Каталог товаров и услуг</h2>
-  <p class="catalog__text">Smart Device предлагает следующие товары и услуги</p>
+  <p class="catalog__title">Smart Device предлагает следующие товары и услуги</p>
 <ul class="catalog__list">
   <li class="catalog__item">
     <a class="catalog__link">
-      Производство печатных
-      плат
+     <span class="catalog__text">Производство печатных
+      плат</span>
+      <picture>
+      <source type="image/webp" media="(min-width: 1024px)" srcset="img/card-1.webp, img/card-1@2x.webp 2x">
+      <img class="catalog__img" src="img/card-1.jpg" width="350" height="650"
+                    srcset="img/card-1@2x.jpg 2x" alt="Производство печатных плат">
+            </picture>
     </a>
     <button class="catalog__button"></button>
   </li>
   <li class="catalog__item">
     <a class="catalog__link">
-      Монтаж печатных плат
+      <span class="catalog__text">   Монтаж печатных плат</span>
+      <picture>
+        <source type="image/webp" media="(min-width: 1024px)" srcset="img/card-2.webp, img/card-2@2x.webp 2x">
+        <img class="catalog__img" src="img/card-2.jpg" width="350" height="650"
+                      srcset="img/card-2@2x.jpg 2x" alt="Производство печатных плат">
+              </picture>
     </a>
     <button class="catalog__button"></button>
   </li>
   <li class="catalog__item">
     <a class="catalog__link">
-      Комплектующие
+      <span class="catalog__text">    Комплектующие
       для
-      светотехники
+      светотехники </span>
+      <picture>
+        <source type="image/webp" media="(min-width: 1024px)" srcset="img/card-3.webp, img/card-3@2x.webp 2x">
+        <img class="catalog__img" src="img/card-3.jpg" width="350" height="650"
+                      srcset="img/card-3@2x.jpg 2x" alt="Производство печатных плат">
+              </picture>
     </a>
     <button class="catalog__button"></button>
   </li>
@@ -99,7 +114,7 @@
 <section class="form">
   <h2 class="form__title">Остались вопросы? Задайте их нам!</h2>
   <p class="form__text">Мы проконсультируем Вас бесплатно</p>
-  <fieldset class="form__fildset">
+  <fieldset class="form__fieldset">
     <legend class="visually-hidden">Заполните данные</legend>
     <label class="visually-hidden" for="name">Имя</label>
     <input class="form__input" type="text" id="name" name="name" placeholder="Имя" required>
@@ -107,12 +122,14 @@
     <input class="form__input" placeholder="Телефон" type="tel" name="phone-number" id="number" required>
     <label class="visually-hidden" for="text">Ваш вопрос</label>
     <textarea class="form__textarea" name="text" id="text">Ваш вопрос</textarea>
+    <div class="form__button-wrapper">
     <button class="form__button" type="submit">Задать вопрос</button>
-    <label class="form__label">
-      <input class="visually-hidden" type="checkbox" name="agreement" required>
+    <label class="form__label form__label--checkbox">
+      <input class="visually-hidden form__checkbox" type="checkbox" name="agreement" required>
       <span class="form__mark"></span>
       <span class="form__text form__text--checkbox">Я согласен на обработку  персональных данных</span>
     </label>
+    </div>
   </fieldset>
 </section>
 <footer class="footer">
@@ -207,7 +224,7 @@
               </button>
               <h2 class="modal__title">Закажите звонок</h2>
               <p class="modal__text">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
-              <fieldset class="modal__form form__fildset form__fildset--modal">
+              <fieldset class="modal__form form__fieldset form__fieldset--modal">
                 <legend class="visually-hidden">Заполните данные</legend>
                 <label class="visually-hidden" for="name">Имя</label>
                 <input class="form__input form__input--modal" type="text" id="name-callme" name="name-callme" placeholder="Имя" required>
