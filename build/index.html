@@ -75,39 +75,27 @@
 <ul class="catalog__list">
   <li class="catalog__item">
     <a class="catalog__link">
-     <span class="catalog__text">Производство печатных
-      плат</span>
-      <picture>
-      <source type="image/webp" media="(min-width: 1024px)" srcset="img/card-1.webp, img/card-1@2x.webp 2x">
-      <img class="catalog__img" src="img/card-1.jpg" width="350" height="650"
-                    srcset="img/card-1@2x.jpg 2x" alt="Производство печатных плат">
-            </picture>
-    </a>
+    Производство печатных
+      плат
+
     <button class="catalog__button"></button>
+  </a>
   </li>
-  <li class="catalog__item">
-    <a class="catalog__link">
-      <span class="catalog__text">   Монтаж печатных плат</span>
-      <picture>
-        <source type="image/webp" media="(min-width: 1024px)" srcset="img/card-2.webp, img/card-2@2x.webp 2x">
-        <img class="catalog__img" src="img/card-2.jpg" width="350" height="650"
-                      srcset="img/card-2@2x.jpg 2x" alt="Производство печатных плат">
-              </picture>
-    </a>
+  <li class="catalog__item  catalog__item--montage">
+    <a class="catalog__link"> Монтаж печатных плат
+
     <button class="catalog__button"></button>
+  </a>
   </li>
-  <li class="catalog__item">
+  <li class="catalog__item catalog__item--accessories">
     <a class="catalog__link">
-      <span class="catalog__text">    Комплектующие
+      Комплектующие
       для
-      светотехники </span>
-      <picture>
-        <source type="image/webp" media="(min-width: 1024px)" srcset="img/card-3.webp, img/card-3@2x.webp 2x">
-        <img class="catalog__img" src="img/card-3.jpg" width="350" height="650"
-                      srcset="img/card-3@2x.jpg 2x" alt="Производство печатных плат">
-              </picture>
-    </a>
+      светотехники
+
+
     <button class="catalog__button"></button>
+  </a>
   </li>
 </ul>
 </section>
@@ -116,10 +104,12 @@
   <p class="form__text">Мы проконсультируем Вас бесплатно</p>
   <fieldset class="form__fieldset">
     <legend class="visually-hidden">Заполните данные</legend>
+    <div class="form__first-row">
     <label class="visually-hidden" for="name">Имя</label>
     <input class="form__input" type="text" id="name" name="name" placeholder="Имя" required>
     <label class="visually-hidden" for="number">Контактный телефон:</label>
     <input class="form__input" placeholder="Телефон" type="tel" name="phone-number" id="number" required>
+  </div>
     <label class="visually-hidden" for="text">Ваш вопрос</label>
     <textarea class="form__textarea" name="text" id="text">Ваш вопрос</textarea>
     <div class="form__button-wrapper">
@@ -133,6 +123,7 @@
   </fieldset>
 </section>
 <footer class="footer">
+  <div class="footer__first-column">
   <a class="footer__logo" href="index.html">
     <picture>
       <source media="(max-width: 767px)" srcset="img/logo-mobile.svg">
@@ -168,6 +159,7 @@
     </li>
   </ul>
 </nav>
+</div>
 <nav class="site-list">
   <h2 class="site-list__title">Разделы сайта</h2>
   <ul class="site-list__list">

@@ -1521,8 +1521,20 @@ button,
 .page {
   background-color: #041827;
   color: #ffffff;
-  width: 1920px;
   height: 100%;
+}
+
+.page__body {
+  min-height: 100%;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.page__container {
+  width: 1920px;
+  margin: 0 auto;
 }
 
 .welcome {
@@ -1582,7 +1594,7 @@ button,
   list-style-type: none;
 }
 
-.catalog__text {
+.catalog__link {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 20px;
   font-weight: 400;
@@ -1590,7 +1602,28 @@ button,
   color: #ffffff;
 }
 
+.catalog__item {
+  position: relative;
+  width: 350px;
+  height: 650px;
+  background-image: url("../../img/card-1.jpg");
+  background-repeat: no-repeat;
+}
+
+.catalog__item--montage {
+  background-image: url("../../img/card-2.jpg");
+  background-repeat: no-repeat;
+}
+
+.catalog__item--accessories {
+  background-image: url("../../img/card-3.jpg");
+  background-repeat: no-repeat;
+}
+
 .catalog__button {
+  position: absolute;
+  top: 590px;
+  right: 0;
   background-color: #00B2FF;
   width: 60px;
   height: 60px;
@@ -1598,10 +1631,11 @@ button,
   background-position: center;
   background-repeat: no-repeat;
   margin-left: 289px;
+  border: none;
 }
 
 .form {
-  background-image: url("../../img/svg/form.png");
+  background-image: url("../../img/form.png");
   background-repeat: no-repeat;
   height: 100%;
   padding: 170px 360px 277px 980px;
@@ -1640,15 +1674,20 @@ button,
   width: 275px;
   height: 50px;
   margin-bottom: 20px;
-  margin-right: 30px;
   border: none;
   border-radius: 3px;
   padding: 15px;
   background-color: rgba(4, 20, 39, 0.15);
 }
 
-.form__input:nth-child(2) {
-  margin-right: 0;
+.form__first-row {
+  width: 585px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .form__input::-webkit-input-placeholder {
@@ -1697,7 +1736,7 @@ button,
 }
 
 .form__textarea {
-  width: 580px;
+  width: 585px;
   min-height: 155px;
   background-color: rgba(4, 20, 39, 0.15);
   border: none;
@@ -1757,16 +1796,118 @@ button,
   width: 15px;
   height: 15px;
   border: solid 1px #ffffff;
+  border-radius: 2px;
 }
 
 .form__checkbox[type=checkbox]:checked + .form__mark::after {
   position: absolute;
-  top: 14px;
-  left: 11px;
+  top: 3px;
+  left: 1px;
   width: 22px;
   height: 16px;
   background-image: url("../../img/tick.svg");
+  background-repeat: no-repeat;
   content: "";
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 50px 350px 55px 350px;
+}
+
+.footer__logo {
+  margin-bottom: 30px;
+}
+
+.social__list {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.social__item {
+  width: 40px;
+  height: 40px;
+  padding: 5px;
+  margin-right: 15px;
+  margin-bottom: 10px;
+}
+
+.social__list:nth-child(3n) {
+  margin-right: 0;
+}
+
+.site-list__list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (220px)[2];
+  grid-template-columns: repeat(2, 220px);
+  grid-column-gap: 30px;
+}
+
+.site-list__title {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 16px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.site-list__link {
+  color: rgba(255, 255, 255, 0.7);
+  font-family: "PT Mono", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  text-decoration: none;
+}
+
+.site-list__item {
+  margin-bottom: 10px;
+}
+
+.footer-contacts__title {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 16px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.footer-contacts__list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-contacts__link,
+.footer-contacts__item {
+  color: rgba(255, 255, 255, 0.7);
+  font-family: "PT Mono", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  text-decoration: none;
+  margin-bottom: 10px;
 }
 
 /* @mixin hover-focus {

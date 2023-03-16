@@ -19,7 +19,7 @@ padding: 70px 350px 140px 350px;
 }
 
 
-.catalog__text {
+.catalog__link {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 20px;
   font-weight: 400;
@@ -27,7 +27,28 @@ padding: 70px 350px 140px 350px;
   color: $color-default-white;
 }
 
+.catalog__item {
+position: relative;
+width: 350px;
+height: 650px;
+background-image: url('../../img/card-1.jpg');
+background-repeat: no-repeat;
+}
+
+.catalog__item--montage {
+background-image: url('../../img/card-2.jpg');
+background-repeat: no-repeat;
+}
+
+.catalog__item--accessories {
+  background-image: url('../../img/card-3.jpg');
+  background-repeat: no-repeat;
+}
+
 .catalog__button {
+  position: absolute;
+  top: 590px;
+  right: 0;
   background-color: $color-deep-sky-blue;
   width: 60px;
   height: 60px;
@@ -35,4 +56,5 @@ padding: 70px 350px 140px 350px;
   background-position: center;
   background-repeat: no-repeat;
   margin-left: 289px;
+  border: none;
 }
