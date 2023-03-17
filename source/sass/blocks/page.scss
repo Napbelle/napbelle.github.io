@@ -1,6 +1,5 @@
 .page{
-  background-color: $color-black-pearl;
-  color: $color-default-white;
+  background-color: $color-default-white;
   height: 100%;
 }
 
@@ -8,9 +7,11 @@
   min-height: 100%;
   margin: 0;
   display: flex;
+
 }
 
 .page__container {
   width: 1920px;
   margin: 0 auto;
+  color: $color-default-white;
 }

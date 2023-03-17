@@ -1291,8 +1291,20 @@ button,
 }
 
 .about-us {
-  padding: 0 350px 100px 600px;
-  background-color: #E5E5E5;
+  position: relative;
+  padding: 60px 350px 100px 600px;
+  background-color: #F2F5F6;
+  margin: 0;
+}
+
+.about-us::after {
+  position: absolute;
+  top: 120px;
+  left: 350px;
+  width: 150px;
+  height: 320px;
+  background-image: url("../../img/2022.png");
+  content: "";
 }
 
 .about-us__title {
@@ -1301,6 +1313,7 @@ button,
   font-weight: 400;
   line-height: 51px;
   margin-bottom: 15px;
+  color: #00B2FF;
 }
 
 .about-us__text {
@@ -1308,42 +1321,56 @@ button,
   font-size: 16px;
   font-weight: 400;
   line-height: 22px;
+  color: #041827;
+  margin-bottom: 30px;
 }
 
 .about-us__button {
+  display: block;
   width: 180px;
-  padding: 14px 13px 8px 12px;
+  padding: 14px 50px 14px 50px;
   border: solid 1px #00B2FF;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 700;
   line-height: 16px;
   color: #00B2FF;
+  text-transform: uppercase;
+  border-radius: 3px;
+  margin-top: 20px;
 }
 
 .advantages {
+  background-color: #F2F5F6;
+  padding: 120px 349px 60px 349px;
+  margin: 0;
+}
+
+.advantages__list {
+  list-style-type: none;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (595px)[2];
   grid-template-columns: repeat(2, 595px);
   grid-column-gap: 23px;
   grid-row-gap: 30px;
-  padding: 120px 349px;
-  background-color: #E5E5E5;
-}
-
-.advantages__list {
-  list-style-type: none;
 }
 
 .advantages__item {
-  padding: 95px 45px 35px 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  position: relative;
+  padding: 95px 45px 35px 45px;
+  min-height: 300px;
+  border: solid 1px #E5E5E5;
+}
+
+.advantages__item::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5px;
+  height: 300px;
+  background-color: #00B2FF;
+  content: "";
 }
 
 .advantages__title {
@@ -1360,6 +1387,7 @@ button,
   font-size: 16px;
   font-weight: 400;
   line-height: 22px;
+  color: #041827;
 }
 
 .contacts__list {
@@ -1386,6 +1414,7 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  background-color: linear-gradient(90deg, rgb(4, 24, 39) 100%, rgba(4, 24, 39, 0) 0%);
 }
 
 .header__logo {
@@ -1519,8 +1548,7 @@ button,
 }
 
 .page {
-  background-color: #041827;
-  color: #ffffff;
+  background-color: #ffffff;
   height: 100%;
 }
 
@@ -1535,6 +1563,7 @@ button,
 .page__container {
   width: 1920px;
   margin: 0 auto;
+  color: #ffffff;
 }
 
 .welcome {
@@ -1557,6 +1586,7 @@ button,
   font-size: 22px;
   font-weight: 400;
   line-height: 34px;
+  margin-bottom: 40px;
 }
 
 .welcome__button {
@@ -1569,10 +1599,12 @@ button,
   padding: 15px 25px 18px 25px;
   color: #F2F5F6;
   background-color: #00B2FF;
+  text-transform: uppercase;
 }
 
 .catalog {
   padding: 70px 350px 140px 350px;
+  background-color: #041827;
 }
 
 .catalog__title {
@@ -1638,7 +1670,8 @@ button,
   background-image: url("../../img/form.png");
   background-repeat: no-repeat;
   height: 100%;
-  padding: 170px 360px 277px 980px;
+  padding: 170px 360px 200px 980px;
+  margin: 0;
 }
 
 .form__fieldset {
@@ -1822,6 +1855,8 @@ button,
   -ms-flex-pack: justify;
   justify-content: space-between;
   padding: 50px 350px 55px 350px;
+  background-color: #041827;
+  margin: 0;
 }
 
 .footer__logo {
