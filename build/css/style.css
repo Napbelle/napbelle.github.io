@@ -1405,16 +1405,24 @@ button,
   list-style-type: none;
 }
 
+.contacts__link {
+  color: #F2F5F6;
+  text-decoration: none;
+}
+
 .header {
   width: 1920px;
-  height: 120px;
+  min-height: 120px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: linear-gradient(90deg, rgb(4, 24, 39) 100%, rgba(4, 24, 39, 0) 0%);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(71.7%, rgb(4, 24, 39)), to(rgba(4, 24, 39, 0)));
+  background-image: -o-linear-gradient(top, rgb(4, 24, 39) 71.7%, rgba(4, 24, 39, 0) 100%);
+  background-image: linear-gradient(180deg, rgb(4, 24, 39) 71.7%, rgba(4, 24, 39, 0) 100%);
+  margin: 0;
 }
 
 .header__logo {
@@ -1433,6 +1441,7 @@ button,
   line-height: 16px;
   text-transform: uppercase;
   border: solid 1px #F2F5F6;
+  color: #F2F5F6;
 }
 
 .modal {
@@ -1566,11 +1575,17 @@ button,
   color: #ffffff;
 }
 
+.page__header-wrapper {
+  background-image: url("../../img/welcome.jpg");
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+}
+
 .welcome {
   width: 1920px;
-  height: 760px;
-  background-image: url("../../img/welcome.jpg");
   padding: 185px 725px 280px 475px;
+  margin: 0;
 }
 
 .welcome__title {
@@ -1636,6 +1651,7 @@ button,
 
 .catalog__item {
   position: relative;
+  padding: 50px 40px;
   width: 350px;
   height: 650px;
   background-image: url("../../img/card-1.jpg");

@@ -1,9 +1,10 @@
 .header {
   width: 1920px;
-  height: 120px;
+  min-height: 120px;
   display: flex;
   align-items: center;
-  background-color: $black-to-down;
+  background-image: $black-to-down;
+  margin: 0;
 }
 
 .header__logo{
@@ -22,4 +23,5 @@ margin-right: 160px;
   line-height: 16px;
   text-transform: uppercase;
   border: solid 1px $color-alice-blue;
+  color: $color-alice-blue;
 }

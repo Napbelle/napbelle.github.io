@@ -7,11 +7,17 @@
   min-height: 100%;
   margin: 0;
   display: flex;
-
 }
 
 .page__container {
   width: 1920px;
   margin: 0 auto;
   color: $color-default-white;
+}
+
+.page__header-wrapper {
+background-image: url("../../img/welcome.jpg");
+background-repeat: no-repeat;
+margin: 0;
+padding: 0;
 }
