@@ -1,0 +1,35 @@
+
+.footer-contacts__title {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 16px;
+  margin: 0;
+  margin-bottom: 20px;
+   margin-left: 81px;
+   text-transform: uppercase;
+
+}
+
+.footer-contacts__list{
+list-style-type: none;
+padding: 0;
+margin: 0;
+width: 345px;
+margin-left: 81px;
+@media screen and (max-width: 1023px) {
+  margin: 0;
+  width: 320px;
+}
+}
+
+.footer-contacts__link,
+.footer-contacts__item {
+  color: $color-transparent-white;
+font-family: "PT Mono", "Arial", sans-serif;
+font-size: 16px;
+font-weight: 400;
+line-height: 22px;
+text-decoration: none;
+margin-bottom: 10px;
+}

@@ -5,11 +5,23 @@
   align-items: center;
   background-image: $black-to-down;
   margin: 0;
+
+  @media screen and (max-width: 1023px) {
+    padding: 20px 70px 25px 50px;
+    min-height: 100px;
+    justify-content: space-between;
+    width: 770px;
+}
 }
 
 .header__logo{
 margin-left: 350px;
 margin-right: 160px;
+
+
+@media screen and (max-width: 1023px) {
+margin: 0;
+}
 }
 
 .header__button {
@@ -24,4 +36,8 @@ margin-right: 160px;
   text-transform: uppercase;
   border: solid 1px $color-alice-blue;
   color: $color-alice-blue;
+
+  @media screen and (max-width: 1023px) {
+    display: none;
+}
 }

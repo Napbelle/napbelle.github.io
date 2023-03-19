@@ -1,0 +1,46 @@
+
+.site-list__list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 470px;
+  height: 145px;
+
+  @media screen and (max-width: 1023px) {
+    height: 230px;
+    width: 220px;
+
+  }
+}
+  .site-list__title {
+    font-family: "Roboto Condensed", "Arial", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 16px;
+    margin: 0;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+
+  .site-list__link {
+  color: $color-transparent-white;
+  font-family: "PT Mono", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  text-decoration: none;
+  }
+
+  .site-list__item {
+    width: 220px;
+    margin: 0;
+    margin-bottom: 5px;
+margin-right: 30px;
+
+@media screen and (max-width: 1023px) {
+  margin-right: 130px;
+  }
+  }

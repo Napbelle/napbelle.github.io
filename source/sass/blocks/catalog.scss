@@ -1,6 +1,11 @@
 .catalog{
 padding: 70px 350px 140px 350px;
 background-color: $color-black-pearl;
+margin: 0;
+
+@media screen and (max-width: 1023px) {
+  padding: 60px 50px 75px 50px;
+}
 }
 
 .catalog__title {
@@ -17,8 +22,13 @@ background-color: $color-black-pearl;
   grid-column-gap: 85px;
   grid-template-rows: 650px;
   list-style-type: none;
-}
 
+  @media screen and (max-width: 1023px) {
+grid-template-columns: 670px;
+grid-row-gap: 30px;
+grid-template-rows: 250px;
+}
+}
 
 .catalog__link {
   font-family: "Roboto Condensed", "Arial", sans-serif;
@@ -35,16 +45,29 @@ width: 350px;
 height: 650px;
 background-image: url('../../img/card-1.jpg');
 background-repeat: no-repeat;
+
+@media screen and (max-width: 1023px) {
+  padding: 40px 45px;
+  width: 670px;
+height: 250px;
+background-image: url('../../img/card-1-tablet.jpg');
+}
 }
 
 .catalog__item--montage {
 background-image: url('../../img/card-2.jpg');
-background-repeat: no-repeat;
+
+@media screen and (max-width: 1023px) {
+  background-image: url('../../img/card-2-tablet.jpg');
+}
 }
 
 .catalog__item--accessories {
   background-image: url('../../img/card-3.jpg');
-  background-repeat: no-repeat;
+
+  @media screen and (max-width: 1023px) {
+    background-image: url('../../img/card-3-tablet.jpg');
+  }
 }
 
 .catalog__button {
@@ -59,4 +82,9 @@ background-repeat: no-repeat;
   background-repeat: no-repeat;
   margin-left: 289px;
   border: none;
+
+  @media screen and (max-width: 1023px) {
+    top: 190px;
+    right: 0;
+  }
 }

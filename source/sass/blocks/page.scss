@@ -13,6 +13,10 @@
   width: 1920px;
   margin: 0 auto;
   color: $color-default-white;
+
+  @media screen and (max-width: 1023px) {
+    width: 770px;
+}
 }
 
 .page__header-wrapper {
@@ -20,4 +24,10 @@ background-image: url("../../img/welcome.jpg");
 background-repeat: no-repeat;
 margin: 0;
 padding: 0;
+height: 880px;
+
+@media screen and (max-width: 1023px) {
+  background-image: url("../../img/welcome-tablet.jpg");
+  height: 640px;
+}
 }

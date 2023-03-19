@@ -3,6 +3,10 @@
 padding: 60px 350px 100px 600px;
 background-color: $color-alice-blue;
 margin: 0;
+
+@media screen and (max-width: 1023px) {
+  padding: 40px 50px 80px 225px;
+}
 }
 
 .about-us::after {
@@ -14,6 +18,10 @@ margin: 0;
   background-image: url("../../img/2022.png");
   content: "";
 
+  @media screen and (max-width: 1023px) {
+    top: 40px;
+  left: 46px;
+}
 }
 
 .about-us__title {

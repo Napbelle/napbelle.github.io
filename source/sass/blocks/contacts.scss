@@ -5,6 +5,7 @@
   line-height: 18px;
   display: flex;
   justify-content: space-between;
+  margin: 0;
   margin-right: 145px;
   list-style-type: none;
 
@@ -13,4 +14,28 @@
 .contacts__link {
   color: $color-alice-blue;
   text-decoration: none;
+}
+
+.contacts__item {
+  width: 225px;
+
+  @media screen and (max-width: 1023px) {
+    width: 40px;
+}
+}
+
+
+.contacts__text {
+  @media screen and (max-width: 1023px) {
+    display: none;
+}
+}
+
+
+.contacts__img {
+  display: none;
+
+  @media screen and (max-width: 1023px) {
+    display: block;
+}
 }
