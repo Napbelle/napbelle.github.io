@@ -17,6 +17,10 @@
   @media screen and (max-width: 1023px) {
     width: 770px;
 }
+
+@media screen and (max-width: 767px) {
+  width: 320px;
+}
 }
 
 .page__header-wrapper {
@@ -29,5 +33,9 @@ height: 880px;
 @media screen and (max-width: 1023px) {
   background-image: url("../../img/welcome-tablet.jpg");
   height: 640px;
+}
+
+@media screen and (max-width: 767px) {
+  height: 560px;
 }
 }

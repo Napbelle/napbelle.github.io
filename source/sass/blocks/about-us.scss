@@ -7,6 +7,10 @@ margin: 0;
 @media screen and (max-width: 1023px) {
   padding: 40px 50px 80px 225px;
 }
+
+@media screen and (max-width: 767px) {
+padding: 25px 25px 80px 25px;
+}
 }
 
 .about-us::after {
@@ -22,6 +26,10 @@ margin: 0;
     top: 40px;
   left: 46px;
 }
+
+@media screen and (max-width: 767px) {
+display: none;
+}
 }
 
 .about-us__title {
@@ -31,6 +39,11 @@ margin: 0;
   line-height: 51px;
   margin-bottom: 15px;
   color: $color-deep-sky-blue;
+
+  @media screen and (max-width: 767px) {
+    font-size: 28px;
+  line-height: 40px;
+  }
 }
 
 .about-us__text {
@@ -40,6 +53,12 @@ margin: 0;
   line-height: 22px;
   color: $color-black-pearl;
   margin-bottom: 30px;
+
+  @media screen and (max-width: 767px) {
+    font-size: 14px;
+  line-height: 19px;
+  margin-bottom: 20px;
+  }
 }
 
 
@@ -56,4 +75,9 @@ color: $color-deep-sky-blue;
 text-transform: uppercase;
 border-radius: 3px;
 margin-top: 20px;
+
+@media screen and (max-width: 767px) {
+  width: 160px;
+  padding: 10px 15px;
+}
 }

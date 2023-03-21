@@ -11,6 +11,11 @@
 padding: 50px 50px 125px 50px;
 height: 580px;
 }
+
+@media screen and (max-width: 767px) {
+  padding: 50px 25px 90px 25px;
+  height: 750px;
+}
 }
 
 .form__fieldset {
@@ -31,6 +36,12 @@ flex-wrap: wrap;
   @media screen and (max-width: 1023px) {
     margin-bottom: 10px;
 }
+
+@media screen and (max-width: 767px) {
+  font-size: 30px;
+  line-height: 42px;
+  margin-bottom: 20px;
+}
 }
 
 .form__text {
@@ -42,6 +53,12 @@ flex-wrap: wrap;
 
   @media screen and (max-width: 1023px) {
     margin-bottom: 25px;
+}
+
+@media screen and (max-width: 767px) {
+  font-size: 14px;
+  line-height: 19px;
+  margin-bottom: 40px;
 }
 }
 
@@ -57,6 +74,10 @@ background-color: $color-transparent;
 
 @media screen and (max-width: 1023px) {
   width: 320px;
+}
+
+@media screen and (max-width: 767px) {
+width: 270px;
 }
 }
 

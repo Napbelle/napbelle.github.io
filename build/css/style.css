@@ -2176,7 +2176,6 @@ button,
 
   .catalog__button {
     top: 190px;
-    right: 0;
   }
 
   .form {
@@ -2349,6 +2348,153 @@ button,
     -webkit-transform: translateY(calc(-50% - 5px));
     -ms-transform: translateY(calc(-50% - 5px));
     transform: translateY(calc(-50% - 5px));
+  }
+
+  .about-us {
+    padding: 25px 25px 80px 25px;
+  }
+
+  .about-us::after {
+    display: none;
+  }
+
+  .about-us__title {
+    font-size: 28px;
+    line-height: 40px;
+  }
+
+  .about-us__text {
+    font-size: 14px;
+    line-height: 19px;
+    margin-bottom: 20px;
+  }
+
+  .about-us__button {
+    width: 160px;
+    padding: 10px 15px;
+  }
+
+  .advantages {
+    padding: 50px 25px 25px 25px;
+  }
+
+  .advantages__list {
+    -ms-grid-columns: 270px;
+    grid-template-columns: 270px;
+  }
+
+  .advantages__item {
+    height: 340px;
+    padding: 30px 30px 35px 30px;
+  }
+
+  .advantages__item::after {
+    height: 340px;
+  }
+
+  .advantages__title {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .advantages__text {
+    font-size: 14px;
+    line-height: 19px;
+  }
+
+  .header {
+    width: 320px;
+    min-height: 70px;
+    padding: 10px 35px 20px 26px;
+  }
+
+  .page__container {
+    width: 320px;
+  }
+
+  .page__header-wrapper {
+    height: 560px;
+  }
+
+  .welcome {
+    width: 320px;
+    padding: 80px 25px 190px 25px;
+  }
+
+  .welcome__title {
+    font-size: 36px;
+    line-height: 42px;
+  }
+
+  .welcome__text {
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 50px;
+  }
+
+  .welcome__button {
+    width: 270px;
+    padding: 10px 30px;
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .catalog {
+    padding: 50px 25px 86px 25px;
+  }
+
+  .catalog__title {
+    font-size: 28px;
+    line-height: 40px;
+  }
+
+  .catalog__list {
+    -ms-grid-columns: 270px;
+    grid-template-columns: 270px;
+  }
+
+  .catalog__link {
+    font-size: 18px;
+  }
+
+  .catalog__item {
+    padding: 30px;
+    background-image: url("../../img/card-1-mobile.jpg");
+  }
+
+  .catalog__item--montage {
+    background-image: url("../../img/card-2-mobile.jpg");
+  }
+
+  .catalog__item--accessories {
+    background-image: url("../../img/card-3-mobile.jpg");
+  }
+
+  .catalog__button {
+    top: 230px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .form {
+    padding: 50px 25px 90px 25px;
+    height: 750px;
+  }
+
+  .form__title {
+    font-size: 30px;
+    line-height: 42px;
+    margin-bottom: 20px;
+  }
+
+  .form__text {
+    font-size: 14px;
+    line-height: 19px;
+    margin-bottom: 40px;
+  }
+
+  .form__input {
+    width: 270px;
   }
 }
 
