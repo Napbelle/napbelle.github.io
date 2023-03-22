@@ -2,6 +2,12 @@
   list-style-type: none;
   display: flex;
   flex-direction: row;
+  padding: 0;
+  margin: 0;
+
+  @media screen and (max-width: 767px) {
+  justify-content: space-around;
+}
 }
 
 .social__item {

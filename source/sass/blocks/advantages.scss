@@ -18,6 +18,7 @@
   grid-column-gap: 23px;
   grid-row-gap: 30px;
 margin: 0;
+padding:0;
 
 @media screen and (max-width: 1023px) {
   grid-template-columns: repeat(2, 321px);

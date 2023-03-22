@@ -1355,6 +1355,7 @@ button,
   grid-column-gap: 23px;
   grid-row-gap: 30px;
   margin: 0;
+  padding: 0;
 }
 
 .advantages__item {
@@ -1658,6 +1659,8 @@ button,
   -ms-grid-rows: 650px;
   grid-template-rows: 650px;
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .catalog__link {
@@ -1961,6 +1964,8 @@ button,
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row;
+  padding: 0;
+  margin: 0;
 }
 
 .social__item {
@@ -2458,6 +2463,7 @@ button,
   }
 
   .catalog__item {
+    width: 270px;
     padding: 30px;
     background-image: url("../../img/card-1-mobile.jpg");
   }
@@ -2471,7 +2477,7 @@ button,
   }
 
   .catalog__button {
-    top: 230px;
+    top: 210px;
     width: 40px;
     height: 40px;
   }
@@ -2481,10 +2487,22 @@ button,
     height: 750px;
   }
 
+  .form__fieldset {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 270px;
+  }
+
   .form__title {
     font-size: 30px;
     line-height: 42px;
     margin-bottom: 20px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
 
   .form__text {
@@ -2495,6 +2513,125 @@ button,
 
   .form__input {
     width: 270px;
+    margin-bottom: 20px;
+  }
+
+  .form__first-row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 270px;
+  }
+
+  .form__textarea {
+    width: 270px;
+    margin-bottom: 30px;
+  }
+
+  .form__button {
+    width: 270px;
+    margin-bottom: 25px;
+  }
+
+  .form__button-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 270px;
+  }
+
+  .footer {
+    padding: 35px 25px;
+    width: 320px;
+    min-height: 475px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+
+  .footer__img {
+    margin: 0 25px 15px 25px;
+  }
+
+  .footer__first-column {
+    width: 270px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-bottom: 25px;
+    -ms-flex-line-pack: center;
+    align-content: center;
+  }
+
+  .footer__second-column {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 270px;
+  }
+
+  .site-list {
+    width: 270px;
+  }
+
+  .site-list__list {
+    width: 270px;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+  }
+
+  .site-list__title {
+    position: relative;
+  }
+
+  .site-list__title::after {
+    position: absolute;
+    top: -15px;
+    left: -25px;
+    width: 320px;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.7);
+    content: "";
+  }
+
+  .site-list__link {
+    font-size: 14px;
+    line-height: 25px;
+  }
+
+  .site-list__item {
+    margin-bottom: 10px;
+  }
+
+  .social__list {
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+  }
+
+  .footer-contacts__title {
+    position: relative;
+  }
+
+  .footer-contacts__title::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 320px;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.7);
+    content: "";
+  }
+
+  .footer-contacts__link,
+  .footer-contacts__item {
+    font-size: 14px;
+    line-height: 25px;
+    margin-bottom: 10px;
   }
 }
 

@@ -30,6 +30,8 @@ margin: 0;
   grid-column-gap: 85px;
   grid-template-rows: 650px;
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 
   @media screen and (max-width: 1023px) {
 grid-template-columns: 670px;
@@ -71,6 +73,7 @@ background-image: url('../../img/card-1-tablet.jpg');
 }
 
 @media screen and (max-width: 767px){
+  width: 270px;
   padding: 30px;
   background-image: url('../../img/card-1-mobile.jpg');
 }
@@ -116,7 +119,7 @@ background-image: url('../../img/card-2.jpg');
   }
 
   @media screen and (max-width: 767px){
-top: 230px;
+top: 210px;
 width: 40px;
 height: 40px;
   }
