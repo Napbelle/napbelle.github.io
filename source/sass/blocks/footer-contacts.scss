@@ -11,14 +11,15 @@
 
    @media screen and (max-width: 767px) {
     position: relative;
+    margin-left: 0;
 }
 }
 
 .footer-contacts__title::after {
   @media screen and (max-width: 767px) {
   position: absolute;
-top: 0;
-left: 0;
+top: -15px;
+left: -25px;
 width: 320px;
 height: 1px;
 background-color: $color-transparent-white;
@@ -38,6 +39,10 @@ margin-left: 81px;
 @media screen and (max-width: 1023px) {
   margin: 0;
   width: 320px;
+}
+@media screen and (max-width: 767px) {
+  width: 270px;
+  flex-wrap: nowrap;
 }
 }
 

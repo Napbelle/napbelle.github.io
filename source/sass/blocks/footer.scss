@@ -2,11 +2,14 @@
 display: flex;
 flex-wrap: wrap;
 flex-direction: row;
-justify-content: space-between;
 padding: 50px 350px 40px 350px;
 background-color: $color-black-pearl;
 margin: 0;
 height: 280px;
+
+@media screen and (min-width: 1024px) {
+  justify-content: space-between;
+}
 
 @media screen and (max-width: 1023px) {
   height: 465px;
@@ -15,10 +18,23 @@ height: 280px;
 }
 
 @media screen and (max-width: 767px) {
+position: relative;
  padding: 35px 25px;
  width: 320px;
- min-height: 475px;
- flex-direction: row;
+ min-height: 100vh;
+flex-direction: row;
+}
+}
+
+.footer::after {
+  @media screen and (max-width: 767px) {
+  position: absolute;
+bottom: 35px;
+left: 0;
+width: 320px;
+height: 1px;
+background-color: $color-transparent-white;
+content: "";
 }
 }
 
@@ -55,13 +71,11 @@ align-content: center;
 .footer__second-column {
   display: flex;
   flex-direction: row;
-
-  @media screen and (max-width: 1023px) {
-  justify-content: space-between;
-}
+ justify-content: space-between;
 
 @media screen and (max-width: 767px) {
 flex-direction: column;
 width: 270px;
+
 }
 }
