@@ -6,10 +6,7 @@ padding: 50px 350px 40px 350px;
 background-color: $color-black-pearl;
 margin: 0;
 height: 280px;
-
-@media screen and (min-width: 1024px) {
-  justify-content: space-between;
-}
+justify-content: space-between;
 
 @media screen and (max-width: 1023px) {
   height: 465px;
@@ -23,6 +20,10 @@ position: relative;
  width: 320px;
  min-height: 100vh;
 flex-direction: row;
+resize: vertical;
+margin: 0 auto;
+overflow: hidden;
+justify-content: stretch;
 }
 }
 
@@ -71,11 +72,11 @@ align-content: center;
 .footer__second-column {
   display: flex;
   flex-direction: row;
- justify-content: space-between;
+  justify-content: space-between;
+
 
 @media screen and (max-width: 767px) {
 flex-direction: column;
 width: 270px;
-
 }
 }

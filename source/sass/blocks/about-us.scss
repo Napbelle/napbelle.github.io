@@ -53,13 +53,25 @@ display: none;
   line-height: 22px;
   color: $color-black-pearl;
   margin-bottom: 30px;
+  max-height: 170px;
+overflow: hidden;
+
+@media screen and (max-width: 1023px) {
+  max-height: 260px;
+}
 
   @media screen and (max-width: 767px) {
     font-size: 14px;
   line-height: 19px;
   margin-bottom: 20px;
+  max-height: 205px;
   }
 }
+
+.about-us__text.is-active {
+  max-height: none;
+  overflow: visible;
+  }
 
 
 .about-us__button {
@@ -67,14 +79,15 @@ display: block;
 width: 180px;
 padding: 14px 50px 14px 50px;
 border: solid 1px $color-deep-sky-blue;
-font-family: "Roboto Condensed", "Arial", sans-serif;
-font-size: 14px;
-font-weight: 700;
-line-height: 16px;
-color: $color-deep-sky-blue;
-text-transform: uppercase;
 border-radius: 3px;
 margin-top: 20px;
+font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;
+  color: $color-deep-sky-blue;
+  text-transform: uppercase;
+  text-align: center;
 
 @media screen and (max-width: 767px) {
   width: 160px;

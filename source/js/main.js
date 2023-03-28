@@ -48,3 +48,13 @@ window.addEventListener('DOMContentLoaded', () => {
 // breakpointChecker();
 
 // используйте .closest(el)
+
+
+const button = document.querySelector('.about-us__button');
+const text = document.querySelector('.about-us__text');
+
+button.onclick = function () {
+  text.classList.toggle('is-active');
+
+};
+

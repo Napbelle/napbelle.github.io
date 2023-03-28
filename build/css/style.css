@@ -1323,6 +1323,13 @@ button,
   line-height: 22px;
   color: #041827;
   margin-bottom: 30px;
+  max-height: 170px;
+  overflow: hidden;
+}
+
+.about-us__text.is-active {
+  max-height: none;
+  overflow: visible;
 }
 
 .about-us__button {
@@ -1330,14 +1337,15 @@ button,
   width: 180px;
   padding: 14px 50px 14px 50px;
   border: solid 1px #00B2FF;
+  border-radius: 3px;
+  margin-top: 20px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 700;
   line-height: 16px;
   color: #00B2FF;
   text-transform: uppercase;
-  border-radius: 3px;
-  margin-top: 20px;
+  text-align: center;
 }
 
 .advantages {
@@ -1897,6 +1905,9 @@ button,
   background-color: #041827;
   margin: 0;
   height: 280px;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .footer__logo {
@@ -2079,14 +2090,6 @@ button,
   }
 */
 
-@media screen and (min-width: 1024px) {
-  .footer {
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-  }
-}
-
 @media (max-width: 1439px) {
   .container {
     padding: 0 32px;
@@ -2107,6 +2110,10 @@ button,
   .about-us::after {
     top: 40px;
     left: 46px;
+  }
+
+  .about-us__text {
+    max-height: 260px;
   }
 
   .advantages {
@@ -2398,6 +2405,7 @@ button,
     font-size: 14px;
     line-height: 19px;
     margin-bottom: 20px;
+    max-height: 205px;
   }
 
   .about-us__button {
@@ -2588,6 +2596,12 @@ button,
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
     flex-direction: row;
+    resize: vertical;
+    margin: 0 auto;
+    overflow: hidden;
+    -webkit-box-pack: stretch;
+    -ms-flex-pack: stretch;
+    justify-content: stretch;
   }
 
   .footer::after {
