@@ -68,6 +68,11 @@ flex-wrap: wrap;
 }
 }
 
+.form__text--modal {
+  font-size: 14px;
+  line-height: 16px;
+}
+
 .form__input {
 box-sizing: border-box;
 width: 275px;
@@ -88,6 +93,9 @@ margin-bottom: 20px;
 }
 }
 
+.form__input--modal {
+width: 420px;
+}
 
 .form__first-row {
   width: 585px;
@@ -138,6 +146,11 @@ justify-content: space-between;
   }
 }
 
+.form__textarea--modal {
+width: 420px;
+margin-bottom: 25px;
+}
+
 .form__button {
   width: 265px;
   padding: 15px 25px;
@@ -160,6 +173,11 @@ justify-content: space-between;
   width: 270px;
   margin-bottom: 25px;
 }
+}
+
+.form__button--modal {
+width: 420px;
+padding: 15px 60px;
 }
 
 .form__button-wrapper {

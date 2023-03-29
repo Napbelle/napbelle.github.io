@@ -52,9 +52,24 @@ window.addEventListener('DOMContentLoaded', () => {
 
 const button = document.querySelector('.about-us__button');
 const text = document.querySelector('.about-us__text');
-
 button.onclick = function () {
   text.classList.toggle('is-active');
-
+  button.innerHTML =
+    (button.innerHTML === 'Подробнее') ? button.innerHTML = 'Свернуть' : button.innerHTML = 'Подробнее';
 };
 
+
+const contacts = document.querySelector('.footer-contacts');
+const contactsBtn = document.querySelector('.footer-contacts__title');
+const siteList = document.querySelector('.site-list');
+const siteListBtn = document.querySelector('.site-list__title');
+
+contactsBtn.onclick = function () {
+  contacts.classList.toggle('is-active');
+  siteList.classList.remove('is-active');
+};
+
+siteListBtn.onclick = function () {
+  siteList.classList.toggle('is-active');
+  contacts.classList.remove('is-active');
+};

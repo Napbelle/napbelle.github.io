@@ -25,15 +25,15 @@
     width: 270px;
     flex-wrap: nowrap;
     margin-bottom: 35px;
+    display: none;
 }
 }
 
-.site-list:not(.site-list--show) .site-list__list {
+.site-list.is-active .site-list__list {
   @media screen and (max-width: 767px) {
-  display: none;
+  display: block;
 }
 }
-
 
   .site-list__title {
     font-family: "Roboto Condensed", "Arial", sans-serif;
@@ -78,7 +78,7 @@ content: "";
 }
 }
 
-.site-list--show .site-list__title::before {
+.site-list.is-active .site-list__title::before {
   background-image: url("../../img/svg/minus.svg");
   position: absolute;
   top: 50%;
