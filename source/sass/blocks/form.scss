@@ -31,6 +31,12 @@ flex-wrap: wrap;
 }
 }
 
+.form__fieldset--modal {
+width: 420px;
+box-sizing: border-box;
+flex-direction: column;
+}
+
 .form__title {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 36px;
@@ -151,6 +157,7 @@ width: 420px;
 margin-bottom: 25px;
 }
 
+
 .form__button {
   width: 265px;
   padding: 15px 25px;
@@ -178,6 +185,7 @@ margin-bottom: 25px;
 .form__button--modal {
 width: 420px;
 padding: 15px 60px;
+margin-bottom: 20px;
 }
 
 .form__button-wrapper {
@@ -203,7 +211,11 @@ padding: 15px 60px;
     display: block;
 padding-left: 29px;
   }
-
+  .form__label--modal{
+    position: relative;
+    display: block;
+padding-left: 34px;
+  }
 
 .form__mark {
 position: absolute;
@@ -215,7 +227,13 @@ border: solid 1px $color-default-white;
 border-radius: 2px;
 }
 
-.form__checkbox[type="checkbox"]:checked + .form__mark::after {
+.form__mark--modal {
+  top: 5px;
+  left: 7px;
+}
+
+.form__checkbox[type="checkbox"]:checked + .form__mark::after,
+.form__checkbox--modal[type="checkbox"]:checked + .form__mark--modal::after{
   position: absolute;
   top: 3px;
   left: 1px;

@@ -28,8 +28,11 @@ margin-right: 160px;
 @media screen and (max-width: 1023px) {
 margin: 0;
 }
+@media screen and (max-width: 767px) {
+  width: 35px;
+  height: 35px;
 }
-
+}
 
 .header__button {
   width: 160px;
