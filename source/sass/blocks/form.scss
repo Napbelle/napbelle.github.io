@@ -99,8 +99,13 @@ margin-bottom: 20px;
 }
 }
 
+.form__input--phone {
+padding: 0;
+background-color: transparent;
+}
+
 .form__input--modal {
-width: 420px;
+min-width: 420px;
 }
 
 .form__first-row {
@@ -153,7 +158,7 @@ justify-content: space-between;
 }
 
 .form__textarea--modal {
-width: 420px;
+max-width: 420px;
 margin-bottom: 25px;
 }
 

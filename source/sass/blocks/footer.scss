@@ -14,14 +14,13 @@ justify-content: space-between;
 }
 
 @media screen and (max-width: 767px) {
+  clear:both;
 position: relative;
  padding: 35px 25px;
  width: 320px;
 flex-direction: row;
-resize: vertical;
 margin: 0 auto;
-overflow: hidden;
-justify-content: stretch;
+height: auto;
 }
 }
 
@@ -78,6 +77,7 @@ align-content: center;
 
 
 @media screen and (max-width: 767px) {
+  clear: both;
 flex-direction: column;
 width: 270px;
 }
