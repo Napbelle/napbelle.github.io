@@ -2,17 +2,27 @@
   width: 1920px;
   padding: 185px 725px 280px 475px;
   margin: 0;
+  background-image: url("../../img/welcome.jpg");
+  background-color: $color-black-pearl;
+background-repeat: no-repeat;
+height: 100%;
 
   @media screen and (max-width: 1023px) {
     width: 770px;
     padding: 80px 50px 205px 50px;
+    background-image: url("../../img/welcome-tablet.jpg");
+    margin-top: -30px;
+
 }
 
 @media screen and (max-width: 767px) {
 width: 320px;
 padding: 80px 25px 190px 25px;
+background-image: url("../../img/welcome-mobile.jpg");
 }
 }
+
+
 .welcome__title {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 80px;

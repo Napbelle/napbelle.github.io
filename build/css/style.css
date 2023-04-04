@@ -1373,6 +1373,18 @@ button,
   margin: 0;
 }
 
+.advantages__item:hover {
+  background-color: #00B2FF;
+}
+
+.advantages__item:hover .advantages__title {
+  color: #ffffff;
+}
+
+.advantages__item:hover .advantages__text {
+  color: #ffffff;
+}
+
 .advantages__item::after {
   position: absolute;
   top: 0;
@@ -1451,10 +1463,11 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(71.7%, rgb(4, 24, 39)), to(rgba(4, 24, 39, 0)));
-  background-image: -o-linear-gradient(top, rgb(4, 24, 39) 71.7%, rgba(4, 24, 39, 0) 100%);
-  background-image: linear-gradient(180deg, rgb(4, 24, 39) 71.7%, rgba(4, 24, 39, 0) 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(84.9%, rgb(4, 24, 39)), to(rgba(4, 24, 39, 0)));
+  background-image: -o-linear-gradient(top, rgb(4, 24, 39) 84.9%, rgba(4, 24, 39, 0) 100%);
+  background-image: linear-gradient(180deg, rgb(4, 24, 39) 84.9%, rgba(4, 24, 39, 0) 100%);
   margin: 0;
+  z-index: 10;
 }
 
 .header__logo {
@@ -1607,18 +1620,14 @@ button,
   color: #ffffff;
 }
 
-.page__header-wrapper {
-  background-image: url("../../img/welcome.jpg");
-  background-repeat: no-repeat;
-  margin: 0;
-  padding: 0;
-  height: 880px;
-}
-
 .welcome {
   width: 1920px;
   padding: 185px 725px 280px 475px;
   margin: 0;
+  background-image: url("../../img/welcome.jpg");
+  background-color: #041827;
+  background-repeat: no-repeat;
+  height: 100%;
 }
 
 .welcome__title {
@@ -2158,7 +2167,6 @@ button,
   .header {
     position: fixed;
     top: 0;
-    z-index: 10;
   }
 }
 
@@ -2247,6 +2255,7 @@ button,
     -ms-flex-pack: justify;
     justify-content: space-between;
     width: 770px;
+    position: relative;
   }
 
   .header__logo {
@@ -2261,14 +2270,11 @@ button,
     width: 770px;
   }
 
-  .page__header-wrapper {
-    background-image: url("../../img/welcome-tablet.jpg");
-    height: 640px;
-  }
-
   .welcome {
     width: 770px;
     padding: 80px 50px 205px 50px;
+    background-image: url("../../img/welcome-tablet.jpg");
+    margin-top: -30px;
   }
 
   .welcome__title {
@@ -2518,13 +2524,10 @@ button,
     width: 320px;
   }
 
-  .page__header-wrapper {
-    height: 560px;
-  }
-
   .welcome {
     width: 320px;
     padding: 80px 25px 190px 25px;
+    background-image: url("../../img/welcome-mobile.jpg");
   }
 
   .welcome__title {

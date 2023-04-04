@@ -5,11 +5,12 @@
   align-items: center;
   background-image: $black-to-down;
   margin: 0;
+  z-index: 10;
 
   @media (min-width: 1024px) {
   position: fixed;
 top: 0;
-z-index: 10;
+
   }
 
   @media screen and (max-width: 1023px) {
@@ -17,6 +18,7 @@ z-index: 10;
     min-height: 100px;
     justify-content: space-between;
     width: 770px;
+   position: relative;
 }
 
 @media screen and (max-width: 767px) {

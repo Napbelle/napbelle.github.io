@@ -47,6 +47,19 @@ padding: 30px 30px 35px 30px;
 }
 }
 
+.advantages__item:hover {
+  background-color: $color-deep-sky-blue;
+}
+
+.advantages__item:hover .advantages__title {
+  color: $color-default-white;
+}
+
+.advantages__item:hover .advantages__text {
+  color: $color-default-white;
+}
+
+
 .advantages__item::after {
 position: absolute;
 top: 0;
