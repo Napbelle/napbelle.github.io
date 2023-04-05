@@ -714,15 +714,19 @@ button,
   cursor: pointer;
 }
 
+.modal__content {
+  position: relative;
+  background-color: #00B2FF;
+  width: 500px;
+  padding: 40px;
+  border-radius: 3px;
+}
+
 .modal__container {
   position: relative;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   margin: auto;
-  background-color: #00B2FF;
-  padding: 40px;
-  width: 500px;
-  height: 610px;
   color: #ffffff;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -750,7 +754,6 @@ button,
   font-size: 30px;
   line-height: 42px;
   margin: 0;
-  margin-bottom: 15px;
 }
 
 .modal__text {
@@ -759,19 +762,7 @@ button,
   font-weight: 400;
   line-height: 22px;
   margin: 0;
-  margin-bottom: 40px;
-}
-
-.form__input {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  width: 275px;
-  height: 50px;
-  margin-bottom: 20px;
-  border: none;
-  border-radius: 3px;
-  padding: 15px;
-  background-color: rgba(4, 20, 39, 0.15);
+  margin-bottom: 38px;
 }
 
 .custom-input,
@@ -1540,15 +1531,19 @@ button,
   cursor: pointer;
 }
 
+.modal__content {
+  position: relative;
+  background-color: #00B2FF;
+  width: 500px;
+  padding: 40px;
+  border-radius: 3px;
+}
+
 .modal__container {
   position: relative;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   margin: auto;
-  background-color: #00B2FF;
-  padding: 40px;
-  width: 500px;
-  height: 610px;
   color: #ffffff;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1576,7 +1571,6 @@ button,
   font-size: 30px;
   line-height: 42px;
   margin: 0;
-  margin-bottom: 15px;
 }
 
 .modal__text {
@@ -1585,19 +1579,7 @@ button,
   font-weight: 400;
   line-height: 22px;
   margin: 0;
-  margin-bottom: 40px;
-}
-
-.form__input {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  width: 275px;
-  height: 50px;
-  margin-bottom: 20px;
-  border: none;
-  border-radius: 3px;
-  padding: 15px;
-  background-color: rgba(4, 20, 39, 0.15);
+  margin-bottom: 38px;
 }
 
 .page {
@@ -1894,7 +1876,7 @@ button,
 .form__button--modal {
   width: 420px;
   padding: 15px 60px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .form__button-wrapper {

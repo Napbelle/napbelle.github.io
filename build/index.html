@@ -143,8 +143,8 @@
 <section class="form" id="form">
   <h2 class="form__title">Остались вопросы? Задайте их нам!</h2>
   <p class="form__text">Мы проконсультируем Вас бесплатно</p>
-  <div class="form-data" data-form-validate="data-form-validate" data-callback="base">
-  <form class="form-form" method="post">
+  <div class="form__data" data-form-validate="data-form-validate" data-callback="base">
+  <form class="form__form" method="post">
   <fieldset class="form__fieldset" >
     <legend class="visually-hidden">Заполните данные</legend>
     <div class="form__first-row">
@@ -258,7 +258,8 @@
           <div class="modal modal--preload" data-modal="phonecall">
             <div class="modal__container">
               <div class="modal__overlay" data-close-modal></div>
-              <button class="modal__button" type="button" aria-label="Закрыть попап" data-close-modal>
+              <div class="modal__content">
+              <button class="modal__button" type="button" aria-label="Закрыть попап" data-close-modal data-focus="data-focus">
                 <span class="visually-hidden">Закрыть</span>
                 <svg class="modal__img" width="20" height="20">
                   <use xlink:href="img/sprite.svg#cross"></use>
@@ -266,12 +267,16 @@
               </button>
               <h2 class="modal__title">Закажите звонок</h2>
               <p class="modal__text">Оставьте контакты, мы проконсультируем <br> вас бесплатно в удобное время</p>
+              <div class="form__data" data-form-validate="data-form-validate" data-callback="base">
+                <form class="form__form" method="post">
               <fieldset class="modal__form form__fieldset form__fieldset--modal">
                 <legend class="visually-hidden">Заполните данные</legend>
                 <label class="visually-hidden" for="name">Имя</label>
-                <input class="form__input form__input--modal" type="text" id="name-callme" name="name-callme" placeholder="Имя" required autofocus>
+                <input class="form__input form__input--modal" type="text" id="name-callme" name="name-callme" placeholder="Имя" required >
+                <div class="form__input form__input--phone" data-validate-type="phone" data-on-input-validate="data-on-input-validate" data-required="data-required">
                 <label class="visually-hidden" for="number">Контактный телефон:</label>
                 <input class="form__input form__input--modal" placeholder="Телефон" type="phone" name="phone-number-callme" id="number-callme" required>
+                </div>
                 <label class="visually-hidden" for="text">Ваш вопрос</label>
                 <textarea class="form__textarea form__textarea--modal" name="text-callme" id="text-callme">Ваш вопрос</textarea>
                 <button class="form__button form__button--modal" type="submit">Отправить</button>
@@ -281,6 +286,9 @@
                   <span class="form__text form__text--modal">Я согласен на обработку  персональных данных</span>
                 </label>
               </fieldset>
+              </form>
+              </div>
+              </div>
               </div>
 </div>
 
