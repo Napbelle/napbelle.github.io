@@ -1282,14 +1282,14 @@ button,
 
 .about-us {
   position: relative;
-  padding: 60px 350px 100px 600px;
+  padding: 33px 350px 118px 600px;
   background-color: #F2F5F6;
   margin: 0;
 }
 
 .about-us::after {
   position: absolute;
-  top: 120px;
+  top: 65px;
   left: 350px;
   width: 150px;
   height: 320px;
@@ -1302,18 +1302,18 @@ button,
   font-size: 36px;
   font-weight: 400;
   line-height: 51px;
-  margin-bottom: 15px;
-  color: #00B2FF;
+  margin-bottom: 8px;
+  color: #041827;
 }
 
 .about-us__text {
   font-family: "PT Mono", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 400;
-  line-height: 22px;
+  line-height: 21px;
   color: #041827;
-  margin-bottom: 30px;
-  max-height: 170px;
+  margin-bottom: 18px;
+  max-height: 165px;
   overflow: hidden;
 }
 
@@ -1350,7 +1350,7 @@ button,
   display: grid;
   -ms-grid-columns: (595px)[2];
   grid-template-columns: repeat(2, 595px);
-  grid-column-gap: 23px;
+  grid-column-gap: 30px;
   grid-row-gap: 30px;
   margin: 0;
   padding: 0;
@@ -1393,7 +1393,7 @@ button,
   line-height: 34px;
   color: #00B2FF;
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 13px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1427,7 +1427,7 @@ button,
   -ms-flex-pack: justify;
   justify-content: space-between;
   margin: 0;
-  margin-right: 145px;
+  margin-right: 117px;
   list-style-type: none;
   padding: 0;
 }
@@ -1435,14 +1435,31 @@ button,
 .contacts__link {
   color: #F2F5F6;
   text-decoration: none;
+  vertical-align: center;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .contacts__item {
   width: 225px;
+  margin: 0;
+  margin-top: -10px;
+  padding: 0;
+  margin-right: 28px;
+}
+
+.contacts__text {
+  margin: 0;
 }
 
 .contacts__img {
-  display: none;
+  margin-right: 15px;
 }
 
 .header {
@@ -1454,6 +1471,7 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 0;
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(84.9%, rgb(4, 24, 39)), to(rgba(4, 24, 39, 0)));
   background-image: -o-linear-gradient(top, rgb(4, 24, 39) 84.9%, rgba(4, 24, 39, 0) 100%);
   background-image: linear-gradient(180deg, rgb(4, 24, 39) 84.9%, rgba(4, 24, 39, 0) 100%);
@@ -1467,7 +1485,7 @@ button,
 }
 
 .header__button {
-  width: 160px;
+  width: 170px;
   height: 40px;
   padding: 10px 15px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
@@ -1478,6 +1496,10 @@ button,
   text-transform: uppercase;
   border: solid 1px #F2F5F6;
   color: #F2F5F6;
+  margin: 0;
+  margin-top: -10px;
+  letter-spacing: 1px;
+  border-radius: 3px;
 }
 
 .modal {
@@ -1604,8 +1626,9 @@ button,
 
 .welcome {
   width: 1920px;
-  padding: 185px 725px 280px 475px;
+  padding: 155px 725px 280px 475px;
   margin: 0;
+  margin-top: 80px;
   background-image: url("../../img/welcome.jpg");
   background-color: #041827;
   background-repeat: no-repeat;
@@ -1617,8 +1640,9 @@ button,
   font-size: 80px;
   font-weight: 700;
   line-height: 94px;
-  margin-bottom: 40px;
+  margin-bottom: 38px;
   text-transform: uppercase;
+  letter-spacing: 5px;
 }
 
 .welcome__text {
@@ -1626,20 +1650,23 @@ button,
   font-size: 22px;
   font-weight: 400;
   line-height: 34px;
-  margin-bottom: 40px;
+  margin-bottom: 45px;
 }
 
 .welcome__button {
+  display: block;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 21px;
   text-align: center;
   width: 410px;
-  padding: 15px 25px 18px 25px;
+  padding: 16px;
+  letter-spacing: 1px;
   color: #F2F5F6;
   background-color: #00B2FF;
   text-transform: uppercase;
+  border-radius: 3px;
 }
 
 .welcome__mobile {
@@ -1647,7 +1674,7 @@ button,
 }
 
 .catalog {
-  padding: 70px 350px 140px 350px;
+  padding: 33px 350px 140px 350px;
   background-color: #041827;
   margin: 0;
 }
@@ -1717,7 +1744,7 @@ button,
   background-color: #00B2FF;
   background-repeat: no-repeat;
   height: 840px;
-  padding: 170px 360px 200px 980px;
+  padding: 137px 360px 200px 980px;
   margin: 0;
 }
 
@@ -1755,7 +1782,7 @@ button,
   font-size: 16px;
   font-weight: 400;
   line-height: 22px;
-  margin-bottom: 35px;
+  margin-bottom: 33px;
 }
 
 .form__text--modal {
@@ -1771,7 +1798,7 @@ button,
   margin-bottom: 20px;
   border: none;
   border-radius: 3px;
-  padding: 15px;
+  padding: 13px;
   background-color: rgba(4, 20, 39, 0.15);
 }
 
@@ -1785,7 +1812,7 @@ button,
 }
 
 .form__first-row {
-  width: 585px;
+  width: 580px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1835,12 +1862,12 @@ button,
 }
 
 .form__textarea {
-  width: 585px;
+  width: 580px;
   min-height: 155px;
   background-color: rgba(4, 20, 39, 0.15);
   border: none;
   border-radius: 3px;
-  padding: 15px;
+  padding: 13px;
   padding-top: 25px;
   margin: 0;
   margin-bottom: 35px;
@@ -1848,7 +1875,7 @@ button,
   font-size: 16px;
   font-weight: 400;
   line-height: 22px;
-  margin-bottom: 35px;
+  margin-bottom: 31px;
   color: #ffffff;
 }
 
@@ -1858,8 +1885,8 @@ button,
 }
 
 .form__button {
-  width: 265px;
-  padding: 15px 25px;
+  width: 350px;
+  padding: 14px 35px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 700;
@@ -1887,14 +1914,19 @@ button,
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
 }
 
 .form__text--checkbox {
   position: relative;
+  display: block;
   font-family: "PT Mono", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 16px;
+  margin: 0;
 }
 
 .form__label--checkbox {
@@ -1911,8 +1943,8 @@ button,
 
 .form__mark {
   position: absolute;
-  top: 13px;
-  left: 0;
+  top: 10px;
+  left: 2px;
   width: 15px;
   height: 15px;
   border: solid 1px #ffffff;
@@ -1946,13 +1978,10 @@ button,
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row;
-  padding: 50px 350px 40px 350px;
+  padding: 58px 350px 40px 350px;
   background-color: #041827;
   margin: 0;
   height: 280px;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
 }
 
 .footer__logo {
@@ -1960,7 +1989,7 @@ button,
 }
 
 .footer__img {
-  margin-bottom: 30px;
+  margin: -8px 45px 30px 0;
 }
 
 .footer__second-column {
@@ -1971,6 +2000,7 @@ button,
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row;
+  margin-left: 113px;
 }
 
 .site-list__list {
@@ -1998,6 +2028,7 @@ button,
   margin: 0;
   margin-bottom: 20px;
   text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .site-list.is-active .site-list__title::before {
@@ -2063,8 +2094,9 @@ button,
   line-height: 16px;
   margin: 0;
   margin-bottom: 20px;
-  margin-left: 81px;
+  margin-left: 30px;
   text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .footer-contacts.is-active .footer-contacts__title::before {
@@ -2082,7 +2114,7 @@ button,
   padding: 0;
   margin: 0;
   width: 345px;
-  margin-left: 81px;
+  margin-left: 32px;
 }
 
 .footer-contacts__link,
@@ -2226,10 +2258,6 @@ button,
     display: none;
   }
 
-  .contacts__img {
-    display: block;
-  }
-
   .header {
     padding: 20px 70px 25px 50px;
     min-height: 100px;
@@ -2352,6 +2380,7 @@ button,
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
     flex-direction: row;
+    margin: 0;
   }
 
   .site-list__list {

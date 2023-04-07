@@ -3,6 +3,7 @@
   min-height: 120px;
   display: flex;
   align-items: center;
+  padding: 0;
   background-image: $black-to-down;
   margin: 0;
   z-index: 10;
@@ -43,7 +44,7 @@ margin: 0;
 }
 
 .header__button {
-  width: 160px;
+  width: 170px;
   height: 40px;
   padding: 10px 15px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
@@ -54,6 +55,10 @@ margin: 0;
   text-transform: uppercase;
   border: solid 1px $color-alice-blue;
   color: $color-alice-blue;
+  margin: 0;
+  margin-top: -10px;
+  letter-spacing: 1px;
+  border-radius: 3px;
 
   @media screen and (max-width: 1023px) {
     display: none;

@@ -15,7 +15,7 @@
   list-style-type: none;
   display: grid;
   grid-template-columns: repeat(2, 595px);
-  grid-column-gap: 23px;
+  grid-column-gap: 30px;
   grid-row-gap: 30px;
 margin: 0;
 padding:0;
@@ -85,7 +85,7 @@ height: 340px;
   line-height: 34px;
   color: $color-deep-sky-blue;
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 13px;
   display: flex;
   flex-direction: column;
 

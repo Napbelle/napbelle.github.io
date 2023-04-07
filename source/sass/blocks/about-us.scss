@@ -1,6 +1,6 @@
 .about-us {
   position: relative;
-padding: 60px 350px 100px 600px;
+padding: 33px 350px 118px 600px;
 background-color: $color-alice-blue;
 margin: 0;
 
@@ -15,7 +15,7 @@ padding: 25px 25px 80px 25px;
 
 .about-us::after {
   position: absolute;
-  top: 120px;
+  top: 65px;
   left: 350px;
   width: 150px;
   height: 320px;
@@ -37,8 +37,8 @@ display: none;
   font-size: 36px;
   font-weight: 400;
   line-height: 51px;
-  margin-bottom: 15px;
-  color: $color-deep-sky-blue;
+  margin-bottom: 8px;
+  color: $color-black-pearl;
 
   @media screen and (max-width: 767px) {
     font-size: 28px;
@@ -50,10 +50,10 @@ display: none;
   font-family: "PT Mono", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 400;
-  line-height: 22px;
+  line-height: 21px;
   color: $color-black-pearl;
-  margin-bottom: 30px;
-  max-height: 170px;
+  margin-bottom: 18px;
+  max-height: 165px;
 overflow: hidden;
 
 @media screen and (max-width: 1023px) {

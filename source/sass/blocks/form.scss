@@ -3,7 +3,7 @@
   background-color: $color-deep-sky-blue;
   background-repeat: no-repeat;
   height: 840px;
-  padding: 170px 360px 200px 980px;
+  padding: 137px 360px 200px 980px;
   margin: 0;
 
   @media screen and (max-width: 1023px) {
@@ -61,7 +61,7 @@ flex-direction: column;
   font-size: 16px;
   font-weight: 400;
   line-height: 22px;
-  margin-bottom: 35px;
+  margin-bottom: 33px;
 
   @media screen and (max-width: 1023px) {
     margin-bottom: 25px;
@@ -86,7 +86,7 @@ height: 50px;
 margin-bottom: 20px;
 border: none;
 border-radius: 3px;
-padding: 15px;
+padding: 13px;
 background-color: $color-transparent;
 
 @media screen and (max-width: 1023px) {
@@ -109,7 +109,7 @@ min-width: 420px;
 }
 
 .form__first-row {
-  width: 585px;
+  width: 580px;
   display: flex;
 justify-content: space-between;
 
@@ -132,12 +132,12 @@ justify-content: space-between;
 }
 
 .form__textarea {
-  width: 585px;
+  width: 580px;
   min-height: 155px;
   background-color: $color-transparent;
   border: none;
   border-radius: 3px;
-  padding: 15px;
+  padding: 13px;
   padding-top: 25px;
   margin: 0;
   margin-bottom: 35px;
@@ -145,7 +145,7 @@ justify-content: space-between;
   font-size: 16px;
   font-weight: 400;
   line-height: 22px;
-  margin-bottom: 35px;
+  margin-bottom: 31px;
   color: $color-default-white;
 
   @media screen and (max-width: 1023px) {
@@ -164,8 +164,8 @@ margin-bottom: 25px;
 
 
 .form__button {
-  width: 265px;
-  padding: 15px 25px;
+  width: 350px;
+  padding: 14px 35px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 700;
@@ -196,6 +196,7 @@ margin-bottom: 10px;
 .form__button-wrapper {
   display: flex;
   flex-direction: row;
+  align-items: flex-end;
 
   @media screen and (max-width: 767px) {
  flex-direction: column;
@@ -205,10 +206,12 @@ margin-bottom: 10px;
 
 .form__text--checkbox{
   position: relative;
+ display: block;
   font-family: "PT Mono", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 16px;
+  margin: 0;
   }
 
   .form__label--checkbox {
@@ -224,8 +227,8 @@ padding-left: 34px;
 
 .form__mark {
 position: absolute;
-top: 13px;
-left: 0;
+top: 10px;
+left: 2px;
 width: 15px;
 height: 15px;
 border: solid 1px $color-default-white;
