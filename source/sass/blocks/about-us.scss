@@ -5,7 +5,7 @@ background-color: $color-alice-blue;
 margin: 0;
 
 @media screen and (max-width: 1023px) {
-  padding: 40px 50px 80px 225px;
+  padding: 7px 50px 78px 225px;
 }
 
 @media screen and (max-width: 767px) {
@@ -39,7 +39,10 @@ display: none;
   line-height: 51px;
   margin-bottom: 8px;
   color: $color-black-pearl;
+  @media screen and (max-width: 1023px) {
 
+  margin-bottom: 12px;
+  }
   @media screen and (max-width: 767px) {
     font-size: 28px;
   line-height: 40px;
@@ -58,6 +61,7 @@ overflow: hidden;
 
 @media screen and (max-width: 1023px) {
   max-height: 260px;
+  margin: 0;
 }
 
   @media screen and (max-width: 767px) {
@@ -88,9 +92,13 @@ font-family: "Roboto Condensed", "Arial", sans-serif;
   color: $color-deep-sky-blue;
   text-transform: uppercase;
   text-align: center;
-
+  @media screen and (max-width: 1023px) {
+  margin-top: 15px;
+  letter-spacing: 1px;
+  }
 @media screen and (max-width: 767px) {
   width: 160px;
   padding: 10px 15px;
+
 }
 }

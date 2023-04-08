@@ -23,6 +23,7 @@ padding:0;
 @media screen and (max-width: 1023px) {
   grid-template-columns: repeat(2, 321px);
   grid-column-gap: 29px;
+  grid-row-gap: 32px;
 }
 
 @media screen and (max-width: 767px) {
@@ -38,6 +39,7 @@ margin: 0;
 
 @media screen and (max-width: 1023px) {
   height: 360px;
+  padding: 37px 43px 35px 43px;
 }
 
 
@@ -89,9 +91,14 @@ height: 340px;
   display: flex;
   flex-direction: column;
 
+  @media screen and (max-width: 1023px) {
+    margin-bottom: 12px;
+    }
+
   @media screen and (max-width: 767px) {
     font-size: 20px;
     line-height: 28px;
+    margin-bottom: 0;
 }
 }
 
@@ -102,13 +109,21 @@ height: 340px;
   line-height: 22px;
   color: $color-black-pearl;
 
+  @media screen and (max-width: 1023px) {
+  margin: 0;
+  }
 
   @media screen and (max-width: 767px) {
     font-size: 14px;
     line-height: 19px;
+
 }
 }
 
 .advantages__img {
   margin-bottom: 20px;
+  @media screen and (max-width: 1023px) {
+    margin-bottom: 15px;
+    }
+
 }
