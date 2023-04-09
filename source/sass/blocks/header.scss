@@ -9,44 +9,45 @@
   z-index: 10;
 
   @media (min-width: 1024px) {
-  position: fixed;
-top: 0;
-
+    position: fixed;
+    top: 0;
   }
 
   @media screen and (max-width: 1023px) {
-    padding: 20px 70px 25px 50px;
+    padding: 15px 70px 15px 40px;
     min-height: 100px;
     justify-content: space-between;
     width: 770px;
-   position: relative;
+    position: relative;
+  }
+
+  @media screen and (max-width: 767px) {
+    width: 320px;
+    min-height: 70px;
+    padding: 15px 35px 10px 26px;
+  }
 }
 
-@media screen and (max-width: 767px) {
-width: 320px;
-min-height: 70px;
-padding: 15px 35px 20px 26px;
-}
-}
-
-.header__logo{
-margin-left: 350px;
-margin-right: 160px;
+.header__logo {
+  margin-left: 350px;
+  margin-right: 160px;
 
 
-@media screen and (max-width: 1023px) {
-margin: 0;
-}
-@media screen and (max-width: 767px) {
-  width: 35px;
-  height: 35px;
-}
+  @media screen and (max-width: 1023px) {
+    margin: 0;
+    width: 225px;
+    height: 55px;
+  }
+
+  @media screen and (max-width: 767px) {
+    width: 35px;
+    height: 35px;
+  }
 }
 
 .header__button {
-  width: 170px;
-  height: 40px;
-  padding: 10px 15px;
+  width: 160px;
+  padding: 10px 12px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 700;
@@ -63,10 +64,22 @@ margin: 0;
 
   @media screen and (max-width: 1023px) {
     display: none;
-}
+  }
 }
 
 .header__button:hover {
   background-color: $color-alice-blue;
   color: $color-black-pearl;
+}
+
+.header__img {
+  @media screen and (max-width: 1023px) {
+    width: 215px;
+    height: 50px;
+    margin: 0;
+  }
+
+  @media screen and (max-width: 767px) {
+    margin-top: -10px;
+  }
 }

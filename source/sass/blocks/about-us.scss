@@ -1,16 +1,16 @@
 .about-us {
   position: relative;
-padding: 33px 350px 118px 600px;
-background-color: $color-alice-blue;
-margin: 0;
+  padding: 33px 350px 118px 600px;
+  background-color: $color-alice-blue;
+  margin: 0;
 
-@media screen and (max-width: 1023px) {
-  padding: 7px 50px 78px 225px;
-}
+  @media screen and (max-width: 1023px) {
+    padding: 7px 50px 78px 225px;
+  }
 
-@media screen and (max-width: 767px) {
-padding: 1px 25px 78px 25px;
-}
+  @media screen and (max-width: 767px) {
+    padding: 1px 25px 78px 25px;
+  }
 }
 
 .about-us::after {
@@ -24,12 +24,12 @@ padding: 1px 25px 78px 25px;
 
   @media screen and (max-width: 1023px) {
     top: 40px;
-  left: 46px;
-}
+    left: 46px;
+  }
 
-@media screen and (max-width: 767px) {
-display: none;
-}
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 }
 
 .about-us__title {
@@ -39,14 +39,16 @@ display: none;
   line-height: 51px;
   margin-bottom: 8px;
   color: $color-black-pearl;
+
   @media screen and (max-width: 1023px) {
 
-  margin-bottom: 12px;
+    margin-bottom: 12px;
   }
+
   @media screen and (max-width: 767px) {
     font-size: 28px;
-  line-height: 40px;
-  margin-bottom: 8px;
+    line-height: 40px;
+    margin-bottom: 8px;
   }
 }
 
@@ -59,52 +61,52 @@ display: none;
   color: $color-black-pearl;
   margin-bottom: 18px;
   max-height: 165px;
-overflow: hidden;
+  overflow: hidden;
 
-@media screen and (max-width: 1023px) {
-  max-height: 260px;
-  margin: 0;
-}
+  @media screen and (max-width: 1023px) {
+    max-height: 260px;
+    margin: 0;
+  }
 
   @media screen and (max-width: 767px) {
     font-size: 14px;
-  line-height: 19px;
-  margin-bottom: 17px;
-  max-height: 205px;
+    line-height: 19px;
+    margin-bottom: 17px;
+    max-height: 205px;
   }
 }
 
 .about-us__text.is-active {
   max-height: none;
   overflow: visible;
-  }
+}
 
 
 .about-us__button {
-display: block;
-width: 180px;
-padding: 14px 50px 14px 50px;
-border: solid 1px $color-deep-sky-blue;
-border-radius: 3px;
-margin-top: 20px;
-font-family: "Roboto Condensed", "Arial", sans-serif;
+  display: block;
+  width: 180px;
+  padding: 14px 50px 14px 50px;
+  border: solid 1px $color-deep-sky-blue;
+  border-radius: 3px;
+  margin-top: 20px;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 700;
   line-height: 16px;
   color: $color-deep-sky-blue;
   text-transform: uppercase;
   text-align: center;
-cursor: pointer;
+  cursor: pointer;
 
   @media screen and (max-width: 1023px) {
-  margin-top: 15px;
-  letter-spacing: 1px;
+    margin-top: 15px;
+    letter-spacing: 1px;
   }
-@media screen and (max-width: 767px) {
-  width: 160px;
-  padding: 10px 15px;
 
-}
+  @media screen and (max-width: 767px) {
+    width: 160px;
+    padding: 10px 15px;
+  }
 }
 
 .about-us__button:hover {

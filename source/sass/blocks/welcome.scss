@@ -5,22 +5,21 @@
   margin-top: 80px;
   background-image: url("../../img/welcome.jpg");
   background-color: $color-black-pearl;
-background-repeat: no-repeat;
-height: 100%;
+  background-repeat: no-repeat;
+  height: 100%;
 
   @media screen and (max-width: 1023px) {
     width: 770px;
     padding: 58px 50px 205px 50px;
     background-image: url("../../img/welcome-tablet.jpg");
     margin-top: -30px;
+  }
 
-}
-
-@media screen and (max-width: 767px) {
-width: 320px;
-padding: 80px 25px 192px 25px;
-background-image: url("../../img/welcome-mobile.jpg");
-}
+  @media screen and (max-width: 767px) {
+    width: 320px;
+    padding: 80px 25px 192px 25px;
+    background-image: url("../../img/welcome-mobile.jpg");
+  }
 }
 
 
@@ -36,15 +35,15 @@ background-image: url("../../img/welcome-mobile.jpg");
   @media screen and (max-width: 1023px) {
     font-size: 64px;
     line-height: 75px;
-margin-bottom: 0;
-}
-@media screen and (max-width: 767px) {
-  font-size: 36px;
-  line-height: 42px;
-  letter-spacing: 3px;
-  margin-bottom: 7px;
+    margin-bottom: 0;
+  }
 
-}
+  @media screen and (max-width: 767px) {
+    font-size: 36px;
+    line-height: 42px;
+    letter-spacing: 3px;
+    margin-bottom: 7px;
+  }
 }
 
 .welcome__text {
@@ -57,17 +56,19 @@ margin-bottom: 0;
   @media screen and (max-width: 1023px) {
     margin: 0;
     margin-bottom: 57px;
-}
+  }
 
-@media screen and (max-width: 767px) {
-  font-size: 14px;
-  line-height: 22px;
-  margin-bottom: 46px;
-  br {
-    display: none;
+  @media screen and (max-width: 767px) {
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 46px;
+
+    br {
+      display: none;
+    }
   }
 }
-}
+
 .welcome__button {
   display: block;
   font-family: "Roboto Condensed", "Arial", sans-serif;
@@ -86,36 +87,34 @@ margin-bottom: 0;
 
   @media screen and (max-width: 1023px) {
     margin-left: 45px;
+  }
 
-
-}
-
-@media screen and (max-width: 767px) {
-display: none;
-}
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 }
 
 .welcome__mobile {
-display: none;
+  display: none;
 
-@media screen and (max-width: 767px) {
-  display: block;
-  width: 270px;
-  padding: 10px 30px;
-  font-size: 14px;
-  line-height: 17px;
-  font-family: "Roboto Condensed", "Arial", sans-serif;
-  font-weight: 700;
-  text-align: center;
-  color: $color-alice-blue;
-  background-color: $color-deep-sky-blue;
-  text-transform: uppercase;
-  cursor: pointer;
-}
+  @media screen and (max-width: 767px) {
+    display: block;
+    width: 270px;
+    padding: 10px 30px;
+    font-size: 14px;
+    line-height: 17px;
+    font-family: "Roboto Condensed", "Arial", sans-serif;
+    font-weight: 700;
+    text-align: center;
+    color: $color-alice-blue;
+    background-color: $color-deep-sky-blue;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
 }
 
 .welcome__button:hover,
 .welcome__mobile:hover {
-background-color: $color-alice-blue;
-color: $color-black-pearl;
+  background-color: $color-alice-blue;
+  color: $color-black-pearl;
 }

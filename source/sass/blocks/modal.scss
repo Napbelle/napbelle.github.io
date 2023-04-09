@@ -27,11 +27,11 @@
 }
 
 .modal.is-active {
-    transform: scale(1);
-    visibility: visible;
-    opacity: 1;
+  transform: scale(1);
+  visibility: visible;
+  opacity: 1;
 
-    pointer-events: auto;
+  pointer-events: auto;
 }
 
 .modal__overlay {
@@ -46,11 +46,11 @@
 }
 
 .modal__content {
-position: relative;
-background-color: $color-deep-sky-blue;
-width: 500px;
-padding: 40px;
-border-radius: 3px;
+  position: relative;
+  background-color: $color-deep-sky-blue;
+  width: 500px;
+  padding: 40px;
+  border-radius: 3px;
 }
 
 .modal__container {
@@ -78,11 +78,11 @@ border-radius: 3px;
 }
 
 .modal__title {
-font-family: "Roboto Condensed", "Arial", sans-serif;
-font-weight: 400;
-font-size: 30px;
-line-height: 42px;
-margin: 0;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 42px;
+  margin: 0;
 }
 
 .modal__text {
@@ -93,5 +93,3 @@ margin: 0;
   margin: 0;
   margin-bottom: 38px;
 }
-
-

@@ -1,5 +1,5 @@
 .form-index {
-  background-image:  url('../../img/form.png');
+  background-image: url("../../img/form.png");
   background-color: $color-deep-sky-blue;
   background-repeat: no-repeat;
   height: 840px;
@@ -8,12 +8,12 @@
 
   @media screen and (max-width: 1023px) {
     background-image: none;
-padding: 18px 50px 125px 50px;
-height: 580px;
-}
+    padding: 18px 50px 125px 50px;
+    height: 580px;
+  }
 
-@media screen and (max-width: 767px) {
-  padding: 20px 25px 90px 23px;
-  height: 750px;
-}
+  @media screen and (max-width: 767px) {
+    padding: 20px 25px 90px 23px;
+    min-height: 750px;
+  }
 }

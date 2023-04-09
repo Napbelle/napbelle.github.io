@@ -1,4 +1,4 @@
-.page{
+.page {
   background-color: $color-default-white;
   height: 100%;
   scroll-behavior: smooth;
@@ -17,10 +17,9 @@
 
   @media screen and (max-width: 1023px) {
     width: 770px;
-}
+  }
 
-@media screen and (max-width: 767px) {
-  width: 320px;
+  @media screen and (max-width: 767px) {
+    width: 320px;
+  }
 }
-}
-

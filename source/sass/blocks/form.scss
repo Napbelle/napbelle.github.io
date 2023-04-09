@@ -1,20 +1,20 @@
 .form__fieldset {
-display: flex;
-width: 585px;
-border: none;
-padding: 0;
-flex-wrap: wrap;
+  display: flex;
+  width: 585px;
+  border: none;
+  padding: 0;
+  flex-wrap: wrap;
 
-@media screen and (max-width: 767px) {
-  flex-direction: column;
-  width: 270px;
-}
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+    width: 270px;
+  }
 }
 
 .form__fieldset--modal {
-width: 420px;
-box-sizing: border-box;
-flex-direction: column;
+  width: 420px;
+  box-sizing: border-box;
+  flex-direction: column;
 }
 
 .form__title {
@@ -26,13 +26,13 @@ flex-direction: column;
 
   @media screen and (max-width: 1023px) {
     margin-bottom: 5px;
-}
+  }
 
-@media screen and (max-width: 767px) {
-  font-size: 30px;
-  line-height: 42px;
-  margin-bottom: 8px;
-}
+  @media screen and (max-width: 767px) {
+    font-size: 30px;
+    line-height: 42px;
+    margin-bottom: 8px;
+  }
 }
 
 .form__text {
@@ -45,15 +45,14 @@ flex-direction: column;
   @media screen and (max-width: 1023px) {
     margin: 0;
     margin-bottom: 25px;
+  }
 
-}
-
-@media screen and (max-width: 767px) {
-  font-size: 14px;
-  line-height: 19px;
-  margin: 0;
-  margin-bottom: 35px;
-}
+  @media screen and (max-width: 767px) {
+    font-size: 14px;
+    line-height: 19px;
+    margin: 0;
+    margin-bottom: 35px;
+  }
 }
 
 .form__text--modal {
@@ -62,59 +61,60 @@ flex-direction: column;
 }
 
 .form__input {
-box-sizing: border-box;
-width: 275px;
-height: 50px;
-margin-bottom: 20px;
-border: none;
-border-radius: 3px;
-padding: 13px;
-background-color: $color-transparent;
-cursor: pointer;
+  box-sizing: border-box;
+  width: 275px;
+  height: 50px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 3px;
+  padding: 13px;
+  background-color: $color-transparent;
+  cursor: pointer;
 
-@media screen and (max-width: 1023px) {
-  width: 320px;
+  @media screen and (max-width: 1023px) {
+    width: 320px;
+  }
+
+  @media screen and (max-width: 767px) {
+    width: 270px;
+    margin-bottom: 20px;
+  }
 }
 
-@media screen and (max-width: 767px) {
-width: 270px;
-margin-bottom: 20px;
-}
-}
-
-.form__input:hover{
+.form__input:hover {
   background-color: $color-default-white;
 }
 
 .form__input--phone {
-padding: 0;
-background-color: transparent;
+  padding: 0;
+  background-color: transparent;
 }
 
 .form__input--modal {
-min-width: 420px;
+  min-width: 420px;
 }
 
-.form__input--modal:focus{
+.form__input--modal:focus {
   background-color: $color-default-white;
 }
 
 .form__first-row {
   width: 580px;
   display: flex;
-justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: space-between;
 
-@media screen and (max-width: 1023px) {
-  width: 670px;
+  @media screen and (max-width: 1023px) {
+    width: 670px;
+  }
+
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+    width: 270px;
+  }
 }
 
-@media screen and (max-width: 767px) {
-  flex-direction: column;
-  width: 270px;
-}
-}
-
-.form__input::placeholder{
+.form__input::placeholder {
   font-family: "PT Mono", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -131,12 +131,11 @@ justify-content: space-between;
   padding: 13px;
   padding-top: 25px;
   margin: 0;
-  margin-bottom: 35px;
+  margin-bottom: 31px;
   font-family: "PT Mono", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 22px;
-  margin-bottom: 31px;
   color: $color-default-white;
   cursor: pointer;
 
@@ -145,6 +144,7 @@ justify-content: space-between;
     padding-top: 27px;
     margin-bottom: 34px;
   }
+
   @media screen and (max-width: 767px) {
     width: 270px;
     margin-bottom: 30px;
@@ -153,19 +153,19 @@ justify-content: space-between;
   }
 }
 
-.form__textarea:hover{
+.form__textarea:hover {
   background-color: $color-default-white;
 }
 
 .form__textarea--modal {
-max-width: 420px;
-margin-bottom: 25px;
+  max-width: 420px;
+  margin-bottom: 25px;
 }
 
 
 .form__button {
   box-sizing: border-box;
-  width: 350px;
+  width: 265px;
   padding: 14px 35px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 16px;
@@ -176,21 +176,20 @@ margin-bottom: 25px;
   background-color: $color-black-pearl;
   border: none;
   border-radius: 3px;
-  margin: 0;
-  margin-right: 50px;
+  margin: 0 43px 10px 0;
   cursor: pointer;
 
   @media screen and (max-width: 1023px) {
-    width: 300px;
+    width: 265px;
     margin-right: 78px;
     letter-spacing: 1px;
+  }
 
-}
-@media screen and (max-width: 767px) {
-  width: 270px;
-  margin-bottom: 22px;
-  margin-right: 0;
-}
+  @media screen and (max-width: 767px) {
+    width: 270px;
+    margin-bottom: 22px;
+    margin-right: 0;
+  }
 }
 
 .form__button:hover {
@@ -199,65 +198,69 @@ margin-bottom: 25px;
 }
 
 .form__button--modal {
-width: 420px;
-padding: 15px 60px;
-margin-bottom: 10px;
+  width: 420px;
+  padding: 15px 60px;
+  margin-bottom: 10px;
 }
 
 .form__button-wrapper {
   display: flex;
   flex-direction: row;
-  align-items: flex-end;
+  flex-wrap: wrap;
+  align-items: center;
 
   @media screen and (max-width: 767px) {
- flex-direction: column;
- width: 270px;
-}
+    flex-direction: column;
+    width: 270px;
+  }
 }
 
-.form__text--checkbox{
+.form__text--checkbox {
   position: relative;
- display: block;
+  display: block;
   font-family: "PT Mono", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 16px;
   margin: 0;
   cursor: pointer;
+  width: 231px;
 
   @media screen and (max-width: 1023px) {
     margin-bottom: 2px;
   }
 }
 
-  .form__label--checkbox {
-    position: relative;
-    display: block;
-padding-left: 29px;
-cursor: pointer;
-  }
-  .form__label--modal{
-    position: relative;
-    display: block;
-padding-left: 34px;
-  }
+.form__label--checkbox {
+  position: relative;
+  display: block;
+  padding-left: 29px;
+  cursor: pointer;
+}
+
+.form__label--modal {
+  position: relative;
+  display: block;
+  padding-left: 34px;
+}
 
 .form__mark {
-position: absolute;
-top: 10px;
-left: 2px;
-width: 15px;
-height: 15px;
-border: solid 1px $color-default-white;
-border-radius: 2px;
+  position: absolute;
+  top: 10px;
+  left: 2px;
+  width: 15px;
+  height: 15px;
+  border: solid 1px $color-default-white;
+  border-radius: 2px;
 
-@media screen and (max-width: 1023px) {
-  top: 5px;
-  left: 5px;
-}
-@media screen and (max-width: 767px) {
-  top: 8px;
-}
+  @media screen and (max-width: 1023px) {
+    top: 5px;
+    left: 5px;
+  }
+
+  @media screen and (max-width: 767px) {
+    top: 8px;
+  }
 }
 
 .form__mark--modal {
@@ -266,7 +269,7 @@ border-radius: 2px;
 }
 
 .form__checkbox[type="checkbox"]:checked + .form__mark::after,
-.form__checkbox--modal[type="checkbox"]:checked + .form__mark--modal::after{
+.form__checkbox--modal[type="checkbox"]:checked + .form__mark--modal::after {
   position: absolute;
   top: 3px;
   left: 1px;
