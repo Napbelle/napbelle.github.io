@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Smart Device">
     <title>ProjectName</title>
+    <link rel="preload" href="fonts/robotocondensed-bold.woff2" as="font">
+    <link rel="preload" href="img/welcome.jpg" as="image">
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="icon" href="favicon.ico"><!-- 32×32 -->
   </head>
     <body class="page__body">
       <div class="page__container">
@@ -121,13 +124,13 @@
     Производство <br>печатных
       плат
 
-    <button class="catalog__button"></button>
+    <div class="catalog__button"></div>
   </a>
   </li>
   <li class="catalog__item  catalog__item--montage">
     <a class="catalog__link"> Монтаж <br> печатных плат
 
-    <button class="catalog__button"></button>
+    <div class="catalog__button"></div>
   </a>
   </li>
   <li class="catalog__item catalog__item--accessories">
@@ -136,13 +139,12 @@
       для
       светотехники
 
-
-    <button class="catalog__button"></button>
+   <div class="catalog__button"></div>
   </a>
   </li>
 </ul>
 </section>
-<section class="form" id="form">
+<section class="form form-index" id="form">
   <h2 class="form__title">Остались вопросы? Задайте их нам!</h2>
   <p class="form__text">Мы проконсультируем Вас бесплатно</p>
   <div class="form__data" data-form-validate="data-form-validate" data-callback="base">
@@ -239,7 +241,9 @@
       <h2 class="footer-contacts__title">Наш офис</h2>
       <ul class="footer-contacts__list">
         <li class="footer-contacts__item">
+          <a class="footer-contacts__link" href="#">
           г. Мытищи, Олимпийский проспект, д.10
+          </a>
         </li>
         <li class="footer-contacts__item">
           <a class="footer-contacts__link" href="tel:+74955894050"> +7 (495) 589-40-50</a>
@@ -257,11 +261,11 @@
 
           </div>
 
-          <div class="modal modal--preload" data-modal="phonecall">
+          <div class="form modal modal--preload" data-modal="phonecall">
             <div class="modal__container">
               <div class="modal__overlay" data-close-modal></div>
               <div class="modal__content">
-              <button class="modal__button" type="button" aria-label="Закрыть попап" data-close-modal data-focus="data-focus">
+              <button class="modal__button" type="button" aria-label="Закрыть попап" data-close-modal>
                 <span class="visually-hidden">Закрыть</span>
                 <svg class="modal__img" width="20" height="20">
                   <use xlink:href="img/sprite.svg#cross"></use>
@@ -274,10 +278,10 @@
               <fieldset class="modal__form form__fieldset form__fieldset--modal">
                 <legend class="visually-hidden">Заполните данные</legend>
                 <label class="visually-hidden" for="name">Имя</label>
-                <input class="form__input form__input--modal" type="text" id="name-callme" name="name-callme" placeholder="Имя" required >
+                <input class="form__input form__input--modal" type="text" id="name-callme" name="name-callme" placeholder="Имя" required data-focus>
                 <div class="form__input form__input--phone" data-validate-type="phone" data-on-input-validate="data-on-input-validate" data-required="data-required">
                 <label class="visually-hidden" for="number">Контактный телефон:</label>
-                <input class="form__input form__input--modal" placeholder="Телефон" type="phone" name="phone-number-callme" id="number-callme" required>
+                <input class="form__input form__input--modal" placeholder="Телефон" type="tel" name="phone-number-callme" id="number-callme" required>
                 </div>
                 <label class="visually-hidden" for="text">Ваш вопрос</label>
                 <textarea class="form__textarea form__textarea--modal" name="text-callme" id="text-callme">Ваш вопрос</textarea>

@@ -75,13 +75,24 @@ grid-template-rows: 250px;
 }
 }
 
+.catalog__item:hover .catalog__link {
+color: $color-deep-sky-blue;
+}
+
+.catalog__item:hover .catalog__button {
+  background-color: $color-black-pearl;
+  }
+
 .catalog__item {
 position: relative;
 padding: 50px 120px 50px 40px;
 width: 350px;
 height: 650px;
 background-image: url('../../img/card-1.jpg');
+background-color: $color-black-pearl;
 background-repeat: no-repeat;
+cursor: pointer;
+
 
 @media screen and (max-width: 1023px) {
   padding: 38px 45px;

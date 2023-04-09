@@ -59,8 +59,14 @@ margin: 0;
   margin-top: -10px;
   letter-spacing: 1px;
   border-radius: 3px;
+  cursor: pointer;
 
   @media screen and (max-width: 1023px) {
     display: none;
 }
+}
+
+.header__button:hover {
+  background-color: $color-alice-blue;
+  color: $color-black-pearl;
 }

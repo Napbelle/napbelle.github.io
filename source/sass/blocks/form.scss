@@ -1,23 +1,3 @@
-.form {
-  background-image:  url('../../img/form.png');
-  background-color: $color-deep-sky-blue;
-  background-repeat: no-repeat;
-  height: 840px;
-  padding: 137px 360px 200px 980px;
-  margin: 0;
-
-  @media screen and (max-width: 1023px) {
-    background-image: none;
-padding: 18px 50px 125px 50px;
-height: 580px;
-}
-
-@media screen and (max-width: 767px) {
-  padding: 20px 25px 90px 23px;
-  height: 750px;
-}
-}
-
 .form__fieldset {
 display: flex;
 width: 585px;
@@ -90,6 +70,7 @@ border: none;
 border-radius: 3px;
 padding: 13px;
 background-color: $color-transparent;
+cursor: pointer;
 
 @media screen and (max-width: 1023px) {
   width: 320px;
@@ -101,6 +82,10 @@ margin-bottom: 20px;
 }
 }
 
+.form__input:hover{
+  background-color: $color-default-white;
+}
+
 .form__input--phone {
 padding: 0;
 background-color: transparent;
@@ -108,6 +93,10 @@ background-color: transparent;
 
 .form__input--modal {
 min-width: 420px;
+}
+
+.form__input--modal:focus{
+  background-color: $color-default-white;
 }
 
 .form__first-row {
@@ -149,6 +138,7 @@ justify-content: space-between;
   line-height: 22px;
   margin-bottom: 31px;
   color: $color-default-white;
+  cursor: pointer;
 
   @media screen and (max-width: 1023px) {
     width: 670px;
@@ -161,6 +151,10 @@ justify-content: space-between;
     padding-top: 24px;
     min-height: 180px;
   }
+}
+
+.form__textarea:hover{
+  background-color: $color-default-white;
 }
 
 .form__textarea--modal {
@@ -184,6 +178,7 @@ margin-bottom: 25px;
   border-radius: 3px;
   margin: 0;
   margin-right: 50px;
+  cursor: pointer;
 
   @media screen and (max-width: 1023px) {
     width: 300px;
@@ -196,6 +191,11 @@ margin-bottom: 25px;
   margin-bottom: 22px;
   margin-right: 0;
 }
+}
+
+.form__button:hover {
+  background-color: $color-default-white;
+  color: $color-black-pearl;
 }
 
 .form__button--modal {
@@ -223,6 +223,7 @@ margin-bottom: 10px;
   font-weight: 400;
   line-height: 16px;
   margin: 0;
+  cursor: pointer;
 
   @media screen and (max-width: 1023px) {
     margin-bottom: 2px;
@@ -233,6 +234,7 @@ margin-bottom: 10px;
     position: relative;
     display: block;
 padding-left: 29px;
+cursor: pointer;
   }
   .form__label--modal{
     position: relative;
@@ -273,4 +275,8 @@ border-radius: 2px;
   background-image: url("../../img/tick.svg");
   background-repeat: no-repeat;
   content: "";
+}
+
+.form__label--checkbox:hover .form__text--checkbox {
+  color: $color-black-pearl;
 }

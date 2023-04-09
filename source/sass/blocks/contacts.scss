@@ -35,6 +35,11 @@ justify-content: flex-end;
   padding: 0;
   display: flex;
   align-items: center;
+  cursor: pointer;
+}
+
+.contacts__link:hover {
+color: $color-deep-sky-blue;
 }
 
 .contacts__item {

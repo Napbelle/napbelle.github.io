@@ -94,6 +94,8 @@ font-family: "Roboto Condensed", "Arial", sans-serif;
   color: $color-deep-sky-blue;
   text-transform: uppercase;
   text-align: center;
+cursor: pointer;
+
   @media screen and (max-width: 1023px) {
   margin-top: 15px;
   letter-spacing: 1px;
@@ -103,4 +105,9 @@ font-family: "Roboto Condensed", "Arial", sans-serif;
   padding: 10px 15px;
 
 }
+}
+
+.about-us__button:hover {
+  background-color: $color-deep-sky-blue;
+  color: $color-alice-blue;
 }

@@ -666,7 +666,7 @@ button,
 .modal {
   position: fixed;
   top: 0;
-  left: 0;
+  right: 0;
   bottom: 0;
   left: 0;
   display: -webkit-box;
@@ -674,8 +674,6 @@ button,
   display: flex;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
-  width: 100%;
-  height: 100%;
   background-color: rgba(3, 16, 27, 0.7);
   z-index: 12;
   visibility: hidden;
@@ -735,6 +733,14 @@ button,
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+  width: 100%;
+  min-height: 100%;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .modal__button {
@@ -1336,6 +1342,12 @@ button,
   color: #00B2FF;
   text-transform: uppercase;
   text-align: center;
+  cursor: pointer;
+}
+
+.about-us__button:hover {
+  background-color: #00B2FF;
+  color: #F2F5F6;
 }
 
 .advantages {
@@ -1444,6 +1456,11 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  cursor: pointer;
+}
+
+.contacts__link:hover {
+  color: #00B2FF;
 }
 
 .contacts__item {
@@ -1500,12 +1517,18 @@ button,
   margin-top: -10px;
   letter-spacing: 1px;
   border-radius: 3px;
+  cursor: pointer;
+}
+
+.header__button:hover {
+  background-color: #F2F5F6;
+  color: #041827;
 }
 
 .modal {
   position: fixed;
   top: 0;
-  left: 0;
+  right: 0;
   bottom: 0;
   left: 0;
   display: -webkit-box;
@@ -1513,8 +1536,6 @@ button,
   display: flex;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
-  width: 100%;
-  height: 100%;
   background-color: rgba(3, 16, 27, 0.7);
   z-index: 12;
   visibility: hidden;
@@ -1574,6 +1595,14 @@ button,
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+  width: 100%;
+  min-height: 100%;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .modal__button {
@@ -1667,10 +1696,17 @@ button,
   background-color: #00B2FF;
   text-transform: uppercase;
   border-radius: 3px;
+  cursor: pointer;
 }
 
 .welcome__mobile {
   display: none;
+}
+
+.welcome__button:hover,
+.welcome__mobile:hover {
+  background-color: #F2F5F6;
+  color: #041827;
 }
 
 .catalog {
@@ -1716,13 +1752,23 @@ button,
   color: #ffffff;
 }
 
+.catalog__item:hover .catalog__link {
+  color: #00B2FF;
+}
+
+.catalog__item:hover .catalog__button {
+  background-color: #041827;
+}
+
 .catalog__item {
   position: relative;
   padding: 50px 120px 50px 40px;
   width: 350px;
   height: 650px;
   background-image: url("../../img/card-1.jpg");
+  background-color: #041827;
   background-repeat: no-repeat;
+  cursor: pointer;
 }
 
 .catalog__item--montage {
@@ -1749,15 +1795,6 @@ button,
   background-repeat: no-repeat;
   margin-left: 289px;
   border: none;
-}
-
-.form {
-  background-image: url("../../img/form.png");
-  background-color: #00B2FF;
-  background-repeat: no-repeat;
-  height: 840px;
-  padding: 137px 360px 200px 980px;
-  margin: 0;
 }
 
 .form__fieldset {
@@ -1812,6 +1849,11 @@ button,
   border-radius: 3px;
   padding: 13px;
   background-color: rgba(4, 20, 39, 0.15);
+  cursor: pointer;
+}
+
+.form__input:hover {
+  background-color: #ffffff;
 }
 
 .form__input--phone {
@@ -1821,6 +1863,10 @@ button,
 
 .form__input--modal {
   min-width: 420px;
+}
+
+.form__input--modal:focus {
+  background-color: #ffffff;
 }
 
 .form__first-row {
@@ -1889,6 +1935,11 @@ button,
   line-height: 22px;
   margin-bottom: 31px;
   color: #ffffff;
+  cursor: pointer;
+}
+
+.form__textarea:hover {
+  background-color: #ffffff;
 }
 
 .form__textarea--modal {
@@ -1912,6 +1963,12 @@ button,
   border-radius: 3px;
   margin: 0;
   margin-right: 50px;
+  cursor: pointer;
+}
+
+.form__button:hover {
+  background-color: #ffffff;
+  color: #041827;
 }
 
 .form__button--modal {
@@ -1941,12 +1998,14 @@ button,
   font-weight: 400;
   line-height: 16px;
   margin: 0;
+  cursor: pointer;
 }
 
 .form__label--checkbox {
   position: relative;
   display: block;
   padding-left: 29px;
+  cursor: pointer;
 }
 
 .form__label--modal {
@@ -1980,6 +2039,10 @@ button,
   background-image: url("../../img/tick.svg");
   background-repeat: no-repeat;
   content: "";
+}
+
+.form__label--checkbox:hover .form__text--checkbox {
+  color: #041827;
 }
 
 .footer {
@@ -2062,6 +2125,11 @@ button,
   font-weight: 400;
   line-height: 22px;
   text-decoration: none;
+  cursor: pointer;
+}
+
+.site-list__link:hover {
+  color: #00B2FF;
 }
 
 .site-list__item {
@@ -2099,6 +2167,11 @@ button,
 
 .social__link {
   list-style-type: none;
+  color: #F2F5F6;
+}
+
+.social__link:hover {
+  color: #00B2FF;
 }
 
 .footer-contacts__title {
@@ -2140,6 +2213,20 @@ button,
   line-height: 22px;
   text-decoration: none;
   margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.footer-contacts__link:hover {
+  color: #00B2FF;
+}
+
+.form-index {
+  background-image: url("../../img/form.png");
+  background-color: #00B2FF;
+  background-repeat: no-repeat;
+  height: 840px;
+  padding: 137px 360px 200px 980px;
+  margin: 0;
 }
 
 /* @mixin hover-focus {
@@ -2383,12 +2470,6 @@ button,
     top: 190px;
   }
 
-  .form {
-    background-image: none;
-    padding: 18px 50px 125px 50px;
-    height: 580px;
-  }
-
   .form__title {
     margin-bottom: 5px;
   }
@@ -2473,6 +2554,12 @@ button,
   .footer-contacts__list {
     margin: 0;
     width: 320px;
+  }
+
+  .form-index {
+    background-image: none;
+    padding: 18px 50px 125px 50px;
+    height: 580px;
   }
 }
 
@@ -2674,6 +2761,7 @@ button,
     color: #F2F5F6;
     background-color: #00B2FF;
     text-transform: uppercase;
+    cursor: pointer;
   }
 
   .catalog {
@@ -2721,11 +2809,6 @@ button,
     top: 210px;
     width: 40px;
     height: 40px;
-  }
-
-  .form {
-    padding: 20px 25px 90px 23px;
-    height: 750px;
   }
 
   .form__fieldset {
@@ -2958,6 +3041,11 @@ button,
     font-size: 14px;
     line-height: 25px;
     margin-bottom: 6px;
+  }
+
+  .form-index {
+    padding: 20px 25px 90px 23px;
+    height: 750px;
   }
 }
 

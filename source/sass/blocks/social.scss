@@ -33,4 +33,12 @@
 
 .social__link {
   list-style-type: none;
+  color: $color-alice-blue;
+}
+
+
+
+
+.social__link:hover  {
+  color: $color-deep-sky-blue;
 }

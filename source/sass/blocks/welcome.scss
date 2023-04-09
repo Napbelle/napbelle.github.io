@@ -82,6 +82,7 @@ margin-bottom: 0;
   background-color: $color-deep-sky-blue;
   text-transform: uppercase;
   border-radius: 3px;
+  cursor: pointer;
 
   @media screen and (max-width: 1023px) {
     margin-left: 45px;
@@ -109,5 +110,12 @@ display: none;
   color: $color-alice-blue;
   background-color: $color-deep-sky-blue;
   text-transform: uppercase;
+  cursor: pointer;
 }
+}
+
+.welcome__button:hover,
+.welcome__mobile:hover {
+background-color: $color-alice-blue;
+color: $color-black-pearl;
 }
