@@ -9,7 +9,7 @@ margin: 0;
 }
 
 @media screen and (max-width: 767px) {
-padding: 25px 25px 80px 25px;
+padding: 1px 25px 78px 25px;
 }
 }
 
@@ -46,8 +46,10 @@ display: none;
   @media screen and (max-width: 767px) {
     font-size: 28px;
   line-height: 40px;
+  margin-bottom: 8px;
   }
 }
+
 
 .about-us__text {
   font-family: "PT Mono", "Arial", sans-serif;
@@ -67,7 +69,7 @@ overflow: hidden;
   @media screen and (max-width: 767px) {
     font-size: 14px;
   line-height: 19px;
-  margin-bottom: 20px;
+  margin-bottom: 17px;
   max-height: 205px;
   }
 }

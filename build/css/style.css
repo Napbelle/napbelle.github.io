@@ -1687,6 +1687,14 @@ button,
   margin-bottom: 50px;
 }
 
+.catalog__title--mobile {
+  display: none;
+}
+
+.catalog__title--desktop {
+  display: block;
+}
+
 .catalog__list {
   display: -ms-grid;
   display: grid;
@@ -2537,7 +2545,7 @@ button,
   }
 
   .about-us {
-    padding: 25px 25px 80px 25px;
+    padding: 1px 25px 78px 25px;
   }
 
   .about-us::after {
@@ -2547,12 +2555,13 @@ button,
   .about-us__title {
     font-size: 28px;
     line-height: 40px;
+    margin-bottom: 8px;
   }
 
   .about-us__text {
     font-size: 14px;
     line-height: 19px;
-    margin-bottom: 20px;
+    margin-bottom: 17px;
     max-height: 205px;
   }
 
@@ -2562,38 +2571,59 @@ button,
   }
 
   .advantages {
-    padding: 50px 25px 25px 25px;
+    padding: 50px 25px 25px 22px;
   }
 
   .advantages__list {
     -ms-grid-columns: 270px;
     grid-template-columns: 270px;
+    grid-row-gap: 30px;
   }
 
   .advantages__item {
     height: 340px;
-    padding: 30px 30px 35px 30px;
+    padding: 27px 30px 35px 30px;
+  }
+
+  .advantages__item--mobile {
+    height: 325px;
   }
 
   .advantages__item::after {
     height: 340px;
   }
 
+  .advantages__item--mobile::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 300px;
+    background-color: #00B2FF;
+    content: "";
+    height: 325px;
+  }
+
   .advantages__title {
     font-size: 20px;
     line-height: 28px;
-    margin-bottom: 0;
+    margin-bottom: 10px;
   }
 
   .advantages__text {
+    margin: 0;
     font-size: 14px;
     line-height: 19px;
+  }
+
+  .contacts__item {
+    margin-top: -5px;
   }
 
   .header {
     width: 320px;
     min-height: 70px;
-    padding: 10px 35px 20px 26px;
+    padding: 15px 35px 20px 26px;
   }
 
   .header__logo {
@@ -2607,19 +2637,25 @@ button,
 
   .welcome {
     width: 320px;
-    padding: 80px 25px 190px 25px;
+    padding: 80px 25px 192px 25px;
     background-image: url("../../img/welcome-mobile.jpg");
   }
 
   .welcome__title {
     font-size: 36px;
     line-height: 42px;
+    letter-spacing: 3px;
+    margin-bottom: 7px;
   }
 
   .welcome__text {
     font-size: 14px;
     line-height: 22px;
-    margin-bottom: 50px;
+    margin-bottom: 46px;
+  }
+
+  .welcome__text br {
+    display: none;
   }
 
   .welcome__button {
@@ -2641,12 +2677,21 @@ button,
   }
 
   .catalog {
-    padding: 50px 25px 86px 25px;
+    padding: 19px 25px 86px 23px;
   }
 
   .catalog__title {
     font-size: 28px;
     line-height: 40px;
+  }
+
+  .catalog__title--mobile {
+    display: block;
+    margin-bottom: 28px;
+  }
+
+  .catalog__title--desktop {
+    display: none;
   }
 
   .catalog__list {
@@ -2660,7 +2705,7 @@ button,
 
   .catalog__item {
     width: 270px;
-    padding: 30px;
+    padding: 26px 30px;
     background-image: url("../../img/card-1-mobile.jpg");
   }
 
@@ -2679,7 +2724,7 @@ button,
   }
 
   .form {
-    padding: 50px 25px 90px 25px;
+    padding: 20px 25px 90px 23px;
     height: 750px;
   }
 
@@ -2694,17 +2739,14 @@ button,
   .form__title {
     font-size: 30px;
     line-height: 42px;
-    margin-bottom: 20px;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+    margin-bottom: 8px;
   }
 
   .form__text {
     font-size: 14px;
     line-height: 19px;
-    margin-bottom: 40px;
+    margin: 0;
+    margin-bottom: 35px;
   }
 
   .form__input {
@@ -2723,11 +2765,14 @@ button,
   .form__textarea {
     width: 270px;
     margin-bottom: 30px;
+    padding-top: 24px;
+    min-height: 180px;
   }
 
   .form__button {
     width: 270px;
-    margin-bottom: 25px;
+    margin-bottom: 22px;
+    margin-right: 0;
   }
 
   .form__button-wrapper {
@@ -2738,10 +2783,14 @@ button,
     width: 270px;
   }
 
+  .form__mark {
+    top: 8px;
+  }
+
   .footer {
     clear: both;
     position: relative;
-    padding: 35px 25px;
+    padding: 35px 25px 45px 25px;
     width: 320px;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -2761,6 +2810,10 @@ button,
     content: "";
   }
 
+  .footer__logo {
+    margin-bottom: 0;
+  }
+
   .footer__img {
     margin: 0 25px 15px 25px;
   }
@@ -2771,7 +2824,7 @@ button,
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    margin-bottom: 25px;
+    margin-bottom: 18px;
     -ms-flex-line-pack: center;
     align-content: center;
   }
@@ -2793,8 +2846,9 @@ button,
     width: 270px;
     -ms-flex-wrap: nowrap;
     flex-wrap: nowrap;
-    margin-bottom: 35px;
     display: none;
+    margin: 0;
+    margin-top: -5px;
   }
 
   .site-list.is-active .site-list__list {
@@ -2810,12 +2864,12 @@ button,
     -ms-flex-pack: justify;
     justify-content: space-between;
     padding: 20px 51px 20px 0;
-    margin: 0;
+    margin-bottom: 0;
   }
 
   .site-list__title::after {
     position: absolute;
-    top: 0;
+    top: -5px;
     left: -25px;
     width: 320px;
     height: 1px;
@@ -2825,7 +2879,7 @@ button,
 
   .site-list__title::before {
     position: absolute;
-    top: 20px;
+    top: 15px;
     right: 0;
     width: 15px;
     height: 15px;
@@ -2840,12 +2894,18 @@ button,
   }
 
   .site-list__item {
-    margin-bottom: 10px;
+    margin-bottom: 6px;
   }
 
   .social__list {
-    -ms-flex-pack: distribute;
-    justify-content: space-around;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  .social__item {
+    margin-right: 15px;
+    margin-left: 0;
   }
 
   .footer-contacts__title {
@@ -2886,6 +2946,7 @@ button,
     -ms-flex-wrap: nowrap;
     flex-wrap: nowrap;
     display: none;
+    margin-top: -5px;
   }
 
   .footer-contacts.is-active .footer-contacts__list {
@@ -2896,7 +2957,7 @@ button,
   .footer-contacts__item {
     font-size: 14px;
     line-height: 25px;
-    margin-bottom: 10px;
+    margin-bottom: 6px;
   }
 }
 

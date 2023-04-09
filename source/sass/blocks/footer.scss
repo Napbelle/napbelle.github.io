@@ -15,7 +15,7 @@ height: 280px;
 @media screen and (max-width: 767px) {
   clear:both;
 position: relative;
- padding: 35px 25px;
+ padding: 35px 25px 45px 25px;
  width: 320px;
 flex-direction: row;
 margin: 0 auto;
@@ -42,8 +42,10 @@ content: "";
   @media screen and (max-width: 1023px) {
     margin-bottom: 7px;
 }
+@media screen and (max-width: 767px) {
+  margin-bottom: 0;
 }
-
+}
 .footer__img {
   margin: -8px 45px 30px 0;
 
@@ -67,7 +69,7 @@ content: "";
 @media screen and (max-width: 767px) {
   width: 270px;
 flex-direction: column;
-margin-bottom: 25px;
+margin-bottom: 18px;
 align-content: center;
 }
 

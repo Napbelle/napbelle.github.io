@@ -18,7 +18,7 @@ height: 100%;
 
 @media screen and (max-width: 767px) {
 width: 320px;
-padding: 80px 25px 190px 25px;
+padding: 80px 25px 192px 25px;
 background-image: url("../../img/welcome-mobile.jpg");
 }
 }
@@ -41,6 +41,9 @@ margin-bottom: 0;
 @media screen and (max-width: 767px) {
   font-size: 36px;
   line-height: 42px;
+  letter-spacing: 3px;
+  margin-bottom: 7px;
+
 }
 }
 
@@ -59,7 +62,10 @@ margin-bottom: 0;
 @media screen and (max-width: 767px) {
   font-size: 14px;
   line-height: 22px;
-  margin-bottom: 50px;
+  margin-bottom: 46px;
+  br {
+    display: none;
+  }
 }
 }
 .welcome__button {
