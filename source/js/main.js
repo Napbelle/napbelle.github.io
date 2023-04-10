@@ -73,4 +73,3 @@ siteListBtn.onclick = function () {
   siteList.classList.toggle('is-active');
   contacts.classList.remove('is-active');
 };
-

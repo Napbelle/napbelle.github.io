@@ -10,10 +10,10 @@
   <link rel="preload" href="fonts/robotocondensed-bold.woff2" as="font">
   <link rel="preload" href="img/welcome.jpg" as="image">
   <link rel="stylesheet" href="css/style.min.css">
-  <link rel="icon" href="favicon.ico"><!-- 32×32 -->
+  <link rel="icon" href="img/favicon.ico"><!-- 32×32 -->
 </head>
-
-<body class="page__body">
+<div class="page__body">
+<body>
   <div class="page__container">
 
     <header class="header">
@@ -290,19 +290,19 @@
         <h2 class="modal__title">Закажите звонок</h2>
         <p class="modal__text">Оставьте контакты, мы проконсультируем <br> вас бесплатно в удобное время</p>
         <div class="form__data" data-form-validate="data-form-validate" data-callback="base">
-          <form class="form__form" action="https://echo.htmlacademy.ru/" method="post">>
+          <form class="form__form" action="https://echo.htmlacademy.ru/" method="post">
             <fieldset class="modal__form form__fieldset form__fieldset--modal">
               <legend class="visually-hidden">Заполните данные</legend>
-              <label class="visually-hidden" for="name">Имя</label>
+              <label class="visually-hidden" for="name-callme">Имя</label>
               <input class="form__input form__input--modal" type="text" id="name-callme" name="name-callme"
                 placeholder="Имя" required data-focus>
               <div class="form__input form__input--phone" data-validate-type="phone"
                 data-on-input-validate="data-on-input-validate" data-required="data-required">
-                <label class="visually-hidden" for="number">Контактный телефон:</label>
+                <label class="visually-hidden" for="number-callme">Контактный телефон:</label>
                 <input class="form__input form__input--modal" placeholder="Телефон" type="tel"
-                  name="phone-number-callme" id="number-callme" required>
+                  name="number-callme" id="number-callme" required>
               </div>
-              <label class="visually-hidden" for="text">Ваш вопрос</label>
+              <label class="visually-hidden" for="text-callme">Ваш вопрос</label>
               <textarea class="form__textarea form__textarea--modal" name="text-callme"
                 id="text-callme">Ваш вопрос</textarea>
               <button class="form__button form__button--modal" type="submit">Отправить</button>
@@ -322,5 +322,6 @@
   <script src="js/vendor.min.js"></script>
   <script src="js/main.min.js"></script>
 </body>
+</div>
 
 </html>

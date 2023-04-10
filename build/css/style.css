@@ -679,7 +679,7 @@ button,
 
 .modal__content {
   position: relative;
-  background-color: #00B2FF;
+  background-color: #00b2ff;
   width: 500px;
   padding: 40px;
   border-radius: 3px;
@@ -739,7 +739,7 @@ button,
 .about-us {
   position: relative;
   padding: 33px 350px 118px 600px;
-  background-color: #F2F5F6;
+  background-color: #f2f5f6;
   margin: 0;
 }
 
@@ -749,7 +749,7 @@ button,
   left: 350px;
   width: 150px;
   height: 320px;
-  background-image: url("../../img/2022.png");
+  background-image: url("/img/2022.png");
   content: "";
 }
 
@@ -782,26 +782,26 @@ button,
   display: block;
   width: 180px;
   padding: 14px 50px 14px 50px;
-  border: solid 1px #00B2FF;
+  border: solid 1px #00b2ff;
   border-radius: 3px;
   margin-top: 20px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 700;
   line-height: 16px;
-  color: #00B2FF;
+  color: #00b2ff;
   text-transform: uppercase;
   text-align: center;
   cursor: pointer;
 }
 
 .about-us__button:hover {
-  background-color: #00B2FF;
-  color: #F2F5F6;
+  background-color: #00b2ff;
+  color: #f2f5f6;
 }
 
 .advantages {
-  background-color: #F2F5F6;
+  background-color: #f2f5f6;
   padding: 120px 349px 60px 349px;
   margin: 0;
 }
@@ -822,13 +822,13 @@ button,
   position: relative;
   padding: 40px 45px 35px 45px;
   height: 300px;
-  border: solid 1px #E5E5E5;
+  border: solid 1px #e5e5e5;
   margin: 0;
   overflow: hidden;
 }
 
 .advantages__item:hover {
-  background-color: #00B2FF;
+  background-color: #00b2ff;
 }
 
 .advantages__item:hover .advantages__title {
@@ -845,7 +845,7 @@ button,
   left: 0;
   width: 5px;
   height: 300px;
-  background-color: #00B2FF;
+  background-color: #00b2ff;
   content: "";
 }
 
@@ -854,7 +854,7 @@ button,
   font-size: 24px;
   font-weight: 400;
   line-height: 34px;
-  color: #00B2FF;
+  color: #00b2ff;
   margin: 0;
   margin-bottom: 13px;
   display: -webkit-box;
@@ -907,7 +907,7 @@ button,
 }
 
 .contacts__link {
-  color: #F2F5F6;
+  color: #f2f5f6;
   text-decoration: none;
   vertical-align: center;
   margin: 0;
@@ -922,7 +922,7 @@ button,
 }
 
 .contacts__link:hover {
-  color: #00B2FF;
+  color: #00b2ff;
 }
 
 .contacts__item {
@@ -972,8 +972,8 @@ button,
   text-align: center;
   line-height: 16px;
   text-transform: uppercase;
-  border: solid 1px #F2F5F6;
-  color: #F2F5F6;
+  border: solid 1px #f2f5f6;
+  color: #f2f5f6;
   margin: 0;
   margin-top: -10px;
   letter-spacing: 1px;
@@ -982,116 +982,8 @@ button,
 }
 
 .header__button:hover {
-  background-color: #F2F5F6;
+  background-color: #f2f5f6;
   color: #041827;
-}
-
-.modal {
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  overflow-y: auto;
-  -webkit-overflow-scrolling: touch;
-  background-color: rgba(3, 16, 27, 0.7);
-  z-index: 12;
-  visibility: hidden;
-  opacity: 0;
-  -webkit-transition: opacity 0.6s cubic-bezier(0.55, 0, 0.1, 1), visibility 0.6s cubic-bezier(0.55, 0, 0.1, 1), -webkit-transform 0.6s cubic-bezier(0.55, 0, 0.1, 1);
-  transition: opacity 0.6s cubic-bezier(0.55, 0, 0.1, 1), visibility 0.6s cubic-bezier(0.55, 0, 0.1, 1), -webkit-transform 0.6s cubic-bezier(0.55, 0, 0.1, 1);
-  -o-transition: opacity 0.6s cubic-bezier(0.55, 0, 0.1, 1), transform 0.6s cubic-bezier(0.55, 0, 0.1, 1), visibility 0.6s cubic-bezier(0.55, 0, 0.1, 1);
-  transition: opacity 0.6s cubic-bezier(0.55, 0, 0.1, 1), transform 0.6s cubic-bezier(0.55, 0, 0.1, 1), visibility 0.6s cubic-bezier(0.55, 0, 0.1, 1);
-  transition: opacity 0.6s cubic-bezier(0.55, 0, 0.1, 1), transform 0.6s cubic-bezier(0.55, 0, 0.1, 1), visibility 0.6s cubic-bezier(0.55, 0, 0.1, 1), -webkit-transform 0.6s cubic-bezier(0.55, 0, 0.1, 1);
-  pointer-events: none;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
-
-.modal--preload {
-  -webkit-transition: none;
-  -o-transition: none;
-  transition: none;
-}
-
-.modal.is-active {
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1);
-  visibility: visible;
-  opacity: 1;
-  pointer-events: auto;
-}
-
-.modal__overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  cursor: pointer;
-}
-
-.modal__content {
-  position: relative;
-  background-color: #00B2FF;
-  width: 500px;
-  padding: 40px;
-  border-radius: 3px;
-}
-
-.modal__container {
-  position: relative;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  margin: auto;
-  color: #ffffff;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  width: 100%;
-  min-height: 100%;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.modal__button {
-  position: absolute;
-  top: 15px;
-  right: 15px;
-  width: 40px;
-  height: 40px;
-  padding: 10px;
-  border: none;
-  background-color: transparent;
-}
-
-.modal__title {
-  font-family: "Roboto Condensed", "Arial", sans-serif;
-  font-weight: 400;
-  font-size: 30px;
-  line-height: 42px;
-  margin: 0;
-}
-
-.modal__text {
-  font-family: "PT Mono", "Arial", sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 22px;
-  margin: 0;
-  margin-bottom: 38px;
 }
 
 .page {
@@ -1119,7 +1011,7 @@ button,
   padding: 155px 725px 280px 475px;
   margin: 0;
   margin-top: 80px;
-  background-image: url("../../img/welcome.jpg");
+  background-image: url("/img/welcome.jpg");
   background-color: #041827;
   background-repeat: no-repeat;
   height: 100%;
@@ -1153,8 +1045,8 @@ button,
   width: 410px;
   padding: 16px;
   letter-spacing: 1px;
-  color: #F2F5F6;
-  background-color: #00B2FF;
+  color: #f2f5f6;
+  background-color: #00b2ff;
   text-transform: uppercase;
   border-radius: 3px;
   cursor: pointer;
@@ -1166,7 +1058,7 @@ button,
 
 .welcome__button:hover,
 .welcome__mobile:hover {
-  background-color: #F2F5F6;
+  background-color: #f2f5f6;
   color: #041827;
 }
 
@@ -1215,7 +1107,7 @@ button,
 }
 
 .catalog__item:hover .catalog__link {
-  color: #00B2FF;
+  color: #00b2ff;
 }
 
 .catalog__item:hover .catalog__button {
@@ -1227,7 +1119,7 @@ button,
   padding: 50px 120px 50px 40px;
   width: 350px;
   height: 650px;
-  background-image: url("../../img/card-1.jpg");
+  background-image: url("/img/card-1.jpg");
   background-color: #041827;
   background-repeat: no-repeat;
   cursor: pointer;
@@ -1235,7 +1127,7 @@ button,
 }
 
 .catalog__item--montage {
-  background-image: url("../../img/card-2.jpg");
+  background-image: url("/img/card-2.jpg");
 }
 
 .catalog__item--montage br {
@@ -1243,17 +1135,17 @@ button,
 }
 
 .catalog__item--accessories {
-  background-image: url("../../img/card-3.jpg");
+  background-image: url("/img/card-3.jpg");
 }
 
 .catalog__button {
   position: absolute;
   top: 590px;
   right: 0;
-  background-color: #00B2FF;
+  background-color: #00b2ff;
   width: 60px;
   height: 60px;
-  background-image: url("../../img/svg/arrow.svg");
+  background-image: url("/img/svg/arrow.svg");
   background-position: center;
   background-repeat: no-repeat;
   margin-left: 289px;
@@ -1393,12 +1285,11 @@ button,
   padding: 13px;
   padding-top: 25px;
   margin: 0;
-  margin-bottom: 35px;
+  margin-bottom: 31px;
   font-family: "PT Mono", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 22px;
-  margin-bottom: 31px;
   color: #ffffff;
   cursor: pointer;
 }
@@ -1503,7 +1394,7 @@ button,
   left: 1px;
   width: 22px;
   height: 16px;
-  background-image: url("../../img/tick.svg");
+  background-image: url("/img/tick.svg");
   background-repeat: no-repeat;
   content: "";
 }
@@ -1594,7 +1485,7 @@ button,
 }
 
 .site-list.is-active .site-list__title::before {
-  background-image: url("../../img/svg/minus.svg");
+  background-image: url("/img/svg/minus.svg");
   position: absolute;
   top: 50%;
   right: 0;
@@ -1614,7 +1505,7 @@ button,
 }
 
 .site-list__link:hover {
-  color: #00B2FF;
+  color: #00b2ff;
 }
 
 .site-list__item {
@@ -1654,11 +1545,11 @@ button,
 
 .social__link {
   list-style-type: none;
-  color: #F2F5F6;
+  color: #f2f5f6;
 }
 
 .social__link:hover {
-  color: #00B2FF;
+  color: #00b2ff;
 }
 
 .footer-contacts__list {
@@ -1682,7 +1573,7 @@ button,
 }
 
 .footer-contacts.is-active .footer-contacts__title::before {
-  background-image: url("../../img/svg/minus.svg");
+  background-image: url("/img/svg/minus.svg");
   position: absolute;
   top: 50%;
   right: 0;
@@ -1704,12 +1595,12 @@ button,
 }
 
 .footer-contacts__link:hover {
-  color: #00B2FF;
+  color: #00b2ff;
 }
 
 .form-index {
-  background-image: url("../../img/form.png");
-  background-color: #00B2FF;
+  background-image: url("/img/form.png");
+  background-color: #00b2ff;
   background-repeat: no-repeat;
   height: 840px;
   padding: 137px 360px 200px 980px;
@@ -1891,7 +1782,7 @@ button,
   .welcome {
     width: 770px;
     padding: 58px 50px 205px 50px;
-    background-image: url("../../img/welcome-tablet.jpg");
+    background-image: url("/img/welcome-tablet.jpg");
     margin-top: -30px;
   }
 
@@ -1930,11 +1821,11 @@ button,
     padding: 38px 45px;
     width: 670px;
     height: 250px;
-    background-image: url("../../img/card-1-tablet.jpg");
+    background-image: url("/img/card-1-tablet.jpg");
   }
 
   .catalog__item--montage {
-    background-image: url("../../img/card-2-tablet.jpg");
+    background-image: url("/img/card-2-tablet.jpg");
   }
 
   .catalog__item--montage br {
@@ -1942,7 +1833,7 @@ button,
   }
 
   .catalog__item--accessories {
-    background-image: url("../../img/card-3-tablet.jpg");
+    background-image: url("/img/card-3-tablet.jpg");
   }
 
   .catalog__button {
@@ -2109,10 +2000,9 @@ button,
     top: 0;
     left: 0;
     width: 5px;
-    height: 300px;
-    background-color: #00B2FF;
-    content: "";
     height: 325px;
+    background-color: #00b2ff;
+    content: "";
   }
 
   .advantages__title {
@@ -2158,7 +2048,7 @@ button,
   .welcome {
     width: 320px;
     padding: 80px 25px 192px 25px;
-    background-image: url("../../img/welcome-mobile.jpg");
+    background-image: url("/img/welcome-mobile.jpg");
   }
 
   .welcome__title {
@@ -2191,8 +2081,8 @@ button,
     font-family: "Roboto Condensed", "Arial", sans-serif;
     font-weight: 700;
     text-align: center;
-    color: #F2F5F6;
-    background-color: #00B2FF;
+    color: #f2f5f6;
+    background-color: #00b2ff;
     text-transform: uppercase;
     cursor: pointer;
   }
@@ -2227,15 +2117,15 @@ button,
   .catalog__item {
     width: 270px;
     padding: 26px 30px;
-    background-image: url("../../img/card-1-mobile.jpg");
+    background-image: url("/img/card-1-mobile.jpg");
   }
 
   .catalog__item--montage {
-    background-image: url("../../img/card-2-mobile.jpg");
+    background-image: url("/img/card-2-mobile.jpg");
   }
 
   .catalog__item--accessories {
-    background-image: url("../../img/card-3-mobile.jpg");
+    background-image: url("/img/card-3-mobile.jpg");
   }
 
   .catalog__button {
@@ -2399,7 +2289,7 @@ button,
     right: 0;
     width: 15px;
     height: 15px;
-    background-image: url("../../img/svg/plus.svg");
+    background-image: url("/img/svg/plus.svg");
     background-repeat: no-repeat;
     content: "";
   }
@@ -2460,7 +2350,7 @@ button,
     right: 0;
     width: 15px;
     height: 15px;
-    background-image: url("../../img/svg/plus.svg");
+    background-image: url("/img/svg/plus.svg");
     background-repeat: no-repeat;
     content: "";
   }

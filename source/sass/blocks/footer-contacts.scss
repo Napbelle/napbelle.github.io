@@ -61,14 +61,14 @@
     right: 0;
     width: 15px;
     height: 15px;
-    background-image: url("../../img/svg/plus.svg");
+    background-image: url("/img/svg/plus.svg");
     background-repeat: no-repeat;
     content: "";
   }
 }
 
 .footer-contacts.is-active .footer-contacts__title::before {
-  background-image: url("../../img/svg/minus.svg");
+  background-image: url("/img/svg/minus.svg");
   position: absolute;
   top: 50%;
   right: 0;
