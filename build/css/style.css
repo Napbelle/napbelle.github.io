@@ -1204,10 +1204,11 @@ button,
   border-radius: 3px;
   padding: 13px;
   background-color: rgba(4, 20, 39, 0.15);
-  cursor: pointer;
+  cursor: text;
 }
 
-.form__input:hover {
+.form__input:hover,
+.form__input:focus {
   background-color: #ffffff;
 }
 
@@ -1236,7 +1237,8 @@ button,
   justify-content: space-between;
 }
 
-.form__input::-webkit-input-placeholder {
+.form__input::-webkit-input-placeholder,
+.form__textarea::-webkit-input-placeholder {
   font-family: "PT Mono", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -1244,7 +1246,8 @@ button,
   color: #ffffff;
 }
 
-.form__input::-moz-placeholder {
+.form__input::-moz-placeholder,
+.form__textarea::-moz-placeholder {
   font-family: "PT Mono", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -1252,7 +1255,8 @@ button,
   color: #ffffff;
 }
 
-.form__input:-ms-input-placeholder {
+.form__input:-ms-input-placeholder,
+.form__textarea:-ms-input-placeholder {
   font-family: "PT Mono", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -1260,7 +1264,8 @@ button,
   color: #ffffff;
 }
 
-.form__input::-ms-input-placeholder {
+.form__input::-ms-input-placeholder,
+.form__textarea::-ms-input-placeholder {
   font-family: "PT Mono", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -1268,7 +1273,8 @@ button,
   color: #ffffff;
 }
 
-.form__input::placeholder {
+.form__input::placeholder,
+.form__textarea::placeholder {
   font-family: "PT Mono", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -1290,17 +1296,47 @@ button,
   font-size: 16px;
   font-weight: 400;
   line-height: 22px;
-  color: #ffffff;
-  cursor: pointer;
+  cursor: text;
 }
 
-.form__textarea:hover {
+.form__textarea:hover,
+.form__textarea:focus {
   background-color: #ffffff;
 }
 
 .form__textarea--modal {
   max-width: 420px;
   margin-bottom: 25px;
+}
+
+.form__button-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.form__button-wrapper--modal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
 }
 
 .form__button {
@@ -1319,6 +1355,9 @@ button,
   border-radius: 3px;
   margin: 0 43px 10px 0;
   cursor: pointer;
+  -webkit-box-ordinal-group: 0;
+  -ms-flex-order: -1;
+  order: -1;
 }
 
 .form__button:hover {
@@ -1330,21 +1369,9 @@ button,
   width: 420px;
   padding: 15px 60px;
   margin-bottom: 10px;
-}
-
-.form__button-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  -webkit-box-ordinal-group: 0;
+  -ms-flex-order: -1;
+  order: -1;
 }
 
 .form__text--checkbox {
@@ -1355,7 +1382,7 @@ button,
   font-weight: 400;
   line-height: 16px;
   margin: 0;
-  cursor: pointer;
+  cursor: text;
   width: 231px;
 }
 
@@ -1399,8 +1426,15 @@ button,
   content: "";
 }
 
-.form__label--checkbox:hover .form__text--checkbox {
+.form__label--checkbox:hover .form__text--checkbox,
+.form__label--checkbox:focus-within .form__text--checkbox,
+.form__label--modal:hover .form__text--modal,
+.form__label--modal:focus-within .form__text--modal {
   color: #041827;
+}
+
+.form__label--checkbox:focus-within .form-mark .form__label--modal:focus-within.form__mark--modal {
+  border: solid 1px #041827;
 }
 
 .footer {
@@ -2175,18 +2209,18 @@ button,
     min-height: 180px;
   }
 
-  .form__button {
-    width: 270px;
-    margin-bottom: 22px;
-    margin-right: 0;
-  }
-
   .form__button-wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
     width: 270px;
+  }
+
+  .form__button {
+    width: 270px;
+    margin-bottom: 22px;
+    margin-right: 0;
   }
 
   .form__mark {

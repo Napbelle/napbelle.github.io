@@ -69,7 +69,7 @@
   border-radius: 3px;
   padding: 13px;
   background-color: $color-transparent;
-  cursor: pointer;
+  cursor: text;
 
   @media screen and (max-width: 1023px) {
     width: 320px;
@@ -81,7 +81,8 @@
   }
 }
 
-.form__input:hover {
+.form__input:hover,
+.form__input:focus {
   background-color: $color-default-white;
 }
 
@@ -114,7 +115,8 @@
   }
 }
 
-.form__input::placeholder {
+.form__input::placeholder,
+.form__textarea::placeholder {
   font-family: "PT Mono", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -136,8 +138,7 @@
   font-size: 16px;
   font-weight: 400;
   line-height: 22px;
-  color: $color-default-white;
-  cursor: pointer;
+  cursor: text;
 
   @media screen and (max-width: 1023px) {
     width: 670px;
@@ -153,7 +154,8 @@
   }
 }
 
-.form__textarea:hover {
+.form__textarea:hover,
+.form__textarea:focus {
   background-color: $color-default-white;
 }
 
@@ -162,6 +164,24 @@
   margin-bottom: 25px;
 }
 
+.form__button-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+    width: 270px;
+  }
+}
+
+.form__button-wrapper--modal {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
 
 .form__button {
   box-sizing: border-box;
@@ -178,6 +198,7 @@
   border-radius: 3px;
   margin: 0 43px 10px 0;
   cursor: pointer;
+  order: -1;
 
   @media screen and (max-width: 1023px) {
     width: 265px;
@@ -201,19 +222,9 @@
   width: 420px;
   padding: 15px 60px;
   margin-bottom: 10px;
+  order: -1;
 }
 
-.form__button-wrapper {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-
-  @media screen and (max-width: 767px) {
-    flex-direction: column;
-    width: 270px;
-  }
-}
 
 .form__text--checkbox {
   position: relative;
@@ -223,7 +234,7 @@
   font-weight: 400;
   line-height: 16px;
   margin: 0;
-  cursor: pointer;
+  cursor: text;
   width: 231px;
 
   @media screen and (max-width: 1023px) {
@@ -280,6 +291,14 @@
   content: "";
 }
 
-.form__label--checkbox:hover .form__text--checkbox {
+.form__label--checkbox:hover .form__text--checkbox,
+.form__label--checkbox:focus-within .form__text--checkbox,
+.form__label--modal:hover .form__text--modal,
+.form__label--modal:focus-within .form__text--modal {
   color: $color-black-pearl;
+}
+
+.form__label--checkbox:focus-within .form-mark
+.form__label--modal:focus-within .form__mark--modal {
+  border: solid 1px $color-black-pearl;
 }
