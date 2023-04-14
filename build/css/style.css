@@ -737,13 +737,24 @@ button,
 }
 
 .about-us {
-  position: relative;
-  padding: 33px 350px 118px 600px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   background-color: #f2f5f6;
-  margin: 0;
 }
 
-.about-us::after {
+.about-us__wrapper {
+  width: 1920px;
+  position: relative;
+  padding: 33px 350px 118px 600px;
+  margin: 0 auto;
+}
+
+.about-us__wrapper::after {
   position: absolute;
   top: 65px;
   left: 350px;
@@ -801,9 +812,20 @@ button,
 }
 
 .advantages {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   background-color: #f2f5f6;
+}
+
+.advantages__wrapper {
+  width: 1920px;
   padding: 120px 349px 60px 349px;
-  margin: 0;
+  margin: 0 auto;
 }
 
 .advantages__list {
@@ -942,8 +964,20 @@ button,
 }
 
 .header {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(84.9%, rgb(4, 24, 39)), to(rgba(4, 24, 39, 0)));
+  background-image: -o-linear-gradient(top, rgb(4, 24, 39) 84.9%, rgba(4, 24, 39, 0) 100%);
+  background-image: linear-gradient(180deg, rgb(4, 24, 39) 84.9%, rgba(4, 24, 39, 0) 100%);
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.header__wrapper {
   width: 1920px;
-  min-height: 120px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -951,11 +985,10 @@ button,
   -ms-flex-align: center;
   align-items: center;
   padding: 0;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(84.9%, rgb(4, 24, 39)), to(rgba(4, 24, 39, 0)));
-  background-image: -o-linear-gradient(top, rgb(4, 24, 39) 84.9%, rgba(4, 24, 39, 0) 100%);
-  background-image: linear-gradient(180deg, rgb(4, 24, 39) 84.9%, rgba(4, 24, 39, 0) 100%);
-  margin: 0;
-  z-index: 10;
+  margin: 0 auto;
+  min-height: 120px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .header__logo {
@@ -987,7 +1020,7 @@ button,
 }
 
 .page {
-  background-color: #ffffff;
+  width: 100%;
   height: 100%;
   scroll-behavior: smooth;
 }
@@ -1001,20 +1034,30 @@ button,
 }
 
 .page__container {
-  width: 1920px;
   margin: 0 auto;
   color: #ffffff;
 }
 
 .welcome {
-  width: 1920px;
-  padding: 155px 725px 280px 475px;
-  margin: 0;
-  margin-top: 80px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   background-image: url("/img/welcome.jpg");
   background-color: #041827;
   background-repeat: no-repeat;
-  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.welcome__wrapper {
+  width: 1920px;
+  padding: 155px 725px 280px 475px;
+  margin: 0 auto;
+  margin-top: 80px;
 }
 
 .welcome__title {
@@ -1063,9 +1106,20 @@ button,
 }
 
 .catalog {
-  padding: 33px 350px 140px 350px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   background-color: #041827;
-  margin: 0;
+}
+
+.catalog__wrapper {
+  width: 1920px;
+  padding: 33px 350px 140px 350px;
+  margin: 0 auto;
 }
 
 .catalog__title {
@@ -1433,11 +1487,26 @@ button,
   color: #041827;
 }
 
-.form__label--checkbox:focus-within .form-mark .form__label--modal:focus-within.form__mark--modal {
+.form__label--checkbox:focus-within .form-mark .form__label--modal:focus-within .form__mark--modal {
   border: solid 1px #041827;
 }
 
 .footer {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: #041827;
+  padding-top: 58px;
+  padding-bottom: 40px;
+}
+
+.footer__wrapper {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1448,13 +1517,12 @@ button,
   -ms-flex-direction: row;
   flex-direction: row;
   width: 1920px;
-  padding: 58px 350px 40px 350px;
-  background-color: #041827;
-  margin: 0;
+  padding: 0 350px;
   height: auto;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+  margin: 0 auto;
 }
 
 .footer__logo {
@@ -1633,12 +1701,25 @@ button,
 }
 
 .form-index {
-  background-image: url("/img/form.png");
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   background-color: #00b2ff;
+  background-size: cover;
+  background-position: center;
+  background-image: url("/img/form.png");
   background-repeat: no-repeat;
+}
+
+.form-index__wrapper {
+  width: 1920px;
   height: 840px;
   padding: 137px 360px 200px 980px;
-  margin: 0;
+  margin: 0 auto;
 }
 
 /* @mixin hover-focus {
@@ -1686,15 +1767,17 @@ button,
   .header {
     position: fixed;
     top: 0;
+    z-index: 10;
   }
 }
 
 @media screen and (max-width: 1023px) {
-  .about-us {
+  .about-us__wrapper {
+    width: 770px;
     padding: 7px 50px 78px 225px;
   }
 
-  .about-us::after {
+  .about-us__wrapper::after {
     top: 40px;
     left: 46px;
   }
@@ -1713,7 +1796,8 @@ button,
     letter-spacing: 1px;
   }
 
-  .advantages {
+  .advantages__wrapper {
+    width: 770px;
     padding: 80px 54px 40px 46px;
   }
 
@@ -1783,13 +1867,13 @@ button,
     margin: 0;
   }
 
-  .header {
+  .header__wrapper {
+    width: 770px;
     padding: 15px 70px 15px 40px;
     min-height: 100px;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    width: 770px;
     position: relative;
   }
 
@@ -1809,14 +1893,14 @@ button,
     margin: 0;
   }
 
-  .page__container {
-    width: 770px;
+  .welcome {
+    background-image: url("/img/welcome-tablet.jpg");
+    margin-top: -30px;
   }
 
-  .welcome {
+  .welcome__wrapper {
     width: 770px;
     padding: 58px 50px 205px 50px;
-    background-image: url("/img/welcome-tablet.jpg");
     margin-top: -30px;
   }
 
@@ -1835,7 +1919,8 @@ button,
     margin-left: 45px;
   }
 
-  .catalog {
+  .catalog__wrapper {
+    width: 770px;
     padding: 20px 50px 75px 50px;
   }
 
@@ -1912,7 +1997,7 @@ button,
     left: 5px;
   }
 
-  .footer {
+  .footer__wrapper {
     width: 770px;
     padding: 55px 45px 55px 50px;
   }
@@ -1974,17 +2059,23 @@ button,
 
   .form-index {
     background-image: none;
+  }
+
+  .form-index__wrapper {
+    width: 770px;
+    background-image: none;
     padding: 18px 50px 125px 50px;
     height: 580px;
   }
 }
 
 @media screen and (max-width: 767px) {
-  .about-us {
+  .about-us__wrapper {
+    width: 320px;
     padding: 1px 25px 78px 25px;
   }
 
-  .about-us::after {
+  .about-us__wrapper::after {
     display: none;
   }
 
@@ -2006,7 +2097,8 @@ button,
     padding: 10px 15px;
   }
 
-  .advantages {
+  .advantages__wrapper {
+    width: 320px;
     padding: 50px 25px 25px 22px;
   }
 
@@ -2060,7 +2152,7 @@ button,
     margin-top: 5px;
   }
 
-  .header {
+  .header__wrapper {
     width: 320px;
     min-height: 70px;
     padding: 15px 35px 10px 26px;
@@ -2075,14 +2167,13 @@ button,
     margin-top: -10px;
   }
 
-  .page__container {
-    width: 320px;
+  .welcome {
+    background-image: url("/img/welcome-mobile.jpg");
   }
 
-  .welcome {
+  .welcome__wrapper {
     width: 320px;
     padding: 80px 25px 192px 25px;
-    background-image: url("/img/welcome-mobile.jpg");
   }
 
   .welcome__title {
@@ -2121,7 +2212,8 @@ button,
     cursor: pointer;
   }
 
-  .catalog {
+  .catalog__wrapper {
+    width: 320px;
     padding: 19px 25px 86px 23px;
   }
 
@@ -2227,7 +2319,7 @@ button,
     top: 8px;
   }
 
-  .footer {
+  .footer__wrapper {
     clear: both;
     position: relative;
     padding: 35px 25px 45px 25px;
@@ -2240,7 +2332,7 @@ button,
     height: auto;
   }
 
-  .footer::after {
+  .footer__wrapper::after {
     position: absolute;
     bottom: 35px;
     left: 0;
@@ -2400,7 +2492,8 @@ button,
     margin-bottom: 6px;
   }
 
-  .form-index {
+  .form-index__wrapper {
+    width: 320px;
     padding: 20px 25px 90px 23px;
     min-height: 750px;
   }

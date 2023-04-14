@@ -1,18 +1,36 @@
 .form-index {
-  background-image: url("/img/form.png");
+  width: 100%;
+  display: flex;
+  justify-content: center;
   background-color: $color-deep-sky-blue;
-  background-repeat: no-repeat;
+  background-size: cover;
+background-position: center;
+background-image: url("/img/form.png");
+background-repeat: no-repeat;
+
+@media screen and (max-width: 1023px) {
+  background-image: none;
+}
+
+
+  }
+
+.form-index__wrapper {
+  width: 1920px;
+
   height: 840px;
   padding: 137px 360px 200px 980px;
-  margin: 0;
+  margin: 0 auto;
 
   @media screen and (max-width: 1023px) {
+    width: 770px;
     background-image: none;
     padding: 18px 50px 125px 50px;
     height: 580px;
   }
 
   @media screen and (max-width: 767px) {
+    width: 320px;
     padding: 20px 25px 90px 23px;
     min-height: 750px;
   }

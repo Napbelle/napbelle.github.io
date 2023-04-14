@@ -1,19 +1,28 @@
 .about-us {
+width: 100%;
+display: flex;
+justify-content: center;
+background-color: $color-alice-blue;
+}
+
+.about-us__wrapper {
+  width: 1920px;
   position: relative;
   padding: 33px 350px 118px 600px;
-  background-color: $color-alice-blue;
-  margin: 0;
+  margin: 0 auto;
 
   @media screen and (max-width: 1023px) {
+    width: 770px;
     padding: 7px 50px 78px 225px;
   }
 
   @media screen and (max-width: 767px) {
+    width: 320px;
     padding: 1px 25px 78px 25px;
   }
 }
 
-.about-us::after {
+.about-us__wrapper::after {
   position: absolute;
   top: 65px;
   left: 350px;

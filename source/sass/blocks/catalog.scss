@@ -1,13 +1,22 @@
 .catalog {
-  padding: 33px 350px 140px 350px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
   background-color: $color-black-pearl;
-  margin: 0;
+  }
+
+.catalog__wrapper {
+  width: 1920px;
+  padding: 33px 350px 140px 350px;
+  margin: 0 auto;
 
   @media screen and (max-width: 1023px) {
+    width: 770px;
     padding: 20px 50px 75px 50px;
   }
 
   @media screen and (max-width: 767px) {
+    width: 320px;
     padding: 19px 25px 86px 23px;
   }
 }

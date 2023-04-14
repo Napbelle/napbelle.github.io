@@ -1,13 +1,22 @@
 .advantages {
-  background-color: $color-alice-blue;
+width: 100%;
+display: flex;
+justify-content: center;
+background-color: $color-alice-blue;
+}
+
+.advantages__wrapper {
+width: 1920px;
   padding: 120px 349px 60px 349px;
-  margin: 0;
+  margin: 0 auto;
 
   @media screen and (max-width: 1023px) {
+    width: 770px;
     padding: 80px 54px 40px 46px;
   }
 
   @media screen and (max-width: 767px) {
+    width: 320px;
     padding: 50px 25px 25px 22px;
   }
 }
