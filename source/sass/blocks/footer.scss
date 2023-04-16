@@ -1,10 +1,8 @@
 .footer {
-  width: 100%;
+  width: 100vw;
   display: flex;
   justify-content: center;
   background-color: $color-black-pearl;
-  padding-top: 58px;
-  padding-bottom: 40px;
 }
 
 
@@ -13,8 +11,8 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  width: 1920px;
-  padding: 0 350px;
+ // width: 1920px;
+  padding: 58px 350px 40px 350px;
   height: auto;
   justify-content: center;
   margin: 0 auto;
