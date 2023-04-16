@@ -4,22 +4,15 @@
   scroll-behavior: smooth;
 }
 
-.page__body {
+.page__wrapper {
   min-height: 100%;
   margin: 0;
   display: flex;
   justify-content: center;
+  align-content: center;
 }
 
 .page__container {
-//margin: 0 auto;
+  margin: 0 auto;
   color: $color-default-white;
-
- // @media screen and (max-width: 1023px) {
- //   width: 770px;
- // }
-
- // @media screen and (max-width: 767px) {
-//    width: 320px;
- // }
 }

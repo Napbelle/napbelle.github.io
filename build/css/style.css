@@ -748,16 +748,18 @@ button,
 }
 
 .about-us__wrapper {
-  width: 1920px;
+  width: calc(1024px + 896 * (100vw - 500px) / 1420);
   position: relative;
-  padding: 33px 350px 118px 600px;
+  padding-top: 33px;
+  padding-bottom: 118px;
+  padding-left: 31%;
   margin: 0 auto;
 }
 
 .about-us__wrapper::after {
   position: absolute;
   top: 65px;
-  left: 350px;
+  left: 18%;
   width: 150px;
   height: 320px;
   background-image: url("/img/2022.png");
@@ -782,6 +784,7 @@ button,
   margin-bottom: 18px;
   max-height: 165px;
   overflow: hidden;
+  width: calc(774px + 196 * (100vw - 500px) / 1420);
 }
 
 .about-us__text.is-active {
@@ -819,12 +822,17 @@ button,
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
   background-color: #f2f5f6;
 }
 
 .advantages__wrapper {
-  width: 1920px;
-  padding: 120px 349px 60px 349px;
+  width: calc(1024px + 896 * (100vw - 500px) / 1420);
+  padding-top: 120px;
+  padding-bottom: 60px;
+  padding-left: 18%;
+  padding-right: 18%;
   margin: 0 auto;
 }
 
@@ -832,17 +840,21 @@ button,
   list-style-type: none;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (595px)[2];
-  grid-template-columns: repeat(2, 595px);
-  grid-column-gap: 30px;
+  -ms-grid-columns: (calc(500px + 95 * (100vw - 500px) / 1420))[2];
+  grid-template-columns: repeat(2, calc(500px + 95 * (100vw - 500px) / 1420));
+  grid-column-gap: 1.8%;
   grid-row-gap: 30px;
   margin: 0;
   padding: 0;
 }
 
 .advantages__item {
+  width: calc(500px + 95 * (100vw - 500px) / 1420);
   position: relative;
-  padding: 40px 45px 35px 45px;
+  padding-top: 40px;
+  padding-bottom: 35px;
+  padding-left: 8%;
+  padding-right: 8%;
   height: 300px;
   border: solid 1px #e5e5e5;
   margin: 0;
@@ -901,7 +913,7 @@ button,
 }
 
 .contacts__list {
-  width: 480px;
+  width: calc(344px + 136 * (100vw - 500px) / 1420);
   font-family: "PT Mono", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -919,7 +931,6 @@ button,
   -ms-flex-pack: justify;
   justify-content: space-between;
   margin: 0;
-  margin-right: 145px;
   list-style-type: none;
   padding: 0;
 }
@@ -948,7 +959,7 @@ button,
 }
 
 .contacts__item {
-  width: 225px;
+  width: calc(157px + 68 * (100vw - 500px) / 1420);
   margin: 0;
   height: 25px;
   padding: 0;
@@ -964,7 +975,6 @@ button,
 }
 
 .header {
-  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -975,11 +985,14 @@ button,
   -ms-flex-pack: center;
   justify-content: center;
   z-index: 10;
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
 .header__wrapper {
-  width: 1920px;
+  width: calc(1024px + 896 * (100vw - 500px) / 1420);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -994,8 +1007,8 @@ button,
 }
 
 .header__logo {
-  margin-left: 350px;
-  margin-right: 160px;
+  margin-left: 18%;
+  margin-right: 8%;
 }
 
 .header__button {
@@ -1011,6 +1024,8 @@ button,
   color: #f2f5f6;
   margin: 0;
   margin-top: -10px;
+  margin-right: 21%;
+  margin-left: 8%;
   letter-spacing: 1px;
   border-radius: 3px;
   cursor: pointer;
@@ -1021,13 +1036,18 @@ button,
   color: #041827;
 }
 
+.header__img {
+  min-width: 215px;
+  min-height: 50px;
+}
+
 .page {
   width: 100%;
   height: 100%;
   scroll-behavior: smooth;
 }
 
-.page__body {
+.page__wrapper {
   min-height: 100%;
   margin: 0;
   display: -webkit-box;
@@ -1036,9 +1056,12 @@ button,
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
 }
 
 .page__container {
+  margin: 0 auto;
   color: #ffffff;
 }
 
@@ -1058,10 +1081,12 @@ button,
 }
 
 .welcome__wrapper {
-  width: 1920px;
-  padding: 155px 725px 280px 475px;
+  width: calc(1024px + 896 * (100vw - 500px) / 1420);
+  padding: 155px 0 280px 475px;
   margin: 0 auto;
   margin-top: 80px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .welcome__title {
@@ -1121,8 +1146,11 @@ button,
 }
 
 .catalog__wrapper {
-  width: 1920px;
-  padding: 33px 350px 140px 350px;
+  width: calc(1024px + 896 * (100vw - 500px) / 1420);
+  padding-top: 33px;
+  padding-bottom: 140px;
+  padding-left: 18%;
+  padding-right: 18%;
   margin: 0 auto;
 }
 
@@ -1145,9 +1173,9 @@ button,
 .catalog__list {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (350px)[3];
-  grid-template-columns: repeat(3, 350px);
-  grid-column-gap: 85px;
+  -ms-grid-columns: (calc(285px + 65 * (100vw - 500px) / 1420))[3];
+  grid-template-columns: repeat(3, calc(285px + 65 * (100vw - 500px) / 1420));
+  grid-column-gap: 4.5%;
   grid-row-gap: 85px;
   -ms-grid-rows: 650px;
   grid-template-rows: 650px;
@@ -1175,7 +1203,7 @@ button,
 .catalog__item {
   position: relative;
   padding: 50px 120px 50px 40px;
-  width: 350px;
+  width: calc(285px + 65 * (100vw - 500px) / 1420);
   height: 650px;
   background-image: url("/img/card-1.jpg");
   background-color: #041827;
@@ -1270,7 +1298,7 @@ button,
   background-color: #ffffff;
 }
 
-.form__input--phone {
+.form__input--wrapper {
   padding: 0;
   background-color: transparent;
 }
@@ -1491,7 +1519,8 @@ button,
   color: #041827;
 }
 
-.form__label--checkbox:focus-within .form-mark .form__label--modal:focus-within .form__mark--modal {
+.form__label--checkbox:focus-within .form-mark,
+.form__label--modal:focus-within .form__mark--modal {
   border: solid 1px #041827;
 }
 
@@ -1518,7 +1547,11 @@ button,
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row;
-  padding: 58px 350px 40px 350px;
+  width: 100%;
+  padding-top: 58px;
+  padding-bottom: 40px;
+  padding-left: 18%;
+  padding-right: 18%;
   height: auto;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
@@ -1545,7 +1578,6 @@ button,
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   width: 215px;
-  margin-right: 43px;
 }
 
 .footer__second-column {
@@ -1556,7 +1588,7 @@ button,
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row;
-  margin-left: 113px;
+  margin-left: 6%;
 }
 
 .site-list__list {
@@ -1572,7 +1604,7 @@ button,
   flex-direction: column;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  width: 470px;
+  width: calc(230px + 240 * (100vw - 500px) / 1420);
   height: 145px;
 }
 
@@ -1659,8 +1691,8 @@ button,
   list-style-type: none;
   padding: 0;
   margin: 0;
-  width: 345px;
-  margin-left: 32px;
+  width: calc(180px + 165 * (100vw - 500px) / 1420);
+  margin-left: 1.6%;
 }
 
 .footer-contacts__title {
@@ -1717,9 +1749,11 @@ button,
 }
 
 .form-index__wrapper {
-  width: 1920px;
+  width: calc(1024px + 896 * (100vw - 500px) / 1420);
   height: 840px;
-  padding: 137px 360px 200px 980px;
+  padding-top: 137px;
+  padding-bottom: 202px;
+  padding-left: 51%;
   margin: 0 auto;
 }
 
@@ -1764,13 +1798,6 @@ button,
   }
 */
 
-@media (min-width: 1024px) {
-  .header {
-    position: fixed;
-    top: 0;
-  }
-}
-
 @media screen and (max-width: 1023px) {
   .about-us__wrapper {
     width: 770px;
@@ -1789,6 +1816,7 @@ button,
   .about-us__text {
     max-height: 260px;
     margin: 0;
+    width: 495px;
   }
 
   .about-us__button {
@@ -1809,6 +1837,7 @@ button,
   }
 
   .advantages__item {
+    width: 321px;
     height: 360px;
     padding: 37px 43px 35px 43px;
   }
@@ -1867,6 +1896,10 @@ button,
     margin: 0;
   }
 
+  .header {
+    position: relative;
+  }
+
   .header__wrapper {
     width: 770px;
     padding: 15px 70px 15px 40px;
@@ -1875,9 +1908,6 @@ button,
     -ms-flex-pack: justify;
     justify-content: space-between;
     position: relative;
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(84.9%, rgb(4, 24, 39)), to(rgba(4, 24, 39, 0)));
-    background-image: -o-linear-gradient(top, rgb(4, 24, 39) 84.9%, rgba(4, 24, 39, 0) 100%);
-    background-image: linear-gradient(180deg, rgb(4, 24, 39) 84.9%, rgba(4, 24, 39, 0) 100%);
   }
 
   .header__logo {
@@ -1891,8 +1921,6 @@ button,
   }
 
   .header__img {
-    width: 215px;
-    height: 50px;
     margin: 0;
   }
 
@@ -2092,6 +2120,7 @@ button,
     line-height: 19px;
     margin-bottom: 17px;
     max-height: 205px;
+    width: 270px;
   }
 
   .about-us__button {
@@ -2111,6 +2140,7 @@ button,
   }
 
   .advantages__item {
+    width: 270px;
     height: 340px;
     padding: 27px 30px 35px 30px;
   }

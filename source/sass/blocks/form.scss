@@ -86,7 +86,7 @@
   background-color: $color-default-white;
 }
 
-.form__input--phone {
+.form__input--wrapper {
   padding: 0;
   background-color: transparent;
 }
@@ -298,7 +298,7 @@
   color: $color-black-pearl;
 }
 
-.form__label--checkbox:focus-within .form-mark
+.form__label--checkbox:focus-within .form-mark,
 .form__label--modal:focus-within .form__mark--modal {
   border: solid 1px $color-black-pearl;
 }

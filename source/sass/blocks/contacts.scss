@@ -9,7 +9,7 @@
 }
 
 .contacts__list {
-  width: 480px;
+  width: calc(344px + (480 - 344) * ((100vw - 500px) / (1920 - 500)));
   font-family: "PT Mono", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -19,7 +19,6 @@
   flex-wrap: wrap;
   justify-content: space-between;
   margin: 0;
-  margin-right: 145px;
   list-style-type: none;
   padding: 0;
 
@@ -55,7 +54,7 @@
 }
 
 .contacts__item {
-  width: 225px;
+  width: calc(157px + (225 - 157) * ((100vw - 500px) / (1920 - 500)));
   margin: 0;
   height: 25px;
   padding: 0;
