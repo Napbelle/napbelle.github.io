@@ -1,7 +1,4 @@
 .welcome {
-  width: 100%;
-  display: flex;
-  justify-content: center;
   background-image: url("/img/welcome.jpg");
   background-color: $color-black-pearl;
   background-repeat: no-repeat;
@@ -10,7 +7,6 @@
 
   @media screen and (max-width: 1023px) {
     background-image: url("/img/welcome-tablet.jpg");
-    margin-top: -30px;
   }
 
   @media screen and (max-width: 767px) {
@@ -19,8 +15,7 @@
 }
 
 .welcome__wrapper {
-  width: calc(1024px + (1920 - 1024) * ((100vw - 500px) / (1920 - 500)));
-  padding: 155px 0 280px 475px;
+  padding: 155px 20% 280px 25%;
   margin: 0 auto;
   margin-top: 80px;
   box-sizing: border-box;
@@ -28,6 +23,7 @@
   @media screen and (max-width: 1023px) {
     width: 770px;
     padding: 58px 50px 205px 50px;
+    margin-top: -30px;
   }
 
   @media screen and (max-width: 767px) {

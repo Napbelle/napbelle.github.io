@@ -1,7 +1,5 @@
 .form-index {
   width: 100%;
-  display: flex;
-  justify-content: center;
   background-color: $color-deep-sky-blue;
   background-size: cover;
   background-position: center;
@@ -14,11 +12,11 @@
 }
 
 .form-index__wrapper {
-  width: calc(1024px + (1920 - 1024) * ((100vw - 500px) / (1920 - 500)));
   height: 840px;
   padding-top: 137px;
   padding-bottom: 202px;
   padding-left: 51%;
+  box-sizing: border-box;
   margin: 0 auto;
 
   @media screen and (max-width: 1023px) {

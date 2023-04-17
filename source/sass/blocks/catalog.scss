@@ -1,12 +1,8 @@
 .catalog {
-  width: 100%;
-  display: flex;
-  justify-content: center;
   background-color: $color-black-pearl;
 }
 
 .catalog__wrapper {
-  width: calc(1024px + (1920 - 1024) * ((100vw - 500px) / (1920 - 500)));
   padding-top: 33px;
   padding-bottom: 140px;
   padding-left: 18%;
@@ -60,7 +56,7 @@
 
 .catalog__list {
   display: grid;
-  grid-template-columns: repeat(3, calc(285px + (350 - 285) * ((100vw - 500px) / (1920 - 500))));
+  grid-template-columns: repeat(3, calc(100px + (350 - 100) * ((100vw - 500px) / (1920 - 500))));
   grid-column-gap: 4.5%;
   grid-row-gap: 85px;
   grid-template-rows: 650px;
@@ -102,13 +98,15 @@
 .catalog__item {
   position: relative;
   padding: 50px 120px 50px 40px;
-  width: calc(285px + (350 - 285) * ((100vw - 500px) / (1920 - 500)));
+  width: calc(100px + (350 - 100) * ((100vw - 500px) / (1920 - 500)));
   height: 650px;
   background-image: url("/img/card-1.jpg");
   background-color: $color-black-pearl;
   background-repeat: no-repeat;
+  background-size: cover;
   cursor: pointer;
   overflow: hidden;
+  box-sizing: border-box;
 
   @media screen and (max-width: 1023px) {
     padding: 38px 45px;
@@ -166,7 +164,6 @@
   background-image: url("/img/svg/arrow.svg");
   background-position: center;
   background-repeat: no-repeat;
-  margin-left: 289px;
   border: none;
 
   @media screen and (max-width: 1023px) {
