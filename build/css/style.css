@@ -717,6 +717,7 @@ button,
   padding: 10px;
   border: none;
   background-color: transparent;
+  cursor: pointer;
 }
 
 .modal__title {
@@ -1465,7 +1466,7 @@ button,
   left: 1px;
   width: 22px;
   height: 16px;
-  background-image: url("/img/tick.svg");
+  background-image: url("../img/tick.svg");
   background-repeat: no-repeat;
   content: "";
 }
