@@ -15,8 +15,6 @@
 
 <body>
   <div class="page__wrapper">
-    <div class="page__container">
-
       <header class="header">
         <div class="header__wrapper">
           <a class="header__logo" href="index.html">
@@ -309,7 +307,6 @@
         </div>
       </footer>
 
-    </div>
 
     <div class="form modal modal--preload" data-modal="phonecall">
       <div class="modal__container">
@@ -327,14 +324,14 @@
             <form class="form__form" action="https://echo.htmlacademy.ru/" method="post">
               <fieldset class="modal__form form__fieldset form__fieldset--modal">
                 <legend class="visually-hidden">Заполните данные</legend>
-                <div class="form__input form__input--wrapper" data-validate-type="text"
+                <div class="form__input form__input--modal form__input--wrapper" data-validate-type="text"
                   data-on-input-validate="data-on-input-validate" data-message-base="Поле обязательно к заполнению"
                   data-required="data-required">
                   <label class="visually-hidden" for="name-callme">Имя</label>
                   <input class="form__input form__input--modal" type="text" id="name-callme" name="name-callme"
                     placeholder="Имя" required data-focus>
                 </div>
-                <div class="form__input form__input--wrapper" data-validate-type="phone"
+                <div class="form__input form__input--modal form__input--wrapper" data-validate-type="phone"
                   data-on-input-validate="data-on-input-validate" data-message-base="Поле обязательно к заполнению"
                   data-required="data-required">
                   <label class="visually-hidden" for="number-callme">Контактный телефон:</label>

@@ -10,10 +10,10 @@
   flex-direction: row;
   padding-top: 58px;
   padding-bottom: 40px;
-  padding-left: 16%;
-  padding-right: 16%;
+  padding-left: calc(50px + (100vw - 1024px) * (50 - 350) / (1024 -  1920));
+  padding-right: calc(50px + (100vw - 1024px) * (50 - 350) / (1024 -  1920));
   height: auto;
-  justify-content: space-between;
+ // justify-content: space-between;
   margin: 0 auto;
 
   @media screen and (max-width: 1023px) {
@@ -70,6 +70,8 @@
   flex-direction: column;
   flex-wrap: wrap;
   width: 215px;
+  margin: 0;
+  margin-right: 8%;
 
 
   @media screen and (max-width: 1023px) {
@@ -92,7 +94,6 @@
 .footer__second-column {
   display: flex;
   flex-direction: row;
-  margin-left: auto;
   flex-wrap: wrap;
   justify-content: space-between;
 

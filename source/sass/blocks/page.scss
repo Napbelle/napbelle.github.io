@@ -6,6 +6,8 @@
 
 .page__wrapper {
   min-height: 100%;
-  margin: 0;
+  margin: 0 auto;
   color: $color-default-white;
+  display: flex;
+  flex-direction: column;
 }

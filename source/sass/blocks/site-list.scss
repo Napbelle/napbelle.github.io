@@ -11,7 +11,7 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  width: calc(160px + (470 - 160) * ((100vw - 500px) / (1920 - 500)));
+  width: calc(300px + (470 - 300) * ((100vw - 500px) / (1920 - 500)));
   height: 145px;
   margin-right: 5%;
 
@@ -110,10 +110,11 @@
 }
 
 .site-list__item {
-  width: calc(75px + (220 - 75) * ((100vw - 500px) / (1920 - 500)));
+  width: calc(140px + (220 - 140) * ((100vw - 500px) / (1920 - 500)));
   margin: 0;
   margin-bottom: 5px;
   margin-right: 1.5%;
+  max-width: 220px;
 
 
   @media screen and (max-width: 1023px) {
