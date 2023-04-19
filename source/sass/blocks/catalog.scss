@@ -1,9 +1,14 @@
 .catalog {
   background-color: $color-black-pearl;
-  padding-top: 33px;
-  padding-bottom: 140px;
-  padding-left: 18%;
-  padding-right: 18%;
+  padding: 33px 18% 140px 18%;
+
+  @media screen and (max-width: 1023px) {
+    padding: 20px 50px 75px 50px;
+  }
+
+  @media screen and (max-width: 767px) {
+    padding: 19px 7.8% 86px 7.8%;
+  }
 }
 
 .catalog__wrapper {
@@ -15,13 +20,13 @@
   max-width: 1220px;
 
   @media screen and (max-width: 1023px) {
-    width: 770px;
-    padding: 20px 50px 75px 50px;
+    width: 670px;
   }
 
   @media screen and (max-width: 767px) {
-    width: 320px;
-    padding: 19px 25px 86px 23px;
+    width: calc(270px + (100vw - 320px) * (270 - 647) / (320 - 767));
+    min-width: 270px;
+    max-width: 647px;
   }
 }
 
@@ -77,7 +82,7 @@
   }
 
   @media screen and (max-width: 767px) {
-    grid-template-columns: 270px;
+    grid-template-columns: minmax(270px, 647px);
   }
 }
 
@@ -122,9 +127,11 @@
   }
 
   @media screen and (max-width: 767px) {
-    width: 270px;
     padding: 26px 30px;
     background-image: url("/img/card-1-mobile.jpg");
+    width: calc(270px + (100vw - 320px) * (270 - 647) / (320 - 767));
+    min-width: 270px;
+    max-width: 647px;
   }
 }
 

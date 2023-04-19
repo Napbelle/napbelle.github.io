@@ -2,6 +2,13 @@
   background-color: $color-alice-blue;
   padding: 33px 18% 118px 18%;
 
+  @media screen and (max-width: 1023px) {
+    padding: 7px 50px 78px 46px;
+  }
+
+  @media screen and (max-width: 767px) {
+    padding: 1px 7.8% 78px 7.8%;
+  }
 }
 
 .about-us__wrapper {
@@ -12,13 +19,14 @@ max-width: 1220px;
 margin: 0 auto;
 
   @media screen and (max-width: 1023px) {
-    width: 770px;
-    padding: 7px 50px 78px 225px;
+    width: 676px;
   }
 
   @media screen and (max-width: 767px) {
-    width: 320px;
-    padding: 1px 25px 78px 25px;
+    width: calc(270px + (100vw - 320px) * (270 - 647) / (320 - 767));
+    min-width: 270px;
+    max-width: 647px;
+
   }
 }
 
@@ -28,13 +36,13 @@ margin: 0 auto;
   left: -40px;
   width: 150px;
   height: 320px;
-  background-image: url("/img/2022.png");
+  background-image: url("../img/2022.png");
   content: "";
 
 
   @media screen and (max-width: 1023px) {
     top: 40px;
-    left: 46px;
+    left: -46px;
   }
 
   @media screen and (max-width: 767px) {
@@ -67,6 +75,16 @@ margin: 0 auto;
   padding-left: 18%;
   max-width: 1220px;
   position: relative;
+
+  @media screen and (max-width: 1023px) {
+    width: 674px;
+  }
+  @media screen and (max-width: 767px) {
+    padding: 0;
+    width: calc(270px + (100vw - 320px) * (270 - 647) / (320 - 767));
+    min-width: 270px;
+    max-width: 647px;
+  }
 }
 
 
@@ -96,7 +114,9 @@ margin: 0 auto;
     line-height: 19px;
     margin-bottom: 17px;
     max-height: 205px;
-    width: 270px;
+    width: calc(270px + (100vw - 320px) * (270 - 647) / (320 - 767));
+    min-width: 270px;
+    max-width: 647px;
   }
 }
 

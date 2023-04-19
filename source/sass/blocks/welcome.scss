@@ -7,11 +7,14 @@
   padding: 155px 18% 280px 25%;
 
   @media screen and (max-width: 1023px) {
+    margin-top: -30px;
     background-image: url("/img/welcome-tablet.jpg");
+    padding: 58px 50px 205px 50px;
   }
 
   @media screen and (max-width: 767px) {
     background-image: url("/img/welcome-mobile.jpg");
+    padding: 80px 7.8% 192px 7.8%;
   }
 }
 
@@ -25,14 +28,13 @@
   max-width: 1095px;
 
   @media screen and (max-width: 1023px) {
-    width: 770px;
-    padding: 58px 50px 205px 50px;
-    margin-top: -30px;
+  width: 670px;
   }
 
   @media screen and (max-width: 767px) {
-    width: 320px;
-    padding: 80px 25px 192px 25px;
+    width: calc(270px + (100vw - 320px) * (270 - 647) / (320 - 767));
+    min-width: 270px;
+    max-width: 647px;
   }
 }
 

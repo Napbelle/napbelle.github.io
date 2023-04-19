@@ -6,17 +6,19 @@
   background-image: url("/img/form.png");
   background-repeat: no-repeat;
 
+
   @media screen and (max-width: 1023px) {
     background-image: none;
   }
 }
 
 .form-index__wrapper {
+  position: relative;
   height: 840px;
   padding-top: 137px;
   padding-bottom: 202px;
-  padding-left: 51%;
-  padding-right: 18%;
+  padding-left: calc(500px + (100vw - 1024px) * (500 - 975) / (1024 -  1920));
+  padding-right: calc(50px + (100vw - 1024px) * (50 - 360) / (1024 -  1920));
   box-sizing: border-box;
   margin: 0 auto;
 
@@ -28,8 +30,26 @@
   }
 
   @media screen and (max-width: 767px) {
-    width: 320px;
-    padding: 20px 25px 90px 23px;
+    width: calc(320px + (100vw - 320px) * (320 - 767) / (320 - 767));
+    padding: 20px 7.8% 90px 7.8%;
     min-height: 750px;
   }
+}
+
+.form-index__wrapper::after {
+  position: absolute;
+  top: 250px;
+  right: 55%;
+  width: calc(340px + (100vw - 1024px) * (340 - 510) / (1024 - 1920));
+  max-width: 510px;
+  height: calc(190px + (100vw - 1024px) * (190 - 285) / (1024 - 1920));
+  max-height: 285px;
+  background-image: url("../img/plane.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  content: "";
+
+  @media screen and (max-width: 1023px) {
+    display: none;
+}
 }

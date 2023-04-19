@@ -3,6 +3,7 @@
   background-image: $black-to-down;
   z-index: 10;
   padding: 30px 13% 35px 10%;
+  position: relative;
 
   @media (min-width: 1023px) {
     position: fixed;
@@ -10,8 +11,11 @@
   }
 
   @media screen and (max-width: 1023px) {
-    position: relative;
-    padding: 0;
+    padding: 15px 70px 15px 40px;
+  }
+
+  @media screen and (max-width: 767px) {
+    padding: 15px 11% 10px 8%;
   }
 }
 
@@ -22,20 +26,20 @@
   min-height: 120px;
   justify-content: space-between;
   max-width: 1220px;
+  box-sizing: border-box;
 
 
   @media screen and (max-width: 1023px) {
-    width: 770px;
-    padding: 15px 70px 15px 40px;
+    width: 660px;
     min-height: 100px;
-    justify-content: space-between;
     position: relative;
   }
 
   @media screen and (max-width: 767px) {
-    width: 320px;
+    min-width: 259px;
+    width: calc(259px + (100vw - 320px) * (259 - 622) / (320 - 767));
+    max-width: 622px;
     min-height: 70px;
-    padding: 15px 35px 10px 26px;
   }
 }
 
