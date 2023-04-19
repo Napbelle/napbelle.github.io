@@ -1,5 +1,6 @@
 .about-us {
   background-color: $color-alice-blue;
+
 }
 
 .about-us__wrapper {
@@ -23,7 +24,7 @@
 .about-us__wrapper::after {
   position: absolute;
   top: 65px;
-  left: 18%;
+  left: calc(50px + (100vw - 1024px) * (50 - 350) / (1024 -  1920));
   width: 150px;
   height: 320px;
   background-image: url("/img/2022.png");
@@ -76,6 +77,8 @@
   overflow: hidden;
   width: calc(300px + (970 - 300) * ((100vw - 500px) / (1920 - 500)));
   margin-right: 5%;
+  display: inline-block;
+  max-width: 970px;
 
 
   @media screen and (max-width: 1023px) {

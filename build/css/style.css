@@ -752,7 +752,7 @@ button,
 .about-us__wrapper::after {
   position: absolute;
   top: 65px;
-  left: 18%;
+  left: calc(50px + (100vw - 1024px) * -300 / -896);
   width: 150px;
   height: 320px;
   background-image: url("/img/2022.png");
@@ -783,6 +783,8 @@ button,
   overflow: hidden;
   width: calc(300px + 670 * (100vw - 500px) / 1420);
   margin-right: 5%;
+  display: inline-block;
+  max-width: 970px;
 }
 
 .about-us__text.is-active {
@@ -1552,22 +1554,23 @@ button,
   justify-content: space-between;
 }
 
+.site-list {
+  max-width: 70%;
+}
+
 .site-list__list {
   list-style-type: none;
   padding: 0;
   margin: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  width: calc(300px + 170 * (100vw - 500px) / 1420);
-  height: 145px;
-  margin-right: 5%;
+  display: -ms-grid;
+  display: grid;
+  height: auto;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 220px));
+  -ms-grid-rows: (auto)[4];
+  grid-template-rows: repeat(4, auto);
+  grid-column-gap: 1.5%;
+  grid-row-gap: 10px;
+  grid-auto-flow: column;
 }
 
 .site-list__title {
@@ -1606,11 +1609,10 @@ button,
 }
 
 .site-list__item {
-  width: calc(140px + 80 * (100vw - 500px) / 1420);
   margin: 0;
-  margin-bottom: 5px;
-  margin-right: 1.5%;
-  max-width: 220px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
 .social__list {
@@ -2039,7 +2041,14 @@ button,
   }
 
   .site-list__list {
-    height: 230px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    height: auto;
     width: 220px;
     margin-right: 130px;
   }
@@ -2381,6 +2390,7 @@ button,
     display: none;
     margin: 0;
     margin-top: -5px;
+    height: auto;
   }
 
   .site-list.is-active .site-list__list {
