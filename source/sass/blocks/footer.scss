@@ -1,5 +1,9 @@
 .footer {
   background-color: $color-black-pearl;
+  padding-top: 58px;
+  padding-bottom: 40px;
+  padding-left: calc(50px + (100vw - 1024px) * (50 - 350) / (1024 -  1920));
+  padding-right: calc(50px + (100vw - 1024px) * (50 - 350) / (1024 -  1920));
 }
 
 
@@ -8,12 +12,9 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  padding-top: 58px;
-  padding-bottom: 40px;
-  padding-left: calc(50px + (100vw - 1024px) * (50 - 350) / (1024 -  1920));
-  padding-right: calc(50px + (100vw - 1024px) * (50 - 350) / (1024 -  1920));
   height: auto;
   margin: 0 auto;
+  max-width: 1220px;
 
   @media screen and (max-width: 1023px) {
     width: 770px;

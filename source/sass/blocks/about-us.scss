@@ -1,14 +1,15 @@
 .about-us {
   background-color: $color-alice-blue;
+  padding: 33px 18% 118px 18%;
 
 }
 
 .about-us__wrapper {
-  position: relative;
-  padding-top: 33px;
-  padding-bottom: 118px;
-  padding-left: 31%;
-  margin: 0 auto;
+display: flex;
+flex-direction: column;
+justify-content: center;
+max-width: 1220px;
+margin: 0 auto;
 
   @media screen and (max-width: 1023px) {
     width: 770px;
@@ -21,10 +22,10 @@
   }
 }
 
-.about-us__wrapper::after {
+.about-us__text-wrapper::after {
   position: absolute;
-  top: 65px;
-  left: calc(50px + (100vw - 1024px) * (50 - 350) / (1024 -  1920));
+  top: 20px;
+  left: -40px;
   width: 150px;
   height: 320px;
   background-image: url("/img/2022.png");
@@ -63,8 +64,11 @@
 }
 
 .about-us__text-wrapper {
-  margin-left: 5%;
+  padding-left: 18%;
+  max-width: 1220px;
+  position: relative;
 }
+
 
 .about-us__text {
   font-family: "PT Mono", "Arial", sans-serif;
