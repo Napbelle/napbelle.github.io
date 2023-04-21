@@ -1,11 +1,9 @@
-
-
 .footer-contacts__list {
   list-style-type: none;
   padding: 0;
   margin: 0;
   width: calc(140px + (345 - 140) * ((100vw - 500px) / (1920 - 500)));
-  margin-left: 32%;
+  margin-left: 18%;
   max-width: 345px;
 
 
@@ -30,7 +28,7 @@
   font-weight: 400;
   line-height: 16px;
   margin: 0;
-  margin-left: 32%;
+  margin-left: 18%;
   margin-bottom: 20px;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -43,7 +41,7 @@
     position: relative;
     display: flex;
     justify-content: space-between;
-    padding: 20px 51px 20px 0;
+    padding: 22px 51px 20px 0;
     margin: 0;
   }
 }
@@ -52,32 +50,33 @@
   @media screen and (max-width: 767px) {
     position: absolute;
     top: 0;
-    left: -7.8%;
-    width:  calc(320px + (100vw - 320px) * (320 - 767) / (320 - 767));
+    left: -9.5%;
+    width: calc((320px + (100vw - 320px) * (320 - 767) / (320 - 767)) - 1px);
     height: 1px;
     background-color: $color-transparent-white;
     content: "";
   }
 }
 
+
 .footer-contacts__title::before {
   @media screen and (max-width: 767px) {
     position: absolute;
-    top: 20px;
-    right: 0;
+    top: 22px;
+    right: 2px;
     width: 15px;
     height: 15px;
-    background-image: url("/img/svg/plus.svg");
+    background-image: url("../img/svg/plus.svg");
     background-repeat: no-repeat;
     content: "";
   }
 }
 
 .footer-contacts.is-active .footer-contacts__title::before {
-  background-image: url("/img/svg/minus.svg");
+  background-image: url("../img/svg/minus.svg");
   position: absolute;
-  top: 50%;
-  right: 0;
+  top: 28px;
+  right: 2px;
   width: 15px;
   background-repeat: no-repeat;
   content: "";
@@ -110,7 +109,7 @@
   @media screen and (max-width: 767px) {
     font-size: 14px;
     line-height: 25px;
-    margin-bottom: 6px;
+    margin-bottom: 7px;
     width: calc(270px + (100vw - 320px) * (270 - 647) / (320 - 767));
     min-width: 270px;
     max-width: 647px;

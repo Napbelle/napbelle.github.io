@@ -1,7 +1,4 @@
 .site-list {
-max-width: 70%;
-
-
   @media screen and (max-width: 767px) {
     width: calc(270px + (100vw - 320px) * (270 - 647) / (320 - 767));
     min-width: 270px;
@@ -17,14 +14,14 @@ max-width: 70%;
   height: auto;
   grid-template-columns: repeat(auto-fill, minmax(100px, 220px));
   grid-template-rows: repeat(4, auto);
-  grid-column-gap: 1.5%;
-  grid-row-gap: 10px;
+  grid-column-gap: 6%;
+  grid-row-gap: 6px;
   grid-auto-flow: column;
+  max-width: 440px;
 
 
   @media screen and (max-width: 1023px) {
-    display: flex;
-    flex-direction: column;
+    display: block;
     height: auto;
     width: 220px;
     margin-right: 130px;
@@ -34,6 +31,7 @@ max-width: 70%;
     width: calc(270px + (100vw - 320px) * (270 - 647) / (320 - 767));
     min-width: 270px;
     max-width: 647px;
+    flex-direction: column;
     flex-wrap: nowrap;
     display: none;
     margin: 0;
@@ -72,8 +70,8 @@ max-width: 70%;
   @media screen and (max-width: 767px) {
     position: absolute;
     top: -5px;
-    left: -7.8%;
-    width:  calc(320px + (100vw - 320px) * (320 - 767) / (320 - 767));
+    left: -9.5%;
+    width: calc(320px + (100vw - 320px) * (320 - 767) / (320 - 767));
     height: 1px;
     background-color: $color-transparent-white;
     content: "";
@@ -87,14 +85,14 @@ max-width: 70%;
     right: 0;
     width: 15px;
     height: 15px;
-    background-image: url("/img/svg/plus.svg");
+    background-image: url("../img/svg/plus.svg");
     background-repeat: no-repeat;
     content: "";
   }
 }
 
 .site-list.is-active .site-list__title::before {
-  background-image: url("/img/svg/minus.svg");
+  background-image: url("../img/svg/minus.svg");
   position: absolute;
   top: 50%;
   right: 0;
@@ -129,10 +127,11 @@ max-width: 70%;
   @media screen and (max-width: 1023px) {
     width: 220px;
     margin-right: 130px;
+    margin-bottom: 5px;
   }
 
   @media screen and (max-width: 767px) {
-    margin-bottom: 6px;
+    margin-bottom: 7px;
     width: calc(270px + (100vw - 320px) * (270 - 647) / (320 - 767));
     min-width: 270px;
     max-width: 647px;

@@ -2,11 +2,11 @@
   background-color: $color-black-pearl;
   padding-top: 58px;
   padding-bottom: 40px;
-  padding-left: calc(50px + (100vw - 1024px) * (50 - 350) / (1024 -  1920));
-  padding-right: calc(50px + (100vw - 1024px) * (50 - 350) / (1024 -  1920));
+  padding-left: calc(50px + (100vw - 1024px) * (50 - 350) / (1024 - 1920));
+  padding-right: calc(50px + (100vw - 1024px) * (50 - 350) / (1024 - 1920));
 
   @media screen and (max-width: 1023px) {
-    padding: 55px 45px 55px 50px;
+    padding: 55px 45px 60px 50px;
   }
 
   @media screen and (max-width: 767px) {
@@ -45,9 +45,9 @@
 .footer::after {
   @media screen and (max-width: 767px) {
     position: absolute;
-    bottom: 35px;
+    bottom: 40px;
     left: 0;
-    width: 100%;
+    width: calc(100% - 1px);
     height: 1px;
     background-color: $color-transparent-white;
     content: "";
@@ -70,6 +70,10 @@
 .footer__img {
   margin: -8px 45px 0 0;
 
+  @media screen and (max-width: 1023px) {
+    margin-top: -4px;
+  }
+
   @media screen and (max-width: 767px) {
     margin: 0 25px 15px 25px;
   }
@@ -81,7 +85,7 @@
   flex-wrap: wrap;
   width: 215px;
   margin: 0;
-  margin-right: 8%;
+  margin-right: 13%;
 
 
   @media screen and (max-width: 1023px) {
@@ -90,7 +94,7 @@
     flex-direction: row;
     margin: 0;
     justify-content: space-between;
-    margin-bottom: 35px;
+    margin-bottom: 30px;
   }
 
   @media screen and (max-width: 767px) {

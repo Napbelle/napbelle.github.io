@@ -3,7 +3,7 @@
   background-color: $color-deep-sky-blue;
   background-size: cover;
   background-position: center;
-  background-image: url("/img/form.png");
+  background-image: url("../img/form.png");
   background-repeat: no-repeat;
 
 
@@ -17,15 +17,15 @@
   height: 840px;
   padding-top: 137px;
   padding-bottom: 202px;
-  padding-left: calc(500px + (100vw - 1024px) * (500 - 975) / (1024 -  1920));
-  padding-right: calc(50px + (100vw - 1024px) * (50 - 360) / (1024 -  1920));
+  padding-left: calc(500px + (100vw - 1024px) * (500 - 975) / (1024 - 1920));
+  padding-right: calc(50px + (100vw - 1024px) * (50 - 360) / (1024 - 1920));
   box-sizing: border-box;
   margin: 0 auto;
 
   @media screen and (max-width: 1023px) {
     width: 770px;
     background-image: none;
-    padding: 18px 50px 125px 50px;
+    padding: 16px 50px 125px 50px;
     height: 580px;
   }
 
@@ -38,8 +38,8 @@
 
 .form-index__wrapper::after {
   position: absolute;
-  top: 250px;
-  right: 55%;
+  top: 245px;
+  right: 55.5%;
   width: calc(340px + (100vw - 1024px) * (340 - 510) / (1024 - 1920));
   max-width: 510px;
   height: calc(190px + (100vw - 1024px) * (190 - 285) / (1024 - 1920));
@@ -51,5 +51,5 @@
 
   @media screen and (max-width: 1023px) {
     display: none;
-}
+  }
 }

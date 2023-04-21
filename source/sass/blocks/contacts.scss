@@ -10,7 +10,7 @@
 
 .contacts__list {
   width: calc(300px + (480 - 300) * ((100vw - 500px) / (1920 - 500)));
-  max-width: 480px;
+  max-width: 460px;
   font-family: "PT Mono", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -55,10 +55,9 @@
 }
 
 .contacts__item {
- // width: calc(140px + (225 - 140) * ((100vw - 500px) / (1920 - 500)));
   margin: 0;
   height: 25px;
-  padding: 0;
+  padding-top: 5px;
   margin-bottom: 10px;
 
 
@@ -88,5 +87,6 @@
 
   @media screen and (max-width: 1023px) {
     margin: 0;
+    margin-top: -5px;
   }
 }
