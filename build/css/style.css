@@ -2344,7 +2344,7 @@ button,
 
   .welcome__mobile {
     display: block;
-    width: calc(270px + (100vw - 320px) * -40 / -447);
+    width: calc(270px + (100vw - 320px) * -377 / -447);
     padding: 10px 30px;
     font-size: 14px;
     line-height: 17px;
@@ -2356,6 +2356,7 @@ button,
     text-transform: uppercase;
     cursor: pointer;
     letter-spacing: 1px;
+    border-radius: 3px;
   }
 
   .catalog {
@@ -2472,7 +2473,7 @@ button,
   }
 
   .form__button {
-    width: calc(270px + (100vw - 320px) * -130 / -447);
+    width: calc(270px + (100vw - 320px) * -377 / -447);
     margin-bottom: 22px;
     margin-right: 0;
     max-width: 647px;
