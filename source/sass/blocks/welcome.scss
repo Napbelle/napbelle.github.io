@@ -16,7 +16,6 @@
     margin-top: -70px;
     background-image: url("../img/welcome-mobile.jpg");
     padding: 50px 7.8% 192px 7.8%;
-
   }
 }
 
@@ -36,7 +35,6 @@
 
   @media screen and (max-width: 767px) {
     width: calc(270px + (100vw - 320px) * (270 - 647) / (320 - 767));
-    min-width: 270px;
     max-width: 647px;
     margin-top: 70px;
   }
@@ -119,7 +117,7 @@
 
   @media screen and (max-width: 767px) {
     display: block;
-    width: 270px;
+    width: calc(270px + (100vw - 320px) * (270 - 310) / (320 - 767));
     padding: 10px 30px;
     font-size: 14px;
     line-height: 17px;

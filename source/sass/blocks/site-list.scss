@@ -1,7 +1,6 @@
 .site-list {
   @media screen and (max-width: 767px) {
     width: calc(270px + (100vw - 320px) * (270 - 647) / (320 - 767));
-    min-width: 270px;
     max-width: 647px;
   }
 }
@@ -29,7 +28,6 @@
 
   @media screen and (max-width: 767px) {
     width: calc(270px + (100vw - 320px) * (270 - 647) / (320 - 767));
-    min-width: 270px;
     max-width: 647px;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -63,6 +61,7 @@
     padding: 20px 51px 20px 0;
     margin-bottom: 0;
     text-align: center;
+    width: calc(270px + (100vw - 320px) * (270 - 647) / (320 - 767));
   }
 }
 
@@ -133,7 +132,6 @@
   @media screen and (max-width: 767px) {
     margin-bottom: 7px;
     width: calc(270px + (100vw - 320px) * (270 - 647) / (320 - 767));
-    min-width: 270px;
     max-width: 647px;
   }
 }

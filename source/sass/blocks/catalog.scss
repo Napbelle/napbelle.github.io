@@ -25,7 +25,6 @@
 
   @media screen and (max-width: 767px) {
     width: calc(270px + (100vw - 320px) * (270 - 647) / (320 - 767));
-    min-width: 270px;
     max-width: 647px;
   }
 }
@@ -130,7 +129,6 @@
     padding: 26px 30px;
     background-image: url("../img/card-1-mobile.jpg");
     width: calc(270px + (100vw - 320px) * (270 - 647) / (320 - 767));
-    min-width: 270px;
     max-width: 647px;
   }
 }

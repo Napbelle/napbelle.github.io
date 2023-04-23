@@ -14,7 +14,7 @@
 
 .form-index__wrapper {
   position: relative;
-  height: 840px;
+
   padding-top: 137px;
   padding-bottom: 202px;
   padding-left: calc(500px + (100vw - 1024px) * (500 - 975) / (1024 - 1920));
@@ -22,17 +22,23 @@
   box-sizing: border-box;
   margin: 0 auto;
 
+  @media screen and (min-width: 1024px) {
+    height: 840px;
+  }
+
   @media screen and (max-width: 1023px) {
     width: 770px;
     background-image: none;
     padding: 16px 50px 125px 50px;
+  }
+
+  @media screen and (min-width: 767px) and (max-width: 1023px) {
     height: 580px;
   }
 
   @media screen and (max-width: 767px) {
     width: calc(320px + (100vw - 320px) * (320 - 767) / (320 - 767));
-    padding: 20px 7.8% 90px 7.8%;
-    min-height: 750px;
+    padding: 20px 7.8% 82px 7.8%;
   }
 }
 

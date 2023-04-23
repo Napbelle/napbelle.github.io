@@ -23,8 +23,8 @@
 
   @media screen and (max-width: 767px) {
     width: calc(270px + (100vw - 320px) * (270 - 647) / (320 - 767));
-    min-width: 270px;
     max-width: 647px;
+    flex-direction: column;
   }
 }
 
@@ -69,7 +69,6 @@
 
   @media screen and (max-width: 767px) {
     width: calc(270px + (100vw - 320px) * (270 - 647) / (320 - 767));
-    min-width: 270px;
     max-width: 647px;
     min-height: 340px;
     padding: 29px 30px 35px 30px;

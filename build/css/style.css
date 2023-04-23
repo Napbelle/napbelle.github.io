@@ -1749,7 +1749,6 @@ button,
 
 .form-index__wrapper {
   position: relative;
-  height: 840px;
   padding-top: 137px;
   padding-bottom: 202px;
   padding-left: calc(500px + (100vw - 1024px) * -475 / -896);
@@ -1832,6 +1831,12 @@ button,
     position: fixed;
     top: 0;
     min-height: 120px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .form-index__wrapper {
+    height: 840px;
   }
 }
 
@@ -2056,22 +2061,15 @@ button,
   }
 
   .form__input {
-    min-width: 320px;
     margin-bottom: 22px;
   }
 
-  .form__first-row {
-    min-width: 670px;
-  }
-
   .form__textarea {
-    min-width: 670px;
     padding-top: 27px;
     margin-bottom: 34px;
   }
 
   .form__button-wrapper {
-    min-width: 670px;
     -webkit-box-pack: start;
     -ms-flex-pack: start;
     justify-content: flex-start;
@@ -2172,7 +2170,6 @@ button,
     width: 770px;
     background-image: none;
     padding: 16px 50px 125px 50px;
-    height: 580px;
   }
 
   .form-index__wrapper::after {
@@ -2187,7 +2184,6 @@ button,
 
   .about-us__wrapper {
     width: calc(270px + (100vw - 320px) * -377 / -447);
-    min-width: 270px;
     max-width: 647px;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
@@ -2208,7 +2204,6 @@ button,
   .about-us__text-wrapper {
     padding: 0;
     width: calc(270px + (100vw - 320px) * -377 / -447);
-    min-width: 270px;
     max-width: 647px;
   }
 
@@ -2217,13 +2212,13 @@ button,
     line-height: 19px;
     max-height: 205px;
     width: calc(270px + (100vw - 320px) * -377 / -447);
-    min-width: 270px;
     max-width: 647px;
     margin-bottom: 0;
   }
 
   .about-us__button {
-    width: 160px;
+    width: calc(160px + (100vw - 320px) * -150 / -447);
+    max-width: 310px;
     padding: 10px 15px;
     margin-top: 10px;
   }
@@ -2234,8 +2229,11 @@ button,
 
   .advantages__wrapper {
     width: calc(270px + (100vw - 320px) * -377 / -447);
-    min-width: 270px;
     max-width: 647px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
 
   .advantages__list {
@@ -2246,7 +2244,6 @@ button,
 
   .advantages__item {
     width: calc(270px + (100vw - 320px) * -377 / -447);
-    min-width: 270px;
     max-width: 647px;
     min-height: 340px;
     padding: 29px 30px 35px 30px;
@@ -2282,7 +2279,7 @@ button,
   }
 
   .contacts__list {
-    width: 150px;
+    width: calc(150px + (100vw - 320px) * -210 / -447);
   }
 
   .contacts__item {
@@ -2296,7 +2293,6 @@ button,
   }
 
   .header__wrapper {
-    min-width: 259px;
     width: calc(259px + (100vw - 320px) * -363 / -447);
     max-width: 622px;
   }
@@ -2307,8 +2303,8 @@ button,
   }
 
   .header__img {
-    width: 35px;
-    height: 35px;
+    min-width: 35px;
+    min-height: 35px;
     margin-top: -4px;
     margin-left: 1px;
   }
@@ -2321,7 +2317,6 @@ button,
 
   .welcome__wrapper {
     width: calc(270px + (100vw - 320px) * -377 / -447);
-    min-width: 270px;
     max-width: 647px;
     margin-top: 70px;
   }
@@ -2349,7 +2344,7 @@ button,
 
   .welcome__mobile {
     display: block;
-    width: 270px;
+    width: calc(270px + (100vw - 320px) * -40 / -447);
     padding: 10px 30px;
     font-size: 14px;
     line-height: 17px;
@@ -2369,7 +2364,6 @@ button,
 
   .catalog__wrapper {
     width: calc(270px + (100vw - 320px) * -377 / -447);
-    min-width: 270px;
     max-width: 647px;
   }
 
@@ -2400,7 +2394,6 @@ button,
     padding: 26px 30px;
     background-image: url("../img/card-1-mobile.jpg");
     width: calc(270px + (100vw - 320px) * -377 / -447);
-    min-width: 270px;
     max-width: 647px;
   }
 
@@ -2424,7 +2417,6 @@ button,
     -ms-flex-direction: column;
     flex-direction: column;
     width: calc(270px + (100vw - 320px) * -377 / -447);
-    min-width: 270px;
     max-width: 647px;
   }
 
@@ -2443,7 +2435,6 @@ button,
   .form__input {
     width: calc(270px + (100vw - 320px) * -377 / -447);
     margin-bottom: 20px;
-    min-width: 270px;
     max-width: 647px;
   }
 
@@ -2453,7 +2444,6 @@ button,
     -ms-flex-direction: column;
     flex-direction: column;
     width: calc(270px + (100vw - 320px) * -377 / -447);
-    min-width: 270px;
     max-width: 647px;
   }
 
@@ -2462,7 +2452,6 @@ button,
     margin-bottom: 30px;
     padding-top: 24px;
     min-height: 180px;
-    min-width: 270px;
     max-width: 647px;
   }
 
@@ -2472,7 +2461,6 @@ button,
     -ms-flex-direction: column;
     flex-direction: column;
     width: calc(270px + (100vw - 320px) * -377 / -447);
-    min-width: 270px;
     max-width: 647px;
     -webkit-box-align: start;
     -ms-flex-align: start;
@@ -2480,21 +2468,21 @@ button,
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
+    margin-bottom: 0;
   }
 
   .form__button {
-    width: calc(270px + (100vw - 320px) * -377 / -447);
+    width: calc(270px + (100vw - 320px) * -130 / -447);
     margin-bottom: 22px;
     margin-right: 0;
-    min-width: 270px;
     max-width: 647px;
     padding: 14px 35px;
   }
 
   .form__text--checkbox {
     width: calc(241px + (100vw - 320px) * -377 / -447);
-    min-width: 241px;
     max-width: 618px;
+    margin-bottom: 0;
   }
 
   .form__text--checkbox br {
@@ -2506,7 +2494,7 @@ button,
   }
 
   .footer {
-    padding: 35px 7.8% 45px 7.8%;
+    padding: 37px 7.8% 45px 7.8%;
     position: relative;
   }
 
@@ -2514,7 +2502,6 @@ button,
     clear: both;
     position: relative;
     width: calc(270px + (100vw - 320px) * -377 / -447);
-    min-width: 270px;
     max-width: 647px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -2542,12 +2529,11 @@ button,
   }
 
   .footer__img {
-    margin: 0 25px 15px 25px;
+    margin: 0 0 15px 0;
   }
 
   .footer__first-column {
     width: calc(270px + (100vw - 320px) * -377 / -447);
-    min-width: 270px;
     max-width: 647px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -2556,6 +2542,9 @@ button,
     margin-bottom: 18px;
     -ms-flex-line-pack: center;
     align-content: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
 
   .footer__second-column {
@@ -2565,19 +2554,16 @@ button,
     -ms-flex-direction: column;
     flex-direction: column;
     width: calc(270px + (100vw - 320px) * -377 / -447);
-    min-width: 270px;
     max-width: 647px;
   }
 
   .site-list {
     width: calc(270px + (100vw - 320px) * -377 / -447);
-    min-width: 270px;
     max-width: 647px;
   }
 
   .site-list__list {
     width: calc(270px + (100vw - 320px) * -377 / -447);
-    min-width: 270px;
     max-width: 647px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -2606,6 +2592,7 @@ button,
     padding: 20px 51px 20px 0;
     margin-bottom: 0;
     text-align: center;
+    width: calc(270px + (100vw - 320px) * -377 / -447);
   }
 
   .site-list__title::after {
@@ -2637,7 +2624,6 @@ button,
   .site-list__item {
     margin-bottom: 7px;
     width: calc(270px + (100vw - 320px) * -377 / -447);
-    min-width: 270px;
     max-width: 647px;
   }
 
@@ -2655,7 +2641,6 @@ button,
 
   .footer-contacts__list {
     width: calc(270px + (100vw - 320px) * -377 / -447);
-    min-width: 270px;
     max-width: 647px;
     -ms-flex-wrap: nowrap;
     flex-wrap: nowrap;
@@ -2673,6 +2658,7 @@ button,
     justify-content: space-between;
     padding: 22px 51px 20px 0;
     margin: 0;
+    width: calc(270px + (100vw - 320px) * -377 / -447);
   }
 
   .footer-contacts__title::after {
@@ -2706,13 +2692,33 @@ button,
     line-height: 25px;
     margin-bottom: 7px;
     width: calc(270px + (100vw - 320px) * -377 / -447);
-    min-width: 270px;
     max-width: 647px;
   }
 
   .form-index__wrapper {
     width: calc(320px + (100vw - 320px) * -447 / -447);
-    padding: 20px 7.8% 90px 7.8%;
-    min-height: 750px;
+    padding: 20px 7.8% 82px 7.8%;
+  }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+  .form__input {
+    min-width: 320px;
+  }
+
+  .form__first-row {
+    min-width: 670px;
+  }
+
+  .form__textarea {
+    min-width: 670px;
+  }
+
+  .form__button-wrapper {
+    min-width: 670px;
+  }
+
+  .form-index__wrapper {
+    height: 580px;
   }
 }

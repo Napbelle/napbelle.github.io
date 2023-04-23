@@ -31,7 +31,7 @@
   }
 
   @media screen and (max-width: 767px) {
-    width: 150px;
+    width: calc(150px + (100vw - 320px) * (150 - 360) / (320 - 767));
   }
 }
 
