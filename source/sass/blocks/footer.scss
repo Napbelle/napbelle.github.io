@@ -23,7 +23,11 @@
   flex-direction: row;
   height: auto;
   margin: 0 auto;
-  max-width: 1220px;
+  justify-content: center;
+
+  @media screen and (min-width: 1023px) {
+    max-width: 1220px;
+  }
 
   @media screen and (max-width: 1023px) {
     max-width: 770px;
@@ -85,6 +89,7 @@
   width: 215px;
   margin: 0;
   margin-right: 13%;
+  margin-left: -5%;
 
 
   @media screen and (max-width: 1023px) {
@@ -111,6 +116,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin: 0;
 
   @media screen and (max-width: 1023px) {
     margin-left: 0;

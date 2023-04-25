@@ -1,9 +1,20 @@
+.form__form--index,
+.form__data--index {
+  @media screen and (min-width: 1024px) {
+    max-width: 585px;
+  }
+}
+
 .form__fieldset {
   display: flex;
   width: calc(400px + (585 - 400) * ((100vw - 500px) / (1920 - 500)));
   border: none;
   padding: 0;
   flex-wrap: wrap;
+
+  @media screen and (min-width: 1024px) {
+    max-width: 585px;
+  }
 
   @media screen and (max-width: 767px) {
     flex-direction: column;
@@ -26,6 +37,11 @@
   line-height: 51px;
   margin-bottom: 10px;
 
+  @media screen and (min-width: 1024px) {
+    max-width: 585px;
+    margin-right: 0;
+  }
+
   @media screen and (max-width: 1023px) {
     margin-bottom: 5px;
   }
@@ -45,6 +61,9 @@
   margin: 0;
   margin-bottom: 33px;
 
+  @media screen and (min-width: 1024px) {
+    max-width: 585px;
+  }
 
   @media screen and (max-width: 1023px) {
     margin-bottom: 25px;
@@ -153,7 +172,6 @@
   cursor: text;
 
   @media screen and (max-width: 1023px) {
-
     padding-top: 27px;
     margin-bottom: 34px;
   }
@@ -272,7 +290,7 @@
   font-weight: 400;
   line-height: 16px;
   margin: 0;
-  cursor: text;
+  cursor: pointer;
   width: auto;
   max-width: 265px;
   box-sizing: border-box;
@@ -304,6 +322,7 @@
   position: relative;
   display: block;
   padding-left: 34px;
+  cursor: pointer;
 }
 
 .form__mark {

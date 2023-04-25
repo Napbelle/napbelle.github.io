@@ -11,12 +11,16 @@
   margin: 0;
   display: grid;
   height: auto;
-  grid-template-columns: repeat(auto-fill, minmax(100px, 220px));
+  grid-template-columns: repeat(auto-fit, auto);
   grid-template-rows: repeat(4, auto);
   grid-column-gap: 6%;
   grid-row-gap: 6px;
   grid-auto-flow: column;
-  max-width: 440px;
+
+
+  @media screen and (min-width: 1023px) {
+    max-width: 1220px;
+  }
 
 
   @media screen and (max-width: 1023px) {
@@ -24,6 +28,7 @@
     height: auto;
     width: 220px;
     margin-right: 130px;
+    margin-bottom: 0;
   }
 
   @media screen and (max-width: 767px) {
@@ -122,6 +127,12 @@
 .site-list__item {
   margin: 0;
   height: fit-content;
+  width: calc(100px + (220 - 100) * ((100vw - 500px) / (1920 - 500)));
+
+
+  @media screen and (min-width: 1023px) {
+    max-width: 220px;
+  }
 
   @media screen and (max-width: 1023px) {
     width: 220px;
