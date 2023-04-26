@@ -14,13 +14,16 @@
 
 .form-index__wrapper {
   position: relative;
-
   padding-top: 137px;
   padding-bottom: 202px;
   padding-left: calc(500px + (100vw - 1024px) * (500 - 975) / (1024 - 1920));
   padding-right: calc(50px + (100vw - 1024px) * (50 - 360) / (1024 - 1920));
   box-sizing: border-box;
   margin: 0 auto;
+
+  @media screen and (min-width: 2600px) {
+    padding-left: 50.5%;
+  }
 
   @media screen and (min-width: 1024px) {
     height: 840px;
@@ -39,23 +42,5 @@
   @media screen and (max-width: 767px) {
     width: calc(320px + (100vw - 320px) * (320 - 767) / (320 - 767));
     padding: 20px 7.8% 82px 7.8%;
-  }
-}
-
-.form-index__wrapper::after {
-  position: absolute;
-  top: 245px;
-  right: 55.5%;
-  width: calc(340px + (100vw - 1024px) * (340 - 510) / (1024 - 1920));
-  max-width: 510px;
-  height: calc(190px + (100vw - 1024px) * (190 - 285) / (1024 - 1920));
-  max-height: 285px;
-  background-image: url("../img/plane.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  content: "";
-
-  @media screen and (max-width: 1023px) {
-    display: none;
   }
 }

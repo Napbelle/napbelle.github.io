@@ -5,6 +5,33 @@
   }
 }
 
+.form__content-wrapper {
+  position: relative;
+
+  @media screen and (min-width: 1024px) {
+    max-width: 585px;
+  }
+}
+
+.form__content-wrapper::after {
+  position: absolute;
+  top: 80px;
+  right: 120%;
+  width: calc(340px + (100vw - 1024px) * (340 - 510) / (1024 - 1920));
+  max-width: 510px;
+  height: calc(190px + (100vw - 1024px) * (190 - 285) / (1024 - 1920));
+  max-height: 285px;
+  background-image: url("../img/plane.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  content: "";
+
+  @media screen and (max-width: 1023px) {
+    display: none;
+  }
+}
+
+
 .form__fieldset {
   display: flex;
   width: calc(400px + (585 - 400) * ((100vw - 500px) / (1920 - 500)));
@@ -22,7 +49,6 @@
     max-width: 647px;
   }
 }
-
 
 .form__fieldset--modal {
   width: 420px;
